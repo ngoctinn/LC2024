@@ -24,3 +24,57 @@ Mỗi bài học được chia thành 4 phần chính:
 
 ---
 *Dữ liệu được cập nhật dựa trên kịch bản chuẩn ETS 2024.*
+
+## 🧭 Cách thêm lesson mới (nhanh & chính xác)
+
+Dưới đây là hướng dẫn chuẩn để bạn dễ dàng thêm một lesson mới vào kho học. Thao tác đúng theo các bước sẽ giúp hệ thống tự nhận diện audio, sidebar và tính năng chunking.
+
+### 1) Đặt file HTML
+- File lesson phải theo định dạng tên: `LC-T{testNum}-P{part}-Q{range}.html`
+	- Ví dụ: `LC-T4-P3-Q32-34.html` (Test 4, Part 3, câu 32–34)
+- Đặt file vào thư mục tương ứng (ví dụ `Test 4/`).
+
+### 2) Đặt audio
+- Tên file audio phải theo định dạng: `Test_{NN}-{range}.mp3` (với `NN` là số test 2 chữ số)
+	- Ví dụ: `Test_04-32-34.mp3`
+- Đặt file audio vào `audio/Test_{NN}/` (ví dụ `audio/Test_04/Test_04-32-34.mp3`).
+- Hệ thống sẽ tự ghép đường dẫn dựa trên file HTML khi khởi tạo audio player.
+
+### 3) Cấu trúc HTML cơ bản cho lesson
+- Các thành phần chính mà script tìm kiếm:
+	- Một phần chứa `strong` cho bản đọc tiếng Anh (chunking) và một phần `.chunk-vi` cho bản dịch.
+	- Container có id `shadowingContainer` để script `enhanceChunkingLayout()` tự động tách chunk.
+
+- Mẫu HTML tối thiểu (dán vào file lesson):
+
+```html
+<div id="shadowingContainer">
+	<div class="flex gap-4">
+		<div class="w-full">
+			<strong>
+				Thanks for taking my call. / As I mentioned in my e-mail, / I'm interested in working / in your field.
+			</strong>
+			<div class="chunk-vi">
+				Cảm ơn đã nhận cuộc gọi của tôi. / Như tôi đã đề cập trong e-mail, / Tôi quan tâm đến việc làm / trong lĩnh vực của bạn.
+			</div>
+		</div>
+	</div>
+</div>
+```
+
+Lưu ý: dấu `/` dùng để tách chunk; script sẽ thay thế `/` thành phân đoạn và hiển thị pseudo-element `/` giữa các chunk.
+
+### 4) Cập nhật sidebar / navigation (nếu cần thủ công)
+- Hầu hết các bài được phát hiện tự động theo cấu trúc thư mục, nhưng nếu bạn muốn cập nhật thủ công hoặc thêm nhãn riêng, chỉnh arrays `TOEIC_TESTS` trong `assets/script.js`.
+
+### 5) Kiểm tra nhanh sau khi thêm
+- Mở file HTML trong trình duyệt (môi trường local). Nếu audio không xuất hiện, kiểm tra tên file audio và thư mục.
+- Xác nhận rằng các chunk hiển thị đúng và không bị dồn sát (nếu cần chỉnh CSS, xem `assets/style.css`).
+
+### 6) Checklist ngắn
+- [ ] File HTML theo tên chuẩn
+- [ ] Audio có tên + đặt đúng folder
+- [ ] `shadowingContainer` tồn tại và chứa `strong` + `.chunk-vi`
+- [ ] Mở trang kiểm tra hiển thị chunk và audio
+
+Nếu bạn muốn, mình có thể tạo một script nhỏ (CLI) để tự động sinh file HTML template và đặt audio path — bạn muốn mình làm không?

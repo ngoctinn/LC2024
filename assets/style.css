@@ -368,3 +368,126 @@ strong {
     max-width: 100%;
   }
 }
+
+/* Practice Mode Styles */
+.practice-hidden {
+  display: none !important;
+}
+
+.practice-blurred {
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.5;
+  transition: filter 0.5s ease, opacity 0.5s ease;
+}
+
+.practice-revealed {
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  opacity: 1 !important;
+}
+
+.question-option {
+  display: block;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background: #ffffff;
+  border: 2px solid #e2e8f0;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.question-option:hover {
+  border-color: #cbd5e1;
+  background: #f8fafc;
+}
+
+.question-option.selected {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.question-option.correct {
+  border-color: #10b981 !important;
+  background: #ecfdf5 !important;
+}
+
+.question-option.wrong {
+  border-color: #ef4444 !important;
+  background: #fef2f2 !important;
+}
+
+.option-letter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-right: 0.75rem;
+  border-radius: 50%;
+  background: #f1f5f9;
+  color: #64748b;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.question-option.selected .option-letter {
+  background: #3b82f6;
+  color: #ffffff;
+}
+
+.question-option.correct .option-letter {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.question-option.wrong .option-letter {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+#submitPracticeBtn {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 2rem auto 0;
+  padding: 1rem;
+  border-radius: 9999px;
+  background: #3b82f6;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+#submitPracticeBtn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(59, 130, 246, 0.4);
+}
+
+#submitPracticeBtn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.explanation-card {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  background: #f5f3ff;
+  border-left: 4px solid #8b5cf6;
+  border-radius: 0.5rem;
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -340,6 +340,119 @@ function initApp() {
   enhanceChunkingLayout();
   initTranslationToggle();
   initAnswerChecker();
+  initPracticeMode();
+}
+
+function initPracticeMode() {
+  const sections = document.querySelectorAll('section');
+  let questionsSection;
+
+  sections.forEach(s => {
+    const h2 = s.querySelector('h2');
+    if (h2 && h2.querySelector('.fa-question-circle')) questionsSection = s;
+  });
+
+  if (!questionsSection) return;
+
+  const questionBlocks = questionsSection.querySelectorAll('.bg-slate-50.p-5');
+  questionBlocks.forEach((block) => {
+    const grid = block.querySelector('.grid');
+    const questionTrans = block.querySelector('.text-slate-500.text-sm.mb-4');
+    const explanation = block.querySelector('.mt-4.p-4, .mt-4.p-3');
+    
+    if (!grid) return;
+
+    // Hide question translation
+    if (questionTrans) questionTrans.classList.add('practice-hidden');
+    // Hide explanation
+    if (explanation) explanation.classList.add('practice-hidden');
+
+    const options = grid.querySelectorAll('div');
+    options.forEach((opt) => {
+      // Detect if this is the correct option
+      const isCorrect = opt.classList.contains('font-bold') || opt.querySelector('.font-bold');
+      
+      // Clean text to separate English and Vietnamese
+      const fullText = opt.innerText.trim();
+      const lines = fullText.split('\n').map(l => l.trim()).filter(Boolean);
+      
+      const letterMatch = lines[0].match(/^\(([A-D])\)/);
+      const letter = letterMatch ? letterMatch[1] : "";
+      const englishText = lines[0].replace(/^\([A-D]\)/, "").trim();
+      const vietnameseText = lines[1] || "";
+
+      // Rebuild option structure
+      opt.className = 'question-option';
+      opt.dataset.letter = letter;
+      if (isCorrect) opt.dataset.correct = "true";
+
+      opt.innerHTML = `
+        <div class="flex items-start">
+          <span class="option-letter">${letter}</span>
+          <div class="flex-grow">
+            <div class="font-medium text-slate-800">${englishText}</div>
+            <div class="text-slate-500 text-sm mt-1 practice-hidden vi-trans">${vietnameseText}</div>
+          </div>
+        </div>
+      `;
+
+      opt.addEventListener('click', () => {
+        if (block.dataset.submitted === "true") return;
+        grid.querySelectorAll('.question-option').forEach(o => o.classList.remove('selected'));
+        opt.classList.add('selected');
+        checkSubmitReady();
+      });
+    });
+  });
+
+  const submitBtn = document.createElement('button');
+  submitBtn.id = 'submitPracticeBtn';
+  submitBtn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i> Nộp bài & Xem kết quả';
+  submitBtn.disabled = true;
+  questionsSection.appendChild(submitBtn);
+
+  function checkSubmitReady() {
+    const totalQuestions = questionBlocks.length;
+    const answeredQuestions = questionsSection.querySelectorAll('.question-option.selected').length;
+    submitBtn.disabled = answeredQuestions < totalQuestions;
+  }
+
+  submitBtn.addEventListener('click', () => {
+    let score = 0;
+    questionBlocks.forEach((block) => {
+      block.dataset.submitted = "true";
+      
+      // Reveal question translation
+      const qTrans = block.querySelector('.text-slate-500.text-sm.mb-4');
+      if (qTrans) qTrans.classList.remove('practice-hidden');
+
+      const selected = block.querySelector('.question-option.selected');
+      const correct = block.querySelector('.question-option[data-correct="true"]');
+      const explanation = block.querySelector('.practice-hidden:not(.vi-trans)');
+      
+      // Reveal all option translations
+      block.querySelectorAll('.vi-trans').forEach(vi => vi.classList.remove('practice-hidden'));
+
+      if (selected) {
+        if (selected.dataset.correct === "true") {
+          selected.classList.add('correct');
+          score++;
+        } else {
+          selected.classList.add('wrong');
+          if (correct) correct.classList.add('correct');
+        }
+      }
+
+      if (explanation) {
+        explanation.classList.remove('practice-hidden');
+        explanation.classList.add('explanation-card');
+      }
+    });
+
+    submitBtn.innerHTML = `<i class="fas fa-check-double mr-2"></i> Kết quả: ${score}/${questionBlocks.length}`;
+    submitBtn.disabled = true;
+    submitBtn.classList.replace('bg-blue-600', 'bg-green-600');
+  });
 }
 
 if (
@@ -369,8 +482,7 @@ function initTranslationToggle() {
     }
 
     shadowingContainer.classList.remove("hidden-vi");
-    toggleBtn.innerHTML =
-      '<i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt';
+    toggleBtn.innerHTML = '<i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt';
     toggleBtn.classList.replace("bg-slate-200", "bg-purple-100");
     toggleBtn.classList.replace("text-slate-700", "text-purple-700");
   });
@@ -723,7 +835,9 @@ function injectSidebar() {
   bindSidebarEvents(visitedLessons);
 
   requestAnimationFrame(() => {
-    const currentLink = document.querySelector('.tree-link[data-current="true"]');
+    const currentLink = document.querySelector(
+      '.tree-link[data-current="true"]',
+    );
     scrollSidebarLessonIntoView(currentLink, "auto");
   });
 }
