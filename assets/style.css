@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html {
+    font-size: 17px; /* Tăng kích thước cơ bản từ mặc định 16px */
+}
+
+body { 
+    font-family: 'Inter', sans-serif; 
+    background-color: #f8fafc; 
+    color: #1e293b; 
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 !important; /* Loại bỏ padding từ HTML để sidebar sát mép */
+}
+
+/* Sidebar Layout */
+.app-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    border-right: 1px solid #e2e8f0;
+    overflow-y: auto;
+    flex-shrink: 0;
+    padding: 1.5rem;
+    z-index: 50;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+    max-width: 100%;
+}
+
+/* Sidebar Tree Styles */
+.tree-item {
+    margin-bottom: 0.5rem;
+}
+
+.tree-header {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.75rem 0.5rem 0.25rem;
+    display: flex;
+    items-center: center;
+}
+
+.tree-link {
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 0.75rem;
+    border-radius: 8px;
+    color: #475569;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.tree-link:hover {
+    background-color: #f1f5f9;
+    color: #2563eb;
+}
+
+.tree-link.active {
+    background-color: #eff6ff;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.tree-link i {
+    width: 20px;
+    margin-right: 0.75rem;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+/* Tăng chiều rộng container lên 6xl (1152px) */
+.main-container {
+    max-width: 72rem; /* tương đương max-w-6xl */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chunk-vi { 
+    display: block; 
+    color: #64748b;
+    font-size: 1.05rem; /* Tăng nhẹ font tiếng Việt */
+    margin-top: 0.25rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Typography Enhancements */
+strong {
+    font-weight: 600;
+    font-size: 1.1rem; /* Tăng font cho phần tiếng Anh */
+}
+
+h1 { font-size: 2.5rem !important; }
+h2 { font-size: 1.8rem !important; }
+h3 { font-size: 1.4rem !important; }
+
+.hidden-vi .chunk-vi { display: none; }
+
+.input-blank {
+    border: none;
+    border-bottom: 2px solid #94a3b8;
+    background: transparent;
+    outline: none;
+    text-align: center;
+    font-weight: 600;
+    color: #2563eb;
+    width: 140px;
+    padding: 0 4px;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.input-blank:focus { border-bottom-color: #3b82f6; }
+
+.input-correct { 
+    border-bottom-color: #16a34a !important; 
+    color: #16a34a; 
+    background-color: #f0fdf4;
+    border-radius: 4px 4px 0 0;
+}
+
+.input-wrong { 
+    border-bottom-color: #dc2626 !important; 
+    color: #dc2626; 
+    background-color: #fef2f2;
+    border-radius: 4px 4px 0 0;
+}
+
+.glass-card { 
+    background: #ffffff; 
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); 
+    border-radius: 12px;
+}
+
+.table-header { background-color: #f1f5f9; }
+
+/* Dashboard Styles */
+.test-card {
+    transition: all 0.3s ease;
+}
+.test-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        display: none; /* Ẩn sidebar trên mobile để đơn giản hóa, có thể thêm toggle sau */
+    }
+}
