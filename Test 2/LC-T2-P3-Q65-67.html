@@ -12,6 +12,41 @@
 
     <div class="main-container space-y-8">
         
+        <!-- Graphic Section -->
+        <section class="glass-card p-6 mb-8">
+            <h2 class="text-xl font-bold text-slate-800 flex items-center mb-4">
+                <i class="fas fa-table text-blue-500 mr-2"></i> Tree Varieties Height Survey
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-slate-200 text-center">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-500 text-sm">
+                            <th class="py-3 px-6 font-semibold border">Variety</th>
+                            <th class="py-3 px-6 font-semibold border">Maximum Height (ft)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Eastern redbud</td>
+                            <td class="py-2 px-4 border font-bold text-blue-600">30</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Flowering dogwood</td>
+                            <td class="py-2 px-4 border">25</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Japanese lilac</td>
+                            <td class="py-2 px-4 border">20</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Paper birch</td>
+                            <td class="py-2 px-4 border">28</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
@@ -219,45 +254,84 @@
                 <!-- Q65 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">65. Where most likely do the speakers work?</div>
-                    <div class="text-slate-500 text-sm mb-4">Các nhân vật có khả năng nhất là đang làm việc ở đâu?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Các nhân vật có khả năng nhất là đang làm việc ở đâu?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) At a landscaping company</div>
-                        <div class="font-bold text-blue-600">(B) At a local government office</div>
-                        <div>(C) At a nature center</div>
-                        <div>(D) At a primary school</div>
+                        <div class="question-option">
+                            (A) At a landscaping company
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Tại một công ty thiết kế cảnh quan</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (B) At a local government office
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Tại một văn phòng chính quyền địa phương</span>
+                        </div>
+                        <div class="question-option">
+                            (C) At a nature center
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Tại một trung tâm thiên nhiên</span>
+                        </div>
+                        <div class="question-option">
+                            (D) At a primary school
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Tại một trường tiểu học</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Họ thảo luận về các chương trình công cộng (public programs), dự án công viên thành phố (Jannis Park project), thị trưởng thành phố (city mayor) và khảo sát cư dân, cho thấy họ làm việc tại một văn phòng chính quyền địa phương.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Họ thảo luận về các chương trình công cộng (public programs), dự án công viên thành phố (Jannis Park project), thị trưởng thành phố (city mayor) và khảo sát cư dân, cho thấy họ làm việc tại một văn phòng chính quyền địa phương.</p>
                     </div>
                 </div>
 
                 <!-- Q66 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">66. What event is scheduled for next month?</div>
-                    <div class="text-slate-500 text-sm mb-4">Sự kiện nào được lên lịch vào tháng tới?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Sự kiện nào được lên lịch vào tháng tới?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) A garden tour</div>
-                        <div>(B) A park opening</div>
-                        <div class="font-bold text-blue-600">(C) A poster contest</div>
-                        <div>(D) A tree-planting ceremony</div>
+                        <div class="question-option">
+                            (A) A garden tour
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Một chuyến tham quan sân vườn</span>
+                        </div>
+                        <div class="question-option">
+                            (B) A park opening
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Một buổi khai trương công viên</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (C) A poster contest
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Một cuộc thi áp phích</span>
+                        </div>
+                        <div class="question-option">
+                            (D) A tree-planting ceremony
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Một buổi lễ trồng cây</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người phụ nữ nói "There'll be a children’s poster competition next month", tương ứng với một cuộc thi áp phích (poster contest).
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người phụ nữ nói "There'll be a children’s poster competition next month", tương ứng với một cuộc thi áp phích (poster contest).</p>
                     </div>
                 </div>
 
                 <!-- Q67 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">67. Look at the graphic. Which seedling will be given away?</div>
-                    <div class="text-slate-500 text-sm mb-4">Quan sát hình ảnh. Loại cây giống nào sẽ được tặng?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Quan sát hình ảnh. Loại cây giống nào sẽ được tặng?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">(A) Eastern redbud</div>
-                        <div>(B) Flowering dogwood</div>
-                        <div>(C) Japanese lilac</div>
-                        <div>(D) Paper birch</div>
+                        <div class="question-option font-bold text-blue-600">
+                            (A) Eastern redbud
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Cây Eastern redbud (Cây rạng đông)</span>
+                        </div>
+                        <div class="question-option">
+                            (B) Flowering dogwood
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Cây Flowering dogwood (Cây sơn thù du)</span>
+                        </div>
+                        <div class="question-option">
+                            (C) Japanese lilac
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Cây Japanese lilac (Cây tử đinh hương Nhật Bản)</span>
+                        </div>
+                        <div class="question-option">
+                            (D) Paper birch
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Cây Paper birch (Cây bạch dương giấy)</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người phụ nữ nói "We'll be giving away the tallest of these four varieties". Dựa trên biểu đồ (giả định), Eastern redbud là loại cây cao nhất (30 feet).
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người phụ nữ nói "We'll be giving away the tallest of these four varieties". Dựa trên biểu đồ, Eastern redbud là loại cây cao nhất (30 feet).</p>
                     </div>
                 </div>
 

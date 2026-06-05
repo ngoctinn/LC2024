@@ -12,6 +12,37 @@
 
     <div class="main-container space-y-8">
         
+        <!-- Graphic Section -->
+        <section class="glass-card p-6">
+            <h2 class="text-xl font-bold text-slate-800 flex items-center mb-4">
+                <i class="fas fa-plane text-blue-500 mr-2"></i> Regional Airport Terminal Assignments
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-slate-200 text-center">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-500 text-sm">
+                            <th class="py-3 px-6 font-semibold border">Terminal</th>
+                            <th class="py-3 px-6 font-semibold border">Airlines</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-blue-50/50">
+                            <td class="py-2 px-4 border font-bold text-blue-600">Terminal A</td>
+                            <td class="py-2 px-4 border font-bold text-blue-600">Selca Air</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Terminal B</td>
+                            <td class="py-2 px-4 border">Starbird Airlines, Blue Jet</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Terminal C</td>
+                            <td class="py-2 px-4 border">Fly Right, Global Airways</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
@@ -147,45 +178,84 @@
                 <!-- Q98 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">98. Who is the speaker most likely addressing?</div>
-                    <div class="text-slate-500 text-sm mb-4">Người nói có nhiều khả năng đang nói chuyện với ai nhất?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Người nói có khả năng cao nhất là đang nói chuyện với ai?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) Airport security officers</div>
-                        <div>(B) Construction workers</div>
-                        <div class="font-bold text-blue-600">(C) News reporters</div>
-                        <div>(D) Pilots</div>
+                        <div class="question-option">
+                            (A) Airport security officers
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Nhân viên an ninh sân bay</span>
+                        </div>
+                        <div class="question-option">
+                            (B) Construction workers
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Công nhân xây dựng</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (C) News reporters
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Phóng viên tin tức</span>
+                        </div>
+                        <div class="question-option">
+                            (D) Pilots
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Phi công</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người nói chào mừng mọi người tham dự một "press conference" (cuộc họp báo), vì vậy đối tượng chính là các phóng viên tin tức.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người nói cảm ơn mọi người đã tham dự "this press conference" (cuộc họp báo này), cho thấy đối tượng là các phóng viên tin tức.</p>
                     </div>
                 </div>
 
                 <!-- Q99 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">99. Look at the graphic. Which airline will likely have its terminal completed last?</div>
-                    <div class="text-slate-500 text-sm mb-4">Nhìn vào sơ đồ. Hãng hàng không nào có khả năng hoàn thành nhà ga cuối cùng?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Nhìn vào sơ đồ. Hãng hàng không nào có khả năng sẽ hoàn thành nhà ga cuối cùng?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">(A) Selca Air</div>
-                        <div>(B) Starbird Airlines</div>
-                        <div>(C) Blue Jet</div>
-                        <div>(D) Fly Right</div>
+                        <div class="question-option font-bold text-blue-600">
+                            (A) Selca Air
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Selca Air</span>
+                        </div>
+                        <div class="question-option">
+                            (B) Starbird Airlines
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Starbird Airlines</span>
+                        </div>
+                        <div class="question-option">
+                            (C) Blue Jet
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Blue Jet</span>
+                        </div>
+                        <div class="question-option">
+                            (D) Fly Right
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Fly Right</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người nói cho biết "Minor design adjustments to terminal A have put the project slightly behind schedule" (nhà ga A bị chậm tiến độ). Dựa vào sơ đồ (giả định), nhà ga A thuộc về Selca Air.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người nói cho biết "Minor design adjustments to terminal A have put the project slightly behind schedule" (nhà ga A bị chậm tiến độ). Theo bảng phân bổ nhà ga, Terminal A thuộc về Selca Air.</p>
                     </div>
                 </div>
 
                 <!-- Q100 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">100. What does the speaker invite the listeners to do?</div>
-                    <div class="text-slate-500 text-sm mb-4">Người nói mời người nghe làm gì?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Người nói mời người nghe làm gì?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) Tour a construction site</div>
-                        <div>(B) Provide some feedback</div>
-                        <div>(C) Attend a grand opening</div>
-                        <div class="font-bold text-blue-600">(D) Visit a Web site</div>
+                        <div class="question-option">
+                            (A) Tour a construction site
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Tham quan công trường xây dựng</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (B) Look at a model
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Xem một mô hình</span>
+                        </div>
+                        <div class="question-option">
+                            (C) Attend a grand opening
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Tham dự lễ khai trương</span>
+                        </div>
+                        <div class="question-option">
+                            (D) Provide feedback
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Đưa ra phản hồi</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Kết thúc bài nói, người nói mời mọi người "visit our Web site so you can view it" (truy cập trang web của chúng tôi để xem nó - mô hình 3D).
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người nói thông báo rằng họ hiện đã có "a 3-D printed model of this project" (một mô hình in 3D của dự án này) và mời mọi người truy cập trang web để xem nó.</p>
                     </div>
                 </div>
 

@@ -12,6 +12,41 @@
 
     <div class="main-container space-y-8">
         
+        <!-- Graphic Section -->
+        <section class="glass-card p-6 mb-8">
+            <h2 class="text-xl font-bold text-slate-800 flex items-center mb-4">
+                <i class="fas fa-table text-blue-500 mr-2"></i> Parking Lot Layout
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-slate-200 text-center">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-500 text-sm">
+                            <th class="py-3 px-6 font-semibold border">Area</th>
+                            <th class="py-3 px-6 font-semibold border">Vehicle Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Area 1</td>
+                            <td class="py-2 px-4 border">Compact Cars</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Area 2</td>
+                            <td class="py-2 px-4 border">Electric Cars</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Area 3</td>
+                            <td class="py-2 px-4 border">SUVs</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Area 4</td>
+                            <td class="py-2 px-4 border">Luxury Sedans</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
@@ -181,45 +216,84 @@
                 <!-- Q62 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">62. Why does the man apologize?</div>
-                    <div class="text-slate-500 text-sm mb-4">Tại sao người đàn ông xin lỗi?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Tại sao người đàn ông xin lỗi?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) He forgot a password.</div>
-                        <div class="font-bold text-blue-600">(B) He arrived late.</div>
-                        <div>(C) He made a mistake on a form.</div>
-                        <div>(D) He lost a car key.</div>
+                        <div class="question-option">
+                            (A) He forgot a password.
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Anh ấy đã quên mật khẩu.</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (B) He arrived late.
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Anh ấy đã đến muộn.</span>
+                        </div>
+                        <div class="question-option">
+                            (C) He made a mistake on a form.
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Anh ấy đã mắc lỗi trên một biểu mẫu.</span>
+                        </div>
+                        <div class="question-option">
+                            (D) He lost a car key.
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Anh ấy đã làm mất chìa khóa xe.</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người đàn ông nói "Sorry I'm a little late" (Xin lỗi vì tôi đến muộn một chút) và giải thích do giao thông tệ.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông nói "Sorry I'm a little late" (Xin lỗi vì tôi đến muộn một chút) và giải thích do giao thông tệ.</p>
                     </div>
                 </div>
 
                 <!-- Q63 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">63. Why does the woman say the office will be busy?</div>
-                    <div class="text-slate-500 text-sm mb-4">Tại sao người phụ nữ nói văn phòng sẽ bận rộn?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Tại sao người phụ nữ nói văn phòng sẽ bận rộn?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) A new system is being installed.</div>
-                        <div>(B) A television show is being filmed.</div>
-                        <div class="font-bold text-blue-600">(C) There is a conference in town.</div>
-                        <div>(D) There is a local holiday.</div>
+                        <div class="question-option">
+                            (A) A new system is being installed.
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Một hệ thống mới đang được cài đặt.</span>
+                        </div>
+                        <div class="question-option">
+                            (B) A television show is being filmed.
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Một chương trình truyền hình đang được quay phim.</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (C) There is a conference in town.
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Có một hội nghị trong thị trấn.</span>
+                        </div>
+                        <div class="question-option">
+                            (D) There is a local holiday.
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Có một ngày lễ địa phương.</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người phụ nữ giải thích "There’s a big education convention in town starting today" (Có một hội nghị giáo dục lớn trong thị trấn bắt đầu từ hôm nay), nên văn phòng cho thuê xe sẽ rất bận.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người phụ nữ giải thích "There’s a big education convention in town starting today" (Có một hội nghị giáo dục lớn trong thị trấn bắt đầu từ hôm nay), nên văn phòng cho thuê xe sẽ rất bận.</p>
                     </div>
                 </div>
 
                 <!-- Q64 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">64. Look at the graphic. Which area will the man go to first?</div>
-                    <div class="text-slate-500 text-sm mb-4">Quan sát hình ảnh. Người đàn ông sẽ đi đến khu vực nào đầu tiên?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Quan sát hình ảnh. Người đàn ông sẽ đi đến khu vực nào đầu tiên?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) Area 1</div>
-                        <div class="font-bold text-blue-600">(B) Area 2</div>
-                        <div>(C) Area 3</div>
-                        <div>(D) Area 4</div>
+                        <div class="question-option">
+                            (A) Area 1
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Khu vực 1</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (B) Area 2
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Khu vực 2</span>
+                        </div>
+                        <div class="question-option">
+                            (C) Area 3
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Khu vực 3</span>
+                        </div>
+                        <div class="question-option">
+                            (D) Area 4
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Khu vực 4</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người phụ nữ yêu cầu anh ta "start by checking the batteries in our electric cars" (bắt đầu bằng việc kiểm tra pin trong những chiếc xe điện). Dựa trên biểu đồ (giả định), Area 2 là khu vực để xe điện.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người phụ nữ yêu cầu anh ta "start by checking the batteries in our electric cars" (bắt đầu bằng việc kiểm tra pin trong những chiếc xe điện). Dựa trên biểu đồ, Area 2 là khu vực để xe điện.</p>
                     </div>
                 </div>
 

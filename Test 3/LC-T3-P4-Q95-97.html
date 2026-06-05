@@ -165,50 +165,109 @@
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
                 <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
+            
+            <!-- Look at the graphic -->
+            <div class="mb-8 p-6 bg-white rounded-xl shadow-sm border border-slate-200">
+                <div class="text-center mb-4 font-bold text-slate-700">LOOK AT THE GRAPHIC: PICKUP LOCATIONS</div>
+                <div class="relative w-full max-w-md mx-auto aspect-square bg-slate-100 rounded-lg overflow-hidden border-2 border-slate-300">
+                    <!-- Streets -->
+                    <div class="absolute top-1/4 left-0 w-full h-12 bg-slate-300 flex items-center justify-center font-bold text-slate-600">MARKET STREET</div>
+                    <div class="absolute top-0 left-1/4 w-12 h-full bg-slate-300 flex items-center justify-center font-bold text-slate-600 [writing-mode:vertical-lr]">STATION ROAD</div>
+                    
+                    <!-- Buildings/Locations -->
+                    <div class="absolute top-[10%] left-[40%] p-2 bg-blue-500 text-white rounded shadow-md text-xs font-bold">Ticket Windows</div>
+                    <div class="absolute top-[50%] left-[40%] p-2 bg-green-500 text-white rounded shadow-md text-xs font-bold">Grand Concourse</div>
+                    <div class="absolute top-[75%] left-[10%] p-2 bg-amber-500 text-white rounded shadow-md text-xs font-bold">Parking Garage</div>
+                    <div class="absolute top-[50%] left-[70%] p-2 bg-purple-500 text-white rounded shadow-md text-xs font-bold">Main Entrance</div>
+
+                    <!-- Labels -->
+                    <div class="absolute top-[20%] left-[10%] text-[10px] text-slate-400 font-bold uppercase">Train Station</div>
+                </div>
+            </div>
+
             <div class="space-y-6">
                 
                 <!-- Q95 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">95. Who is the speaker?</div>
-                    <div class="text-slate-500 text-sm mb-4">Người nói là ai?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Người nói là ai?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">(A) A rideshare driver</div>
-                        <div>(B) A train conductor</div>
-                        <div>(C) A travel agent</div>
-                        <div>(D) A city official</div>
+                        <div class="question-option font-bold text-blue-600">
+                            (A) A rideshare driver
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Một tài xế dịch vụ đi chung xe</span>
+                        </div>
+                        <div class="question-option">
+                            (B) A train conductor
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Một người soát vé tàu</span>
+                        </div>
+                        <div class="question-option">
+                            (C) A travel agent
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Một đại lý du lịch</span>
+                        </div>
+                        <div class="question-option">
+                            (D) A city official
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Một quan chức thành phố</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Emily nói cô ấy đang đón khách ("picking you up") và nhắc đến "rideshare services", cho thấy cô ấy là tài xế dịch vụ đi chung xe.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Emily nói cô ấy đang đón khách ("picking you up") và nhắc đến "rideshare services", cho thấy cô ấy là tài xế dịch vụ đi chung xe.</p>
                     </div>
                 </div>
 
                 <!-- Q96 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">96. According to the speaker, where is there heavy traffic?</div>
-                    <div class="text-slate-500 text-sm mb-4">Theo người nói, nơi nào có giao thông đông đúc?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Theo người nói, nơi nào có giao thông đông đúc?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">(A) On Market Street</div>
-                        <div>(B) At the ticket windows</div>
-                        <div>(C) In the grand concourse</div>
-                        <div>(D) Near the parking garage</div>
+                        <div class="question-option font-bold text-blue-600">
+                            (A) On Market Street
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Trên đường Market</span>
+                        </div>
+                        <div class="question-option">
+                            (B) At the ticket windows
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Tại các quầy bán vé</span>
+                        </div>
+                        <div class="question-option">
+                            (C) In the grand concourse
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Trong sảnh chính</span>
+                        </div>
+                        <div class="question-option">
+                            (D) Near the parking garage
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Gần nhà để xe</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người nói đề cập có "heavy traffic on that street" (giao thông đông đúc trên con phố đó - ám chỉ nơi khách đã chọn đón). Theo phương án lựa chọn, Market Street là tên con phố được nhắc đến.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người nói đề cập có "heavy traffic on that street" (giao thông đông đúc trên con phố đó - ám chỉ nơi khách đã chọn đón). Theo phương án lựa chọn, Market Street là tên con phố được nhắc đến.</p>
                     </div>
                 </div>
 
                 <!-- Q97 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">97. How should the listener confirm the change?</div>
-                    <div class="text-slate-500 text-sm mb-4">Thính giả nên xác nhận sự thay đổi bằng cách nào?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Thính giả nên xác nhận sự thay đổi bằng cách nào?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) By making a phone call</div>
-                        <div>(B) By sending an email</div>
-                        <div class="font-bold text-blue-600">(C) By using an app</div>
-                        <div>(D) By speaking to a station employee</div>
+                        <div class="question-option">
+                            (A) By making a phone call
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Bằng cách gọi điện thoại</span>
+                        </div>
+                        <div class="question-option">
+                            (B) By sending an email
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Bằng cách gửi email</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (C) By using an app
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Bằng cách sử dụng một ứng dụng</span>
+                        </div>
+                        <div class="question-option">
+                            (D) By speaking to a station employee
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Bằng cách nói chuyện với nhân viên nhà ga</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người nói yêu cầu thính giả xác nhận "by responding to the prompt within the app" (bằng cách phản hồi yêu cầu trong ứng dụng).
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người nói yêu cầu thính giả xác nhận "by responding to the prompt within the app" (bằng cách phản hồi yêu cầu trong ứng dụng).</p>
                     </div>
                 </div>
 

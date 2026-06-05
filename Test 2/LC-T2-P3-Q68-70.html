@@ -12,6 +12,41 @@
 
     <div class="main-container space-y-8">
         
+        <!-- Graphic Section -->
+        <section class="glass-card p-6 mb-8">
+            <h2 class="text-xl font-bold text-slate-800 flex items-center mb-4">
+                <i class="fas fa-table text-blue-500 mr-2"></i> Cash Back Rewards Program
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-slate-200 text-center">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-500 text-sm">
+                            <th class="py-3 px-6 font-semibold border">Card Type</th>
+                            <th class="py-3 px-6 font-semibold border">Cash Back Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Shelby's Preferred</td>
+                            <td class="py-2 px-4 border">3%</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">EZ-Cash</td>
+                            <td class="py-2 px-4 border font-bold text-blue-600">2%</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">City-Traveler</td>
+                            <td class="py-2 px-4 border">1.5%</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Global-Rewards</td>
+                            <td class="py-2 px-4 border">1%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
@@ -219,45 +254,84 @@
                 <!-- Q68 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">68. Where does the conversation most likely take place?</div>
-                    <div class="text-slate-500 text-sm mb-4">Cuộc trò chuyện có khả năng nhất là diễn ra ở đâu?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Cuộc trò chuyện có khả năng nhất là diễn ra ở đâu?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">(A) At a café</div>
-                        <div>(B) At a bank</div>
-                        <div>(C) At a fitness center</div>
-                        <div>(D) At a hotel</div>
+                        <div class="question-option font-bold text-blue-600">
+                            (A) At a café
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Tại một quán cà phê</span>
+                        </div>
+                        <div class="question-option">
+                            (B) At a bank
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Tại một ngân hàng</span>
+                        </div>
+                        <div class="question-option">
+                            (C) At a fitness center
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Tại một trung tâm thể hình</span>
+                        </div>
+                        <div class="question-option">
+                            (D) At a hotel
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Tại một khách sạn</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người đàn ông gọi món "large black coffee" (cà phê đen lớn) và "egg-and-cheese croissant" (bánh sừng bò trứng phô mai), cho thấy họ đang ở một quán cà phê.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông gọi món "large black coffee" (cà phê đen lớn) và "egg-and-cheese croissant" (bánh sừng bò trứng phô mai), cho thấy họ đang ở một quán cà phê.</p>
                     </div>
                 </div>
 
                 <!-- Q69 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">69. Look at the graphic. What percentage of cash back will the man receive?</div>
-                    <div class="text-slate-500 text-sm mb-4">Quan sát hình ảnh. Người đàn ông sẽ nhận được bao nhiêu phần trăm hoàn tiền?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Quan sát hình ảnh. Người đàn ông sẽ nhận được bao nhiêu phần trăm hoàn tiền?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) 0.5%</div>
-                        <div>(B) 1%</div>
-                        <div>(C) 1.5%</div>
-                        <div class="font-bold text-blue-600">(D) 2%</div>
+                        <div class="question-option">
+                            (A) 0.5%
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">0,5%</span>
+                        </div>
+                        <div class="question-option">
+                            (B) 1%
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">1%</span>
+                        </div>
+                        <div class="question-option">
+                            (C) 1.5%
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">1,5%</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (D) 2%
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">2%</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người đàn ông nói anh ta có "EZ-Cash card". Dựa trên biểu đồ (giả định), thẻ EZ-Cash tương ứng với mức hoàn tiền là 2%.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông nói anh ta có "EZ-Cash card". Dựa trên biểu đồ, thẻ EZ-Cash tương ứng với mức hoàn tiền là 2%.</p>
                     </div>
                 </div>
 
                 <!-- Q70 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">70. What does the man say he will do later today?</div>
-                    <div class="text-slate-500 text-sm mb-4">Người đàn ông nói anh ta sẽ làm gì vào cuối ngày hôm nay?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Người đàn ông nói anh ta sẽ làm gì vào cuối ngày hôm nay?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">(A) Call a business</div>
-                        <div>(B) Visit a bank</div>
-                        <div>(C) Meet with a team</div>
-                        <div>(D) Check a website</div>
+                        <div class="question-option font-bold text-blue-600">
+                            (A) Call a business
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Gọi điện cho một doanh nghiệp</span>
+                        </div>
+                        <div class="question-option">
+                            (B) Visit a bank
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Đến thăm một ngân hàng</span>
+                        </div>
+                        <div class="question-option">
+                            (C) Meet with a team
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Họp với một nhóm</span>
+                        </div>
+                        <div class="question-option">
+                            (D) Check a website
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Kiểm tra một trang web</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người đàn ông nói "I’ll call you later today when I know what everyone wants" để đặt bữa sáng cho nhóm của mình.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông nói "I’ll call you later today when I know what everyone wants" để đặt bữa sáng cho nhóm của mình.</p>
                     </div>
                 </div>
 

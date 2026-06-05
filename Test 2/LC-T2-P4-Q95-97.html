@@ -12,6 +12,46 @@
 
     <div class="main-container space-y-8">
         
+        <!-- Graphic Section -->
+        <section class="glass-card p-6">
+            <h2 class="text-xl font-bold text-slate-800 flex items-center mb-4">
+                <i class="fas fa-table text-blue-500 mr-2"></i> Regional Train Schedule
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-slate-200 text-center">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-500 text-sm">
+                            <th class="py-3 px-6 font-semibold border">Train Number</th>
+                            <th class="py-3 px-6 font-semibold border">Next Stop</th>
+                            <th class="py-3 px-6 font-semibold border">Departure Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Train 105</td>
+                            <td class="py-2 px-4 border">Richmond</td>
+                            <td class="py-2 px-4 border">11:30 am</td>
+                        </tr>
+                        <tr class="bg-blue-50/50">
+                            <td class="py-2 px-4 border font-medium text-blue-600">Train 133</td>
+                            <td class="py-2 px-4 border font-bold text-blue-600">Wilmington</td>
+                            <td class="py-2 px-4 border font-bold text-blue-600">12:05 pm</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Train 212</td>
+                            <td class="py-2 px-4 border">Philadelphia</td>
+                            <td class="py-2 px-4 border">12:45 pm</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border font-medium">Train 156</td>
+                            <td class="py-2 px-4 border">New York City</td>
+                            <td class="py-2 px-4 border">1:15 pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
@@ -159,45 +199,84 @@
                 <!-- Q95 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">95. Why does the speaker apologize?</div>
-                    <div class="text-slate-500 text-sm mb-4">Tại sao người nói lại xin lỗi?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Tại sao người nói lại xin lỗi?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">(A) There is construction noise at the station.</div>
-                        <div>(B) A train has been canceled.</div>
-                        <div>(C) A ticket office is closed.</div>
-                        <div>(D) An elevator is out of order.</div>
+                        <div class="question-option font-bold text-blue-600">
+                            (A) There is construction noise at the station
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Có tiếng ồn xây dựng tại nhà ga</span>
+                        </div>
+                        <div class="question-option">
+                            (B) A train has been canceled
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Một chuyến tàu đã bị hủy</span>
+                        </div>
+                        <div class="question-option">
+                            (C) A ticket office is closed
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Văn phòng bán vé bị đóng cửa</span>
+                        </div>
+                        <div class="question-option">
+                            (D) An elevator is out of order
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Thang máy bị hỏng</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người nói xin lỗi vì sự bất tiện do "construction noise" (tiếng ồn xây dựng) gây ra trong quá trình cải tạo nhà ga.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người nói xin lỗi vì sự bất tiện do "construction noise" (tiếng ồn xây dựng) gây ra trong quá trình cải tạo nhà ga.</p>
                     </div>
                 </div>
 
                 <!-- Q96 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">96. Why should some listeners speak to a ticket agent?</div>
-                    <div class="text-slate-500 text-sm mb-4">Tại sao một số người nghe nên nói chuyện với nhân viên bán vé?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Tại sao một số người nghe nên nói chuyện với nhân viên bán vé?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) To buy a ticket</div>
-                        <div class="font-bold text-blue-600">(B) To request baggage service</div>
-                        <div>(C) To ask for a schedule</div>
-                        <div>(D) To report a missing item</div>
+                        <div class="question-option">
+                            (A) To buy a ticket
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Để mua vé</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (B) To request baggage service
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Để yêu cầu dịch vụ hành lý</span>
+                        </div>
+                        <div class="question-option">
+                            (C) To ask for a schedule
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Để hỏi về lịch trình</span>
+                        </div>
+                        <div class="question-option">
+                            (D) To report a missing item
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Để báo cáo một món đồ bị thất lạc</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người nói thông báo: "lf you need assistance handling your baggage, please speak to a ticket agent immediately" (nếu cần hỗ trợ xử lý hành lý, hãy nói chuyện với nhân viên bán vé).
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người nói thông báo: "lf you need assistance handling your baggage, please speak to a ticket agent immediately" (nếu cần hỗ trợ xử lý hành lý, hãy nói chuyện với nhân viên bán vé).</p>
                     </div>
                 </div>
 
                 <!-- Q97 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">97. Look at the graphic. What time will Train 133 leave the station?</div>
-                    <div class="text-slate-500 text-sm mb-4">Nhìn vào sơ đồ. Tàu 133 sẽ rời ga lúc mấy giờ?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Nhìn vào sơ đồ. Tàu 133 sẽ rời ga lúc mấy giờ?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) At 11:30 am</div>
-                        <div class="font-bold text-blue-600">(B) At 12:05 pm</div>
-                        <div>(C) At 12:45 pm</div>
-                        <div>(D) At 1:15 pm</div>
+                        <div class="question-option">
+                            (A) At 11:30 am
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Lúc 11:30 sáng</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (B) At 12:05 pm
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Lúc 12:05 trưa</span>
+                        </div>
+                        <div class="question-option">
+                            (C) At 12:45 pm
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Lúc 12:45 trưa</span>
+                        </div>
+                        <div class="question-option">
+                            (D) At 1:15 pm
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Lúc 1:15 chiều</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Trong bài nói, "Train 133’s next stop will be Wilmington". Kết hợp với bảng lịch trình (giả định), chuyến tàu có điểm dừng tiếp theo là Wilmington sẽ rời ga lúc 12:05 pm.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Trong bài nói, người nói đề cập "Train 133’s next stop will be Wilmington". Kết hợp với bảng lịch trình ở trên, chuyến tàu đi Wilmington (Tàu 133) sẽ khởi hành lúc 12:05 pm.</p>
                     </div>
                 </div>
 

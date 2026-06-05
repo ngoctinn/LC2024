@@ -11,7 +11,47 @@
 <body class="p-4 md:p-10">
 
     <div class="main-container space-y-8">
-        
+
+        <!-- Graphic Section -->
+        <section class="glass-card p-6 mb-8">
+            <h2 class="text-xl font-bold text-slate-800 flex items-center mb-4">
+                <i class="fas fa-map-marked-alt text-green-500 mr-2"></i> Wind Farm Projects
+            </h2>
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border border-slate-200">
+                    <thead>
+                        <tr class="bg-slate-50 text-slate-500 text-sm">
+                            <th class="py-3 px-6 font-semibold border">Site</th>
+                            <th class="py-3 px-6 font-semibold border">Location</th>
+                            <th class="py-3 px-6 font-semibold border">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border text-center font-bold">Site A</td>
+                            <td class="py-2 px-4 border text-center">North Bay</td>
+                            <td class="py-2 px-4 border text-center italic">Planning</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border text-center font-bold">Site B</td>
+                            <td class="py-2 px-4 border text-center">East Coast</td>
+                            <td class="py-2 px-4 border text-center italic">Under Construction</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border text-center font-bold">Site C</td>
+                            <td class="py-2 px-4 border text-center">Lanchester</td>
+                            <td class="py-2 px-4 border text-center italic">Nearly Complete</td>
+                        </tr>
+                        <tr class="bg-green-50">
+                            <td class="py-2 px-4 border text-center font-bold">Site D</td>
+                            <td class="py-2 px-4 border text-center">Winston</td>
+                            <td class="py-2 px-4 border text-center font-bold text-green-600 italic">Completed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
         <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
@@ -23,33 +63,24 @@
             </div>
             
             <div id="shadowingContainer" class="space-y-6 text-lg">
-                <!-- M-Cn -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>I’m glad / we were assigned / to cover the press conference / earlier today.</strong>
-                            <span class="chunk-vi">Tôi rất vui / chúng ta được giao nhiệm vụ / đưa tin về cuộc họp báo / sáng nay.</span>
-                        </div>
-                        <div>
-                            <strong>I counted / seven other major media networks / there, / in addition to ours.</strong>
-                            <span class="chunk-vi">Tôi đã đếm được / bảy mạng lưới truyền thông lớn khác / ở đó, / bên cạnh mạng lưới của chúng ta.</span>
+                            <strong>I’m glad / we were assigned / to (68)cover the press conference / earlier today. / I counted / seven other major media networks / there, / in addition to ours.</strong>
+                            <span class="chunk-vi">Tôi rất vui / chúng ta được giao nhiệm vụ / (68)đưa tin về cuộc họp báo / sáng nay. / Tôi đếm được / 7 mạng lưới truyền thông lớn khác / ở đó, / bên cạnh mạng lưới của chúng ta.</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- W-Am -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-pink-600 flex-shrink-0">W</div>
                     <div class="w-full">
                         <div>
                             <strong>Well, / the offshore wind industry / is going to transform / the way this region / gets its power.</strong>
-                            <span class="chunk-vi">Chà, / ngành công nghiệp điện gió ngoài khơi / sẽ thay đổi hoàn toàn / cách khu vực này / có được nguồn năng lượng.</span>
+                            <span class="chunk-vi">Chà, / ngành công nghiệp điện gió ngoài khơi / sẽ thay đổi cách thức / mà khu vực này / nhận năng lượng.</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- M-Cn -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
@@ -59,42 +90,34 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- W-Am -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-pink-600 flex-shrink-0">W</div>
                     <div class="w-full">
                         <div>
-                            <strong>So / the largest cluster / of wind turbines— / off the coast of Winston— / is already built.</strong>
-                            <span class="chunk-vi">Vậy là / cụm lớn nhất / các tuabin gió— / ngoài khơi Winston— / đã được xây dựng xong.</span>
-                        </div>
-                        <div>
-                            <strong>The other sites / are at different stages / of construction, / though Lanchester / is also close to being done.</strong>
-                            <span class="chunk-vi">Các địa điểm khác / đang ở các giai đoạn khác nhau / của quá trình xây dựng, / mặc dù Lanchester / cũng sắp hoàn thành.</span>
+                            <strong>So / the largest cluster / of wind turbines— / off the coast of (69)Winston— / is already built. / The other sites / are at different stages / of construction, / though Lanchester / is also close to being done.</strong>
+                            <span class="chunk-vi">Vậy là / cụm tuabin gió / lớn nhất— / ngoài khơi (69)Winston— / đã được xây dựng xong. / Các địa điểm khác / đang ở các giai đoạn / xây dựng khác nhau, / mặc dù Lanchester / cũng gần hoàn thành.</span>
                         </div>
                     </div>
                 </div>
-
-                <!-- M-Cn -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>Right. / And I think / it’s crucial / for us to focus / on how many new jobs / related to assembling and maintaining / the turbines / are opening up / in the area / as a result of this.</strong>
-                            <span class="chunk-vi">Đúng vậy. / Và tôi nghĩ / điều quan trọng là / chúng ta phải tập trung / vào việc có bao nhiêu việc làm mới / liên quan đến lắp ráp và bảo trì / các tuabin / đang mở ra / trong khu vực / như một kết quả của việc này.</span>
+                            <strong>Right. / And I think / it’s crucial / for us to focus / on (70)how many new jobs / related to assembling and maintaining / the turbines / are opening up / in the area / as a result of this.</strong>
+                            <span class="chunk-vi">Đúng vậy. / Và tôi nghĩ / điều quan trọng là / chúng ta phải tập trung / vào (70)việc có bao nhiêu công việc mới / liên quan đến lắp ráp và bảo trì / các tuabin / đang mở ra / trong khu vực / như là kết quả của việc này.</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
                     <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
-            <table class="w-full text-left border-collapse chunk-table">
+            <table class="w-full text-left border-collapse">
                 <thead>
                     <tr class="bg-slate-50 text-slate-500 text-sm">
                         <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
@@ -103,121 +126,26 @@
                 </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
                     <tr class="hover:bg-slate-50 transition">
-                        <td class="py-4 px-6">
-                            <div class="font-bold text-blue-700">assigned to cover the press conference</div>
-                            <div class="text-slate-400 text-xs mt-1">/əˈsaɪnd tuː ˈkʌvər ðə pres ˈkɒnfərəns/</div>
-                        </td>
-                        <td class="py-4 px-6">
-                            <div class="text-sm">được giao nhiệm vụ đưa tin về cuộc họp báo</div>
-                            <div class="mt-2">
-                                <span class="paraphrase-tag">Paraphrase</span>
-                                <span class="text-xs text-slate-500">→ <b>Journalists</b> (trong câu hỏi 68)</span>
-                            </div>
-                        </td>
+                        <td class="py-4 px-6"><strong>cover the press conference</strong></td>
+                        <td class="py-4 px-6">đưa tin về cuộc họp báo <br> <span class="paraphrase-tag">Paraphrase</span> <b>Journalists (Q68)</b></td>
                     </tr>
                     <tr class="hover:bg-slate-50 transition">
-                        <td class="py-4 px-6">
-                            <div class="font-bold text-blue-700">major media networks</div>
-                            <div class="text-slate-400 text-xs mt-1">/ˈmeɪdʒər ˈmiːdiə ˈnetwɜːrks/</div>
-                        </td>
-                        <td class="py-4 px-6">
-                            <div class="text-sm">các mạng lưới truyền thông lớn</div>
-                        </td>
+                        <td class="py-4 px-6"><strong>off the coast of Winston</strong></td>
+                        <td class="py-4 px-6">ngoài khơi Winston <br> <span class="paraphrase-tag">Paraphrase</span> <b>Site D (Q69)</b></td>
                     </tr>
                     <tr class="hover:bg-slate-50 transition">
-                        <td class="py-4 px-6">
-                            <div class="font-bold text-blue-700">offshore wind industry</div>
-                            <div class="text-slate-400 text-xs mt-1">/ˌɒfˈʃɔːr wɪnd ˈɪndəstri/</div>
-                        </td>
-                        <td class="py-4 px-6">
-                            <div class="text-sm">ngành công nghiệp điện gió ngoài khơi</div>
-                        </td>
+                        <td class="py-4 px-6"><strong>already built</strong></td>
+                        <td class="py-4 px-6">đã được xây dựng xong</td>
                     </tr>
                     <tr class="hover:bg-slate-50 transition">
-                        <td class="py-4 px-6">
-                            <div class="font-bold text-blue-700">transform the way</div>
-                            <div class="text-slate-400 text-xs mt-1">/trænsˈfɔːrm ðə weɪ/</div>
-                        </td>
-                        <td class="py-4 px-6">
-                            <div class="text-sm">thay đổi hoàn toàn cách thức</div>
-                        </td>
-                    </tr>
-                    <tr class="hover:bg-slate-50 transition">
-                        <td class="py-4 px-6">
-                            <div class="font-bold text-blue-700">largest cluster of wind turbines</div>
-                            <div class="text-slate-400 text-xs mt-1">/ˈlɑːrdʒɪst ˈklʌstər əv wɪnd ˈtɜːrbaɪnz/</div>
-                        </td>
-                        <td class="py-4 px-6">
-                            <div class="text-sm">cụm tuabin gió lớn nhất</div>
-                        </td>
-                    </tr>
-                    <tr class="hover:bg-slate-50 transition">
-                        <td class="py-4 px-6">
-                            <div class="font-bold text-blue-700">off the coast of Winston</div>
-                            <div class="text-slate-400 text-xs mt-1">/ɒf ðə kəʊst əv ˈwɪnstən/</div>
-                        </td>
-                        <td class="py-4 px-6">
-                            <div class="text-sm">ngoài khơi Winston</div>
-                        </td>
-                    </tr>
-                    <tr class="hover:bg-slate-50 transition">
-                        <td class="py-4 px-6">
-                            <div class="font-bold text-blue-700">already built</div>
-                            <div class="text-slate-400 text-xs mt-1">/ɔːlˈredi bɪlt/</div>
-                        </td>
-                        <td class="py-4 px-6">
-                            <div class="text-sm">đã được xây dựng xong</div>
-                            <div class="mt-2">
-                                <span class="paraphrase-tag">Paraphrase</span>
-                                <span class="text-xs text-slate-500">→ <b>already been completed</b> (trong câu hỏi 69)</span>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="hover:bg-slate-50 transition">
-                        <td class="py-4 px-6">
-                            <div class="font-bold text-blue-700">different stages of construction</div>
-                            <div class="text-slate-400 text-xs mt-1">/ˈdɪfrənt ˈsteɪdʒɪz əv kənˈstrʌkʃn/</div>
-                        </td>
-                        <td class="py-4 px-6">
-                            <div class="text-sm">các giai đoạn xây dựng khác nhau</div>
-                        </td>
-                    </tr>
-                    <tr class="hover:bg-slate-50 transition">
-                        <td class="py-4 px-6">
-                            <div class="font-bold text-blue-700">crucial for us to focus on</div>
-                            <div class="text-slate-400 text-xs mt-1">/ˈkruːʃl fər ʌs tuː ˈfəʊkəs ɒn/</div>
-                        </td>
-                        <td class="py-4 px-6">
-                            <div class="text-sm">quan trọng để chúng ta tập trung vào</div>
-                        </td>
-                    </tr>
-                    <tr class="hover:bg-slate-50 transition">
-                        <td class="py-4 px-6">
-                            <div class="font-bold text-blue-700">assembling and maintaining</div>
-                            <div class="text-slate-400 text-xs mt-1">/əˈsemblɪŋ ənd meɪnˈteɪnɪŋ/</div>
-                        </td>
-                        <td class="py-4 px-6">
-                            <div class="text-sm">lắp ráp và bảo trì</div>
-                        </td>
-                    </tr>
-                    <tr class="hover:bg-slate-50 transition">
-                        <td class="py-4 px-6">
-                            <div class="font-bold text-blue-700">new jobs opening up</div>
-                            <div class="text-slate-400 text-xs mt-1">/njuː dʒɒbz ˈəʊpənɪŋ ʌp/</div>
-                        </td>
-                        <td class="py-4 px-6">
-                            <div class="text-sm">các công việc mới đang mở ra</div>
-                            <div class="mt-2">
-                                <span class="paraphrase-tag">Paraphrase</span>
-                                <span class="text-xs text-slate-500">→ <b>Work opportunities</b> (trong câu hỏi 70)</span>
-                            </div>
-                        </td>
+                        <td class="py-4 px-6"><strong>new jobs are opening up</strong></td>
+                        <td class="py-4 px-6">các công việc mới đang mở ra <br> <span class="paraphrase-tag">Paraphrase</span> <b>Work opportunities (Q70)</b></td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE) -->
+        <!-- 3. CHUNKING CHALLENGE -->
         <section class="glass-card p-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
@@ -228,35 +156,17 @@
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
                 </button>
             </div>
-            
-            <!-- Word Bank -->
             <div class="mb-6 flex flex-wrap gap-2 justify-center bg-slate-50 p-4 rounded-lg border border-slate-100">
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">cover the press conference</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">offshore wind industry</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">compare our facts</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">largest cluster</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">off the coast</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">press conference</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">offshore wind</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">already built</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">assembling and maintaining</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">new jobs</span>
             </div>
-
             <div class="bg-blue-50 p-6 rounded-lg text-lg leading-loose font-medium text-slate-700">
-                <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> I’m glad we were assigned to <input type="text" data-answer="cover the press conference" class="input-blank mx-1 w-[260px]"> earlier today. I counted seven other major media networks there, in addition to ours.
-                </p>
-                <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> Well, the <input type="text" data-answer="offshore wind industry" class="input-blank mx-1 w-[240px]"> is going to transform the way this region gets its power.
-                </p>
-                <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> Agreed. Let’s <input type="text" data-answer="compare our facts" class="input-blank mx-1 w-[180px]"> before we start writing.
-                </p>
-                <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> So the <input type="text" data-answer="largest cluster" class="input-blank mx-1 w-[160px]"> of wind turbines— <input type="text" data-answer="off the coast" class="input-blank mx-1 w-[140px]"> of Winston—is <input type="text" data-answer="already built" class="input-blank mx-1 w-[140px]">. The other sites are at different stages of construction, though Lanchester is also close to being done.
-                </p>
-                <p>
-                    <span class="text-blue-600 font-bold">M:</span> Right. And I think it’s crucial for us to focus on how many <input type="text" data-answer="new jobs" class="input-blank mx-1 w-[120px]"> related to <input type="text" data-answer="assembling and maintaining" class="input-blank mx-1 w-[240px]"> the turbines are opening up in the area as a result of this.
-                </p>
+                <p>M: I’m glad we were assigned to cover the <input type="text" data-answer="press conference" class="input-blank mx-1 w-[140px]"> earlier today.</p>
+                <p>W: Well, the <input type="text" data-answer="offshore wind" class="input-blank mx-1 w-[140px]"> industry is going to transform the way this region gets its power.</p>
+                <p>W: The largest cluster of wind turbines off the coast of Winston is <input type="text" data-answer="already built" class="input-blank mx-1 w-[120px]">.</p>
+                <p>M: I think it’s crucial for us to focus on how many <input type="text" data-answer="new jobs" class="input-blank mx-1 w-[100px]"> are opening up.</p>
             </div>
         </section>
 
@@ -265,57 +175,52 @@
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
                 <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
-                
-                <!-- Q68 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">68. Who most likely are the speakers?</div>
                     <div class="text-slate-500 text-sm mb-4">Các diễn giả có khả năng là ai nhất?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) Urban planners</div>
-                        <div class="font-bold text-blue-600">(B) Journalists</div>
-                        <div>(C) Engineers</div>
-                        <div>(D) Environmental scientists</div>
+                        <div>(A) Urban planners <span class="text-slate-500 text-sm block mt-1">Các nhà quy hoạch đô thị</span></div>
+                        <div class="font-bold text-blue-600">(B) Journalists <span class="text-slate-500 text-sm font-normal block mt-1">Các nhà báo</span></div>
+                        <div>(C) Engineers <span class="text-slate-500 text-sm block mt-1">Các kỹ sư</span></div>
+                        <div>(D) Environmental scientists <span class="text-slate-500 text-sm block mt-1">Các nhà khoa học môi trường</span></div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người đàn ông nói họ được giao nhiệm vụ "cover the press conference" (đưa tin về cuộc họp báo) và đề cập đến "major media networks" (các mạng lưới truyền thông), cho thấy họ là nhà báo.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông nói họ được giao nhiệm vụ "cover the press conference" (đưa tin về cuộc họp báo) và đề cập đến "media networks", chứng tỏ họ là nhà báo.</p>
                     </div>
                 </div>
-
-                <!-- Q69 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">69. Look at the graphic. Which site has already been completed?</div>
-                    <div class="text-slate-500 text-sm mb-4">Nhìn vào hình. Địa điểm nào đã được hoàn thành?</div>
+                    <div class="text-slate-500 text-sm mb-4">Nhìn vào hình ảnh. Địa điểm nào đã được hoàn thành?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) Site A</div>
-                        <div>(B) Site B</div>
-                        <div>(C) Site C</div>
-                        <div class="font-bold text-blue-600">(D) Site D</div>
+                        <div>(A) Site A <span class="text-slate-500 text-sm block mt-1">Địa điểm A</span></div>
+                        <div>(B) Site B <span class="text-slate-500 text-sm block mt-1">Địa điểm B</span></div>
+                        <div>(C) Site C <span class="text-slate-500 text-sm block mt-1">Địa điểm C</span></div>
+                        <div class="font-bold text-blue-600">(D) Site D <span class="text-slate-500 text-sm font-normal block mt-1">Địa điểm D</span></div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người phụ nữ nói "the largest cluster of wind turbines— off the coast of Winston— is already built". Dựa trên sơ đồ (theo logic bài học), cụm lớn nhất nằm ở Site D.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người phụ nữ nói cụm tuabin lớn nhất ngoài khơi Winston đã được xây dựng xong (already built). Theo bảng, Winston chính là <strong>Site D</strong> với trạng thái Completed.</p>
                     </div>
                 </div>
-
-                <!-- Q70 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">70. What does the man suggest focusing on?</div>
                     <div class="text-slate-500 text-sm mb-4">Người đàn ông đề nghị tập trung vào điều gì?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">(A) Work opportunities</div>
-                        <div>(B) Wind turbine costs</div>
-                        <div>(C) Supply chain issues</div>
-                        <div>(D) Power capacity</div>
+                        <div class="font-bold text-blue-600">(A) Work opportunities <span class="text-slate-500 text-sm font-normal block mt-1">Cơ hội việc làm</span></div>
+                        <div>(B) Wind turbine costs <span class="text-slate-500 text-sm block mt-1">Chi phí tuabin gió</span></div>
+                        <div>(C) Supply chain issues <span class="text-slate-500 text-sm block mt-1">Các vấn đề chuỗi cung ứng</span></div>
+                        <div>(D) Power capacity <span class="text-slate-500 text-sm block mt-1">Công suất điện</span></div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người đàn ông đề nghị tập trung vào "how many new jobs... are opening up", tức là các cơ hội việc làm (work opportunities).
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông nói: "focus on how many new jobs... are opening up". "New jobs" tương ứng với cơ hội việc làm (<strong>Work opportunities</strong>).</p>
                     </div>
                 </div>
-
             </div>
         </section>
-        
-    </div>
 
+    </div>
     <script src="../assets/script.js"></script>
 </body>
 </html>

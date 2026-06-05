@@ -167,50 +167,125 @@
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
                 <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
+
+            <!-- Look at the graphic -->
+            <div class="mb-8 p-6 bg-white rounded-xl shadow-sm border border-slate-200">
+                <div class="text-center mb-4 font-bold text-slate-700">LOOK AT THE GRAPHIC: PRESENTATION SCHEDULE</div>
+                <table class="w-full border-collapse border border-slate-300 text-sm">
+                    <thead>
+                        <tr class="bg-slate-100 text-slate-700">
+                            <th class="border border-slate-300 p-2">Time</th>
+                            <th class="border border-slate-300 p-2">Presentation</th>
+                            <th class="border border-slate-300 p-2">Speaker</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-slate-600 text-center">
+                        <tr>
+                            <td class="border border-slate-300 p-2">9:00 AM</td>
+                            <td class="border border-slate-300 p-2 text-left">Introduction to Nutrition</td>
+                            <td class="border border-slate-300 p-2">Dr. Aris</td>
+                        </tr>
+                        <tr class="bg-blue-50 font-bold text-blue-700">
+                            <td class="border border-slate-300 p-2">9:45 AM</td>
+                            <td class="border border-slate-300 p-2 text-left">Benefits of Eating Fruit</td>
+                            <td class="border border-slate-300 p-2">Dr. Novikova</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-slate-300 p-2">10:30 AM</td>
+                            <td class="border border-slate-300 p-2 text-left" colspan="2">Coffee Break (Dining Room)</td>
+                        </tr>
+                        <tr>
+                            <td class="border border-slate-300 p-2">11:00 AM</td>
+                            <td class="border border-slate-300 p-2 text-left">Developing Healthy Habits</td>
+                            <td class="border border-slate-300 p-2">Prof. Green</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
             <div class="space-y-6">
                 
                 <!-- Q98 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">98. Who is the speaker?</div>
-                    <div class="text-slate-500 text-sm mb-4">Người nói là ai?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Người nói là ai?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) A fitness instructor</div>
-                        <div class="font-bold text-blue-600">(B) Dr. Novikova</div>
-                        <div>(C) A cafeteria manager</div>
-                        <div>(D) A fruit farmer</div>
+                        <div class="question-option">
+                            (A) A fitness instructor
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Một người hướng dẫn thể dục</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (B) Dr. Novikova
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Tiến sĩ Novikova</span>
+                        </div>
+                        <div class="question-option">
+                            (C) A cafeteria manager
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Một người quản lý căn tin</span>
+                        </div>
+                        <div class="question-option">
+                            (D) A fruit farmer
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Một người trồng trái cây</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người nói thực hiện bài thuyết trình ("presentation") và đã xuất bản một nghiên cứu khoa học ("published a paper"), cho thấy đây là một chuyên gia hoặc bác sĩ (Dr. Novikova).
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người nói thực hiện bài thuyết trình ("presentation") và đã xuất bản một nghiên cứu khoa học ("published a paper"), cho thấy đây là một chuyên gia hoặc bác sĩ (Dr. Novikova).</p>
                     </div>
                 </div>
 
                 <!-- Q99 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">99. What did the speaker do last year?</div>
-                    <div class="text-slate-500 text-sm mb-4">Người nói đã làm gì vào năm ngoái?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Người nói đã làm gì vào năm ngoái?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) She started a new business.</div>
-                        <div>(B) She traveled to another country.</div>
-                        <div class="font-bold text-blue-600">(C) She published a study.</div>
-                        <div>(D) She designed a new beverage.</div>
+                        <div class="question-option">
+                            (A) She started a new business.
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Cô ấy đã bắt đầu một công việc kinh doanh mới.</span>
+                        </div>
+                        <div class="question-option">
+                            (B) She traveled to another country.
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Cô ấy đã đi du lịch đến một quốc gia khác.</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (C) She published a study.
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Cô ấy đã xuất bản một nghiên cứu.</span>
+                        </div>
+                        <div class="question-option">
+                            (D) She designed a new beverage.
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Cô ấy đã thiết kế một loại đồ uống mới.</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người nói cho biết "Last year, I published a paper reporting on my research" (Năm ngoái, tôi đã xuất bản một bài báo báo cáo về nghiên cứu của mình).
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người nói cho biết "Last year, I published a paper reporting on my research" (Năm ngoái, tôi đã xuất bản một bài báo báo cáo về nghiên cứu của mình).</p>
                     </div>
                 </div>
 
                 <!-- Q100 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
                     <div class="font-semibold text-slate-800 mb-1 text-lg">100. Where can the listeners find the sponsor's booth?</div>
-                    <div class="text-slate-500 text-sm mb-4">Thính giả có thể tìm thấy quầy hàng của nhà tài trợ ở đâu?</div>
+                    <div class="text-slate-500 text-sm mb-4 practice-hidden">Thính giả có thể tìm thấy quầy hàng của nhà tài trợ ở đâu?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>(A) In a lecture hall</div>
-                        <div>(B) In a parking lot</div>
-                        <div>(C) In a staff lounge</div>
-                        <div class="font-bold text-blue-600">(D) In a dining area</div>
+                        <div class="question-option">
+                            (A) In a lecture hall
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Trong một hội trường giảng đường</span>
+                        </div>
+                        <div class="question-option">
+                            (B) In a parking lot
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Trong một bãi đậu xe</span>
+                        </div>
+                        <div class="question-option">
+                            (C) In a staff lounge
+                            <span class="text-slate-500 text-sm block mt-1 practice-hidden vi-trans">Trong phòng nghỉ của nhân viên</span>
+                        </div>
+                        <div class="question-option font-bold text-blue-600">
+                            (D) In a dining area
+                            <span class="text-slate-500 text-sm font-normal block mt-1 practice-hidden vi-trans">Trong một khu vực ăn uống</span>
+                        </div>
                     </div>
-                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
-                        <strong>Giải thích:</strong> Người nói khuyên thính giả "wander to the dining room" (đi dạo đến phòng ăn), nơi nhà tài trợ đã dựng quầy.
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500 practice-hidden">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người nói khuyên thính giả "wander to the dining room" (đi dạo đến phòng ăn), nơi nhà tài trợ đã dựng quầy.</p>
                     </div>
                 </div>
 
