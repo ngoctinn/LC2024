@@ -1,0 +1,1754 @@
+{
+    "T5": [
+        {
+            "transcript": "W-Br Hi, Shenchao, (32) I'm practicing my presentation in the conference room across the hall, and the projector in there keeps shutting off. I think it's overheating. Has this happened to you?\nM-Cn Oh, that projector is old. It really needs to be replaced. (33) If I were you, l'd just move to room 204 and practice there. Also, that room has a window. It's much nicer.\nW-Br OK. Thanks.\nM-Cn By the way, (34)you’ll need a special cable to connect to the control panel in that room. Here, you can use this one. Just leave it plugged in when you're finished.",
+            "questions": [
+                {
+                    "num": "32",
+                    "question": "What problem does the woman describe?",
+                    "options": {
+                        "A": "A room is not available.",
+                        "B": "A window will not open.",
+                        "C": "A projector is not working.",
+                        "D": "The weather has changed suddenly."
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "33",
+                    "question": "What does the man suggest doing?",
+                    "options": {
+                        "A": "Moving to a different room",
+                        "B": "Calling a technician",
+                        "C": "Canceling an event",
+                        "D": "Ordering some supplies"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "34",
+                    "question": "What does the man hand to the woman?",
+                    "options": {
+                        "A": "An umbrella",
+                        "B": "Some keys",
+                        "C": "A cable",
+                        "D": "Some printouts"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Am Hi. (35) I'm Amanda Hoffman, and I'm on the panel of publishing experts. I was told to check in here at the registration desk.\nM-Au Yes, Ms. Hoffman. Welcome to the Portland Literary Conference. (36) Here's your registration packet, which includes a gift card to thank you for participating.\nW-Am Oh, thank you. Just to confirm, the panel discussion begins at three P.M., right?\nM-Au Yes, but (37) we do ask that all panel members arrive ten minutes beforehand. I hope you enjoy the conference!",
+            "questions": [
+                {
+                    "num": "35",
+                    "question": "What industry does Amanda Hoffman work in?",
+                    "options": {
+                        "A": "Hospitality",
+                        "B": "Healthcare",
+                        "C": "Publishing",
+                        "D": "Information technology"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "36",
+                    "question": "According to the man, what is included in the registration packet?",
+                    "options": {
+                        "A": "A map",
+                        "B": "A gift card",
+                        "C": "A schedule of events",
+                        "D": "A certificate of attendance"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "37",
+                    "question": "What does the man tell the woman to do?",
+                    "options": {
+                        "A": "Arrive early",
+                        "B": "Pay a fee",
+                        "C": "Wear a name badge",
+                        "D": "Choose a menu option"
+                    },
+                    "ans": "A"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Br (38) I'm looking for a gift for my brother's birthday party this weekend. He loves teas, and you have so many varieties!\nM-Cn Well, (39) I could recommend a quality brand if you know what type he enjoys.\nW-Br Oh, I'm not sure. Hmm. Maybe I should get him a gift card so he can choose his own.\nM-Cn That's a good idea.\nW-Br l'Il get one for 50 dollars. (40)Do your cards have an expiration date?\nM-Cn Yes. We ask that they be used within one year of purchase.",
+            "questions": [
+                {
+                    "num": "38",
+                    "question": "What event will the woman attend this weekend?",
+                    "options": {
+                        "A": "A wedding",
+                        "B": "A birthday party",
+                        "C": "A retirement dinner",
+                        "D": "A graduation celebration"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "39",
+                    "question": "What does the man offer to do?",
+                    "options": {
+                        "A": "Authorize free shipping",
+                        "B": "Apply a discount",
+                        "C": "Provide a sample",
+                        "D": "Make a recommendation"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "40",
+                    "question": "What does the woman ask about?",
+                    "options": {
+                        "A": "An expiration date",
+                        "B": "A manufacturer’s guarantee",
+                        "C": "The origin of a product",
+                        "D": "The cost of a product"
+                    },
+                    "ans": "A"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au: Thanks for meeting with us, Ms. Raj. (41) We're excited to learn about the product your company has developed for factories like ours.\nW-Am: I’m happy to tell you about it. (42)It’s an application to monitor factory machines. It identifies problems in operations and generates a report about the efficiency of each machine.\nM-Cn: That sounds great! We have about 100 machine operators here. How much training would be involved?\nW-Am: About an hour's worth. (43)We provide a video with step-by-step instructions.\nM-Au: Excellent. That’s good to know.",
+            "questions": [
+                {
+                    "num": "41",
+                    "question": "Why is the woman visiting?",
+                    "options": {
+                        "A": "To promote a product",
+                        "B": "To sign a contract",
+                        "C": "To tour a facility",
+                        "D": "To inspect some equipment"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "42",
+                    "question": "What did the woman’s company design?",
+                    "options": {
+                        "A": "A digital security system",
+                        "B": "A device to lift heavy objects",
+                        "C": "An application to monitor machines",
+                        "D": "Protective clothing for workers"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "43",
+                    "question": "What does the woman say her company can provide?",
+                    "options": {
+                        "A": "A new client discount",
+                        "B": "A training video",
+                        "C": "An extended warranty",
+                        "D": "Customer testimonials"
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Am Hi. (44)l'd like to go to the Baldwin Theater. The address is 91 Circle Drive.\nM-Cn (44)Sure, (45) but did you know they're resurfacing Circle Drive? (44)I just dropped someone off in that area.\nW-Am Oh, really? I've got a ticket to a play, and the show starts at seven thirty. They don't let you in if you're late.\nM-Cn Well, let me see. (45,46) I can turn onto Felton Street and cut over to Lancaster Drive. It's a little out of the way, but it'll get you close to the theater.",
+            "questions": [
+                {
+                    "num": "44",
+                    "question": "Who most likely is the man?",
+                    "options": {
+                        "A": "A theater employee",
+                        "B": "A taxi driver",
+                        "C": "A train conductor",
+                        "D": "A construction worker"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "45",
+                    "question": "What is causing a problem?",
+                    "options": {
+                        "A": "A truck is too heavy.",
+                        "B": "An event has been delayed.",
+                        "C": "A parking area is full.",
+                        "D": "A road is closed."
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "46",
+                    "question": "What does the man say he will do?",
+                    "options": {
+                        "A": "Ask for a refund",
+                        "B": "Take a different route",
+                        "C": "Postpone a trip",
+                        "D": "File a complaint"
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Br Do you have a minute to discuss the budget for the upcoming Vancouver meeting? (47)I’ve looked over the travel requests you submitted for your team. Last year we sent only two representatives.\nM-Au (47)Ms. Tamura has just given us approval to send three. In fact, (48)the clients are looking to expand their online service options, and the third representative we’re bringing is particularly knowledgeable about that.\nW-Br OK. I guess we'll have to find savings somewhere else, then.\nM-Au l’ve already looked into some new meeting venues. (49)The Renova Hotel is offering discounted corporate rates this month.",
+            "questions": [
+                {
+                    "num": "47",
+                    "question": "Why does the woman say, “Last year we sent only two representatives”?",
+                    "options": {
+                        "A": "To explain a delay",
+                        "B": "To compliment a team",
+                        "C": "To point out that an event was unsuccessful",
+                        "D": "To question a decision"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "48",
+                    "question": "According to the man, what do some clients want to do?",
+                    "options": {
+                        "A": "Increase their online offerings",
+                        "B": "Obtain additional financing",
+                        "C": "Open a new office",
+                        "D": "Recruit more employees"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "49",
+                    "question": "According to the man, what is the Renova Hotel offering this month?",
+                    "options": {
+                        "A": "A new shuttle service",
+                        "B": "A discount for businesses",
+                        "C": "A flexible cancellation policy",
+                        "D": "Complimentary meals"
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Am Good morning. (50)l wanted to meet today to discuss the recent decline in our museum's ticket sales. You're the outreach coordinator, so I’m hoping you might have some ideas on how we can attract more community involvement.\nM-Cn Well, (51)l recently read an article about a museum in Chicago that has a room where visitors can paint on the walls. It’s become very popular. We could try it here—we have that huge room on the third floor that isn’t being used.\nW-Am That's a great idea. (52)Can you draft a list of the supplies we would need to make sure we have the budget for them?",
+            "questions": [
+                {
+                    "num": "50",
+                    "question": "What problem does the woman mention?",
+                    "options": {
+                        "A": "A decrease in ticket sales",
+                        "B": "A lack of exhibition space",
+                        "C": "A colleague’s resignation",
+                        "D": "A damaged painting"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "51",
+                    "question": "What does the man suggest doing?",
+                    "options": {
+                        "A": "Relocating an exhibit",
+                        "B": "Consulting a specialist",
+                        "C": "Adding security measures",
+                        "D": "Introducing a new activity"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "52",
+                    "question": "What will the man most likely do next?",
+                    "options": {
+                        "A": "Write a press release",
+                        "B": "Attend a budget meeting",
+                        "C": "Make a list of supplies",
+                        "D": "Plan a site visit"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Br Thilo, (53)this is Ms. Gao, a new customer. She’s purchasing an upholstered sofa. We just walked around our showroom, and she’s decided on our Hudson model.\nM-Cn One of our best sellers!\nW-Am It is really comfortable.\nW-Br Can you assist her with the paperwork for our payment plan?\nM-Cn Sure. Happy to help you, Ms. Gao. Are you getting the standard fabric?\nW-Am No—I’d like to select a custom fabric.\nM-Cn Just so you know, (54)the price will increase some with a custom order.\nW-Am I think it’s worth the extra cost. It’ll really brighten up my living room.\nM-Cn Wonderful. (55)Now in order to set up a payment plan, I'll need to see some identification. A driver's license will do.",
+            "questions": [
+                {
+                    "num": "53",
+                    "question": "Where most likely are the speakers?",
+                    "options": {
+                        "A": "At a clothing factory",
+                        "B": "At a bookstore",
+                        "C": "At a tailor’s shop",
+                        "D": "At a furniture store"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "54",
+                    "question": "According to the man, why will a product cost more?",
+                    "options": {
+                        "A": "It includes an extended warranty.",
+                        "B": "It is a custom order.",
+                        "C": "A rebate has expired.",
+                        "D": "Shipping will be expedited."
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "55",
+                    "question": "What does the man request?",
+                    "options": {
+                        "A": "A purchase receipt",
+                        "B": "A delivery address",
+                        "C": "A form of identification",
+                        "D": "An account number"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Am: Good morning, Mr. Tong. I’m here to check on my order. (56) How are the chairs coming along?\nM-Cn: (56)The machines have been assembling them. They’re almost ready. Right over here.\nW-Am: Wow, they look so nice!\nM-Cn (57)Look at the curved shape of the back. The only way you can get that unique shape is by means of the specialized laser we use.\nW-Am: Amazing! Can I also see the pullout sofa?\nM-Cn: Not right now. It’s being treated with mineral oil. But (58)later today I should be able to take a photo and send it to you.",
+            "questions": [
+                {
+                    "num": "56",
+                    "question": "Where most likely are the speakers?",
+                    "options": {
+                        "A": "At a hotel",
+                        "B": "At a factory",
+                        "C": "At a retail store",
+                        "D": "At a trade show"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "57",
+                    "question": "What feature does the man emphasize about some chairs?",
+                    "options": {
+                        "A": "The color",
+                        "B": "The price",
+                        "C": "The shape",
+                        "D": "The durability"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "58",
+                    "question": "What does the man say he will do later?",
+                    "options": {
+                        "A": "Modify a design",
+                        "B": "E-mail a contract",
+                        "C": "Create an invoice",
+                        "D": "Send a photo"
+                    },
+                    "ans": "D"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au: Hi, So-Jin. (59)I just heard that Ms. Yoon is retiring next month.\nW-Br: l’ll be sorry to see her go. She was my mentor when I first joined the firm, and we've worked on dozens of projects together.\nM-Au: (60) It's a bit hard to imagine our sales team without her. (61)Has anybody approached you about leading the team after she’s gone?\nW-Br: (61)Yes, and I’ve thought about it. It’s a big step up, even for someone like me who's worked in Sales for eight years. And Human Resources hasn’t even posted the job description yet.\nM-Au: Well, we need someone with experience.",
+            "questions": [
+                {
+                    "num": "59",
+                    "question": "What will happen next month?",
+                    "options": {
+                        "A": "An award will be given.",
+                        "B": "A new product will launch.",
+                        "C": "A colleague will retire.",
+                        "D": "An office will relocate."
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "60",
+                    "question": "What department do the speakers work in?",
+                    "options": {
+                        "A": "Sales",
+                        "B": "Human Resources",
+                        "C": "Legal",
+                        "D": "Accounting"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "61",
+                    "question": "What does the man imply when he says, “we need someone with experience”?",
+                    "options": {
+                        "A": "The team has grown very quickly.",
+                        "B": "The woman should apply for a job.",
+                        "C": "A job description should be revised.",
+                        "D": "A new manager is not experienced enough."
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Am: Rajesh, (62) It was nice to see you here in New York again this year.\nM-Cn: Same here. (62) I look forward to attending the Theater Technology Conference again next year.\nW-Am: (63) I really enjoyed your talk, especially the information you provided on acoustics. Is it published anywhere? I'd like to have a closerlook.\nM-Cn: Actually, it is. You can find the article in last November’s issue of Theater Sound. It’s posted online.\nW-Am: Great. I'll look it up.\nM-Cn: Oh—(64)my train leaves in fourteen minutes. I have to get going. Safe travels, Camille!",
+            "questions": [
+                {
+                    "num": "62",
+                    "question": "Why are the speakers in New York?",
+                    "options": {
+                        "A": "They saw a play.",
+                        "B": "They attended a conference.",
+                        "C": "They met with some clients.",
+                        "D": "They viewed some real estate."
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "63",
+                    "question": "What does the woman ask the man about?",
+                    "options": {
+                        "A": "Locating some information",
+                        "B": "Applying for a position",
+                        "C": "Opening a branch office",
+                        "D": "Making a reservation"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "64",
+                    "question": "Look at the graphic. Where will the man travel to next?",
+                    "options": {
+                        "A": "Shady Grove",
+                        "B": "Braddock Bay",
+                        "C": "Largo",
+                        "D": "Ashburn"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Cn Welcome to Orlando’s Deli. If you’d like to try one of our daily specials, they’re on the board behind me.\nW-Br Wow, that’s a great menu. (65)The vegetable curry looks good. Is it spicy?\nM-Cn No, it’s very mild—but we just sold out, unfortunately.\nW-Br In that case, (66)I’ll have the lasagna.\nM-Cn Great choice. By the way, (67)we just opened our new patio this week in case you'd like to sit outside.\nW-Br Actually, it is a beautiful day. (67)And your patio looks lovely.",
+            "questions": [
+                {
+                    "num": "65",
+                    "question": "What does the woman ask the man about?",
+                    "options": {
+                        "A": "Whether a coupon is valid",
+                        "B": "Whether a food is spicy",
+                        "C": "Whether a drink is included",
+                        "D": "Whether any seats are available"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "66",
+                    "question": "Look at the graphic. Which special does the woman order?",
+                    "options": {
+                        "A": "Special 1",
+                        "B": "Special 2",
+                        "C": "Special 3",
+                        "D": "Special 4"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "67",
+                    "question": "What will the woman most likely do next?",
+                    "options": {
+                        "A": "Move her car",
+                        "B": "Go to a patio",
+                        "C": "Make a reservation",
+                        "D": "Meet some friends"
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Am I'm excited about our hike today here at Marina Park. And (68)I’m so glad we got to the park early before it gets crowded. Which trail should we hike?\nM-Au Let’s take a look at the map. We’re at the visitor center, and there’s a shuttle that stops at different trailheads.\nW-Am Right. It looks like the Creek Trail and the Pond Trail are fairly short. I’d like to do a more challenging hike.\nM-Au OK. (69)How about the Waterfall Trail?\nW-Am (69)That sounds good. And look—(70)there’s a video about the park. We can watch while we wait.",
+            "questions": [
+                {
+                    "num": "68",
+                    "question": "What is the woman happy about?",
+                    "options": {
+                        "A": "She happened to meet some friends.",
+                        "B": "The weather is perfect for an activity.",
+                        "C": "The park was closer than expected.",
+                        "D": "There are few people in the park."
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "69",
+                    "question": "Look at the graphic. How far will the speakers hike?",
+                    "options": {
+                        "A": "7 kilometers",
+                        "B": "5 kilometers",
+                        "C": "2 kilometers",
+                        "D": "1 kilometer"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "70",
+                    "question": "What can the speakers do while waiting for the shuttle?",
+                    "options": {
+                        "A": "Buy some snacks",
+                        "B": "Watch a video",
+                        "C": "Visit a gift shop",
+                        "D": "Rent some equipment"
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "Hi, Ms. Cho. I’m calling from Springdale Lights. (71)Yesterday, you ordered 24 of our purple solar lanterns for your upcoming event. (72)Unfortunately, our supplier won't be able to get us purple lanterns for another three weeks, so we only have yellow ones in stock. (73)We would like to offer you a ten percent discount on them to apologize for this. Please call us back to confirm whether you'd like the yellow solar lights, and we'll set them aside for you.",
+            "questions": [
+                {
+                    "num": "71",
+                    "question": "What did the listener do yesterday?",
+                    "options": {
+                        "A": "She placed an order.",
+                        "B": "She scheduled an event.",
+                        "C": "She called a manager.",
+                        "D": "She painted some rooms."
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "72",
+                    "question": "What problem does the speaker mention?",
+                    "options": {
+                        "A": "A price has increased.",
+                        "B": "A machine needs to be repaired.",
+                        "C": "A product is not available.",
+                        "D": "A performance has been canceled."
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "73",
+                    "question": "What does the speaker offer the listener?",
+                    "options": {
+                        "A": "Expedited shipping",
+                        "B": "A full refund",
+                        "C": "A free consultation",
+                        "D": "A discount"
+                    },
+                    "ans": "D"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au (74)Welcome to Osterwind Estate. The former owner, Ms. Yuping Wei, was a famous painter. What's special about this estate is that Ms. Wei designed it herself, including the landscaping. (75)We're asking volunteers to clear debris from the walkways around the gardens in preparation for the estate’s first season as a public park. You can pick up a bag and gloves from the patio area. And remember, be sure to see me as you check out before you leave. (76)All volunteers are eligible for a complimentary visitor pass that you can use to access the estate and attend any events held here all summer long.",
+            "questions": [
+                {
+                    "num": "74",
+                    "question": "According to the speaker, what is special about Osterwind Estate?",
+                    "options": {
+                        "A": "It houses many historic paintings.",
+                        "B": "It was designed by its owner.",
+                        "C": "It includes a botanical garden.",
+                        "D": "It is used as a museum."
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "75",
+                    "question": "Why are the listeners at Osterwind Estate?",
+                    "options": {
+                        "A": "To attend an awards ceremony",
+                        "B": "To apply for landscaping jobs",
+                        "C": "To take a tour of a building",
+                        "D": "To clean up some gardens"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "76",
+                    "question": "What will the listeners receive?",
+                    "options": {
+                        "A": "Gift-shop coupons",
+                        "B": "Free passes",
+                        "C": "Lunch boxes",
+                        "D": "T-shirts"
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Cn Good morning, Ms. Espinosa. This is Marcel Fournier. It's Saturday morning, and I'm on my way to the airport. This is a little out of the ordinary, but (77)l'm calling because in my haste I left a note with Mr. Hang's mobile phone number on my office desk. He's picking me up from the airport, and I'll be stuck if I can't reach him. (77,78)I'll need you to go into the office and text me with the number. I know this is inconvenient. (79)I'll check my messages once I land in San Diego.",
+            "questions": [
+                {
+                    "num": "77",
+                    "question": "Who most likely is the listener?",
+                    "options": {
+                        "A": "A travel agent",
+                        "B": "An administrative assistant",
+                        "C": "A flight attendant",
+                        "D": "A security guard"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "78",
+                    "question": "Why does the speaker say, “I know this is inconvenient”?",
+                    "options": {
+                        "A": "To suggest a deadline extension",
+                        "B": "To report on an additional cost",
+                        "C": "To offer an alternative solution",
+                        "D": "To apologize for a request"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "79",
+                    "question": "What will the speaker do when he arrives in San Diego?",
+                    "options": {
+                        "A": "Retrieve his messages",
+                        "B": "Check in to a hotel",
+                        "C": "Change a flight reservation",
+                        "D": "Visit a company office"
+                    },
+                    "ans": "A"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Am Hi, everyone! Thanks for watching today. If you're new to my channel, you should know that (80) my videos focus on ways that we can repurpose common objects so that they don’t end up in landfills. In this video, you'll learn how to make candles from old and leftover crayons. (81)Your first step is to collect the items you'll need. You may already have some old crayons around the house, or you can ask your friends and neighbors for theirs. I'll be covering a lot of steps, but don’t worry, (82)a full written version of the instructions is available on my Web site. I recommend downloading those later for future reference.",
+            "questions": [
+                {
+                    "num": "80",
+                    "question": "What does the speaker say her videos are usually about?",
+                    "options": {
+                        "A": "How to plan trips",
+                        "B": "How to reuse items",
+                        "C": "How to organize closets",
+                        "D": "How to draw landscapes"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "81",
+                    "question": "What first step does the speaker mention?",
+                    "options": {
+                        "A": "Writing a list",
+                        "B": "Finding coupons",
+                        "C": "Gathering supplies",
+                        "D": "Looking at images online"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "82",
+                    "question": "According to the speaker, what can the listeners do on a Web site?",
+                    "options": {
+                        "A": "Enter a contest",
+                        "B": "Subscribe to a video channel",
+                        "C": "Submit some photographs",
+                        "D": "Download some instructions"
+                    },
+                    "ans": "D"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Br Thank you all for coming to this press conference. As you know, (83)the Grand Falls Bridge improvement work has been underway for almost a year. We're nearing the final stage of sanding and painting the newly built portions. (84) I know the fishing community has expressed concern over the potential environmental impact of this project on our local marine life. Well, all required studies were conducted a year ago. I'll take some questions now. (85) After that, our special-events coordinator will discuss the bridge-opening ceremony that’s being planned.",
+            "questions": [
+                {
+                    "num": "83",
+                    "question": "What is the speech mainly about?",
+                    "options": {
+                        "A": "A financial report",
+                        "B": "A round of promotions",
+                        "C": "A product prototype",
+                        "D": "A construction project"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "84",
+                    "question": "Why does the speaker say, “all required studies were conducted a year ago”?",
+                    "options": {
+                        "A": "To correct a timeline error",
+                        "B": "To provide reassurance",
+                        "C": "To deny responsibility for a problem",
+                        "D": "To argue that a new study is needed"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "85",
+                    "question": "What will the next speaker discuss?",
+                    "options": {
+                        "A": "A job fair",
+                        "B": "A school opening",
+                        "C": "A ceremony",
+                        "D": "A sporting event"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Am Hello, Mr. Smith. (86) I hope you’re getting settled into your office space in our building. I’m calling about some large packages that arrived for your company last week. We're keeping them for you in the storage room downstairs. (87)The lease agreement says management will hold packages for five days. It's been ten days. Please give me a call and let me know when you can come down to claim them so (88)I can be there to open the storage room door for you.",
+            "questions": [
+                {
+                    "num": "86",
+                    "question": "Who most likely is the speaker?",
+                    "options": {
+                        "A": "A salesperson",
+                        "B": "A government official",
+                        "C": "An interior designer",
+                        "D": "A building manager"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "87",
+                    "question": "Why does the speaker say, “It’s been ten days”?",
+                    "options": {
+                        "A": "To explain an expense",
+                        "B": "To point out a problem",
+                        "C": "To make an offer",
+                        "D": "To thank a colleague"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "88",
+                    "question": "What does the speaker offer to do?",
+                    "options": {
+                        "A": "Open the door to a room",
+                        "B": "Reset a password",
+                        "C": "Send a copy of a document",
+                        "D": "Refund a payment"
+                    },
+                    "ans": "A"
+                }
+            ]
+        },
+        {
+            "transcript": "(89)Our next story concerns Ferndale Valley. It’s well-known that the area is one of the windiest locations in the region, and one company would like to take advantage of that natural energy source. Breeze Capture hopes to install dozens of wind turbines by the end of next year. (90)The company is looking for local farmers who are interested in leasing some of their land for the project. (91)In addition to being paid for the land use, participants will also be compensated for the energy that is generated by the turbines. For more information, e-mail info@breezecapture.com.",
+            "questions": [
+                {
+                    "num": "89",
+                    "question": "What is mentioned about Ferndale Valley?",
+                    "options": {
+                        "A": "It is heavily forested.",
+                        "B": "It attracts many tourists.",
+                        "C": "It is developing quickly.",
+                        "D": "It is very windy."
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "90",
+                    "question": "Who will participate in a project?",
+                    "options": {
+                        "A": "Biologists",
+                        "B": "Farmers",
+                        "C": "Airline pilots",
+                        "D": "Real estate agents"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "91",
+                    "question": "What will the participants receive?",
+                    "options": {
+                        "A": "Tickets to an industry event",
+                        "B": "Technical assistance",
+                        "C": "Financial compensation",
+                        "D": "Advertising advice"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Cn Hello, Mr. Kimura. (92)l'm calling from Feras Portable Storage. You recently ordered a container to store and move your household belongings in. (93)I'm calling to confirm that your container will be delivered tomorrow morning at nine o'clock. The driver will place it in your driveway. After the delivery, if you could, (94)please complete the customer feedback survey that we'll e-mail you. It will help us to improve our service. Thanks.",
+            "questions": [
+                {
+                    "num": "92",
+                    "question": "What kind of business does the speaker work for?",
+                    "options": {
+                        "A": "A construction firm",
+                        "B": "A landscaping service",
+                        "C": "A storage company",
+                        "D": "An auto repair shop"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "93",
+                    "question": "Why is the speaker calling?",
+                    "options": {
+                        "A": "To apologize for a cancellation",
+                        "B": "To confirm a delivery",
+                        "C": "To share a price quote",
+                        "D": "To update some contact information"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "94",
+                    "question": "What does the speaker ask the listener to do?",
+                    "options": {
+                        "A": "Purchase a warranty",
+                        "B": "Complete a survey",
+                        "C": "Clean up an area",
+                        "D": "Apply for a permit"
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Am (95)This is the custodial staff's cabinet for cleaning supplies. As part of your training, you'll be expected to learn which cleaning solutions are used for different surfaces in the hotel, such as carpet and tile flooring. (96)The spray bottle on the top shelf, Baxlon, is for glass surfaces. The product directly under the spray bottle is brand new. It was just released this month, and it’s excellent for polishing furniture. Oh, and (97)every Tuesday at one o'clock, a delivery truck brings any supplies that we're low on. Don’t forget to check that.",
+            "questions": [
+                {
+                    "num": "95",
+                    "question": "What is the purpose of the talk?",
+                    "options": {
+                        "A": "To discuss a schedule",
+                        "B": "To consider changing suppliers",
+                        "C": "To train employees",
+                        "D": "To develop an inventory system"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "96",
+                    "question": "Look at the graphic. Which product does the speaker say is new?",
+                    "options": {
+                        "A": "Klennlee",
+                        "B": "Baxlon",
+                        "C": "Z-Factor",
+                        "D": "Clean Sure"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "97",
+                    "question": "What happens at one o’clock on Tuesdays?",
+                    "options": {
+                        "A": "An expense report is due.",
+                        "B": "A work shift begins.",
+                        "C": "A staff meeting is held.",
+                        "D": "A delivery arrives."
+                    },
+                    "ans": "D"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au Welcome back to this professional development workshop. (98)We’ll continue from where we left off in our discussion on advertising through social media using videos, and we'll end today’s meeting by performing a group task. (98)Last week, we discussed the planning phase for a video marketing campaign. (99)Today, we'll move on to the production phase. During this phase, you'll need to ensure that high-quality equipment is used for lighting and camera work and that you have the best video editors you can get for the job. (100)We're very lucky to have an expert here today to talk about her experience with the process. Please give your attention to Usha Madan.",
+            "questions": [
+                {
+                    "num": "98",
+                    "question": "What is the topic of the course?",
+                    "options": {
+                        "A": "Marketing",
+                        "B": "Investing",
+                        "C": "Documentary filmmaking",
+                        "D": "Software development"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "99",
+                    "question": "Look at the graphic. Which step will be discussed today?",
+                    "options": {
+                        "A": "Step 1",
+                        "B": "Step 2",
+                        "C": "Step 3",
+                        "D": "Step 4"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "100",
+                    "question": "What will the listeners do next?",
+                    "options": {
+                        "A": "Read a handout",
+                        "B": "Watch a video",
+                        "C": "Take a coffee break",
+                        "D": "Listen to a guest speaker"
+                    },
+                    "ans": "D"
+                }
+            ]
+        }
+    ],
+    "T6": [
+        {
+            "transcript": "M-Cn: (32)The renovations we’re planning for the theater are long overdue.\nw-Br: (32) I'm glad we have time between productions so we can get the work done.\nM-Cn: I agree—and even though (33)it’s great that our latest musical production has had such a successful run, we can all use the break.\nW-Br: Plus, (34)it gives us time to focus on next month’s fund-raiser.\nM-Cn: (34)Hopefully we'll raise enough money at that event to replace the old lighting system too.",
+            "questions": [
+                {
+                    "num": "32",
+                    "question": "What are the speakers mainly discussing?",
+                    "options": {
+                        "A": "Theater renovations",
+                        "B": "Changes to a performance schedule",
+                        "C": "Selection of a new lighting director",
+                        "D": "A promotional gift"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "33",
+                    "question": "What does the man say about a musical production?",
+                    "options": {
+                        "A": "It was based on a book.",
+                        "B": "It has been successful.",
+                        "C": "It will be performed overseas.",
+                        "D": "Some casting changes were made."
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "34",
+                    "question": "What event are the speakers planning?",
+                    "options": {
+                        "A": "A press conference",
+                        "B": "A fund-raiser",
+                        "C": "An audition",
+                        "D": "An autograph session"
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au: Fernanda, (35) I wanted to tell you that the top candidate we chose for the customer-care position just accepted our job offer. I'll send him a contract later today.\nW-Am: Great! But now I think we need a bigger office space for our business. With the new hire, there'll be ten of us in the office.\nM-Au: I agree. Our lease expires next month, so we should look at a different space. (36)There’s a new office building on Second Street. It has solar panels, so all of its energy comes from renewable sources.\nW-Am: (36) I like that. (37)But I’m worried we may not be able to afford the lease.\nM-Au: We'll see. I'll contact the rental agency today.",
+            "questions": [
+                {
+                    "num": "35",
+                    "question": "What did the speakers recently do?",
+                    "options": {
+                        "A": "They launched a new product.",
+                        "B": "They chose a job candidate.",
+                        "C": "They moved to a different city.",
+                        "D": "They renovated a space."
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "36",
+                    "question": "What do the speakers like about a building?",
+                    "options": {
+                        "A": "It provides 24-hour access.",
+                        "B": "It has an outdoor space.",
+                        "C": "It is near public transportation.",
+                        "D": "It uses renewable energy."
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "37",
+                    "question": "What is the woman worried about?",
+                    "options": {
+                        "A": "A new competitor",
+                        "B": "A longer commute",
+                        "C": "A high price",
+                        "D": "An upcoming deadline"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au: How can I help you?\nW-Br: Hi, (38,39) I'd like to order a cake for my son's birthday next week. He really likes dinosaurs.\nM-Au: (39) I have several different dinosaur-shaped pans for you to choose from.\nW-Br: Actually, (40)I was hoping you could make a standing cake instead of a flat one.\nM-Au: Oh, I see. (40) I'm sorry. I do have someone on staff who can make those, but she's all booked up for the next few weeks. Try Carmen's Creations on Pine Street.",
+            "questions": [
+                {
+                    "num": "38",
+                    "question": "What event is the woman planning?",
+                    "options": {
+                        "A": "A retirement party",
+                        "B": "A birthday party",
+                        "C": "A science fair",
+                        "D": "A school festival"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "39",
+                    "question": "Who most likely is the man?",
+                    "options": {
+                        "A": "A baker",
+                        "B": "A musician",
+                        "C": "A gardener",
+                        "D": "A teacher"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "40",
+                    "question": "Why does the man apologize?",
+                    "options": {
+                        "A": "Some tools cannot be found.",
+                        "B": "Some invitations were sent late.",
+                        "C": "A store is closed for a holiday.",
+                        "D": "A request cannot be fulfilled."
+                    },
+                    "ans": "D"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Am: Hello, you've reached Quick Phone Repair Service.\nM-Cn: Hi, (41)I went online to schedule a repair for my mobile phone, but all appointments in your store were booked for today. Have you had any cancellations?\nW-Am: No, unfortunately not. What's the problem with your phone?\nM-Cn: (42)The phone only lasts about an hour before it has to be recharged.\nW-Am: It sounds like you need a new battery. (43)If you come to the store now, we can try to fit you in as a walk-in appointment. You may have to wait around for a bit.\nM-Cn: (43) I don’t mind waiting.",
+            "questions": [
+                {
+                    "num": "41",
+                    "question": "What did the man try to do online?",
+                    "options": {
+                        "A": "Purchase a new phone",
+                        "B": "Make an appointment",
+                        "C": "Order a part",
+                        "D": "Cancel a contract"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "42",
+                    "question": "What does the man say is wrong with his mobile phone?",
+                    "options": {
+                        "A": "It has a short battery life.",
+                        "B": "The screen is damaged.",
+                        "C": "A cable is missing.",
+                        "D": "It has limited storage space."
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "43",
+                    "question": "What will the man most likely do next?",
+                    "options": {
+                        "A": "Speak with a manager",
+                        "B": "Call technical support",
+                        "C": "Visit a store",
+                        "D": "Restart a device"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au: Asako, (44)how far along are you on that news report about the bank merger? If you want it to be included in tomorrow morning’s newspaper, it has to be on my desk by nine p.m.\nW-Am: Well, (45)I'm still doing research for this article. I’m having trouble getting all the facts from the people involved. They haven't returned my phone calls.\nM-Au: Well, we can’t print the story without confirming the details. But (46)if you can have it finished by Wednesday night, I can put it in Thursday’s paper.",
+            "questions": [
+                {
+                    "num": "44",
+                    "question": "Where do the speakers most likely work?",
+                    "options": {
+                        "A": "At a bank",
+                        "B": "At a research laboratory",
+                        "C": "At a newspaper company",
+                        "D": "At a legal firm"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "45",
+                    "question": "Why has the woman been unable to finish a task?",
+                    "options": {
+                        "A": "She needs a manager’s signature.",
+                        "B": "She cannot access her files.",
+                        "C": "She cannot get the necessary information.",
+                        "D": "Some data are incorrect."
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "46",
+                    "question": "What solution does the man propose?",
+                    "options": {
+                        "A": "Changing a deadline",
+                        "B": "Scheduling a meeting",
+                        "C": "Asking a colleague for help",
+                        "D": "Reviewing some documents"
+                    },
+                    "ans": "A"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Cn: (47)We'll have to remove the soil from the garden bed and lay down drainpipes that'll take the water out through holes in the retaining wall.\nW-Am: Sounds like a lot of work, but it'll be worth it to be able to grow the garden that I want to.\nM-Cn: Do you think you’d like bricks or stones for the retaining wall? Many homeowners prefer brick because it creates a nice, uniform look. But (48) stones will last longer. They are more expensive, though.\nW-Am: I don’t want to have to make repairs.\nM-Cn: You have several different kinds of stones to choose from. (49) I have some pictures of projects I’ve completed in the past you can look at.",
+            "questions": [
+                {
+                    "num": "47",
+                    "question": "What kind of work does the man do?",
+                    "options": {
+                        "A": "Appliance repair",
+                        "B": "Painting",
+                        "C": "Landscaping",
+                        "D": "Roofing"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "48",
+                    "question": "What does the woman imply when she says, “I don’t want to have to make repairs”?",
+                    "options": {
+                        "A": "She is not qualified for a task.",
+                        "B": "She prefers durable materials.",
+                        "C": "She will buy a new appliance.",
+                        "D": "She is not happy with a cost estimate."
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "49",
+                    "question": "What will the man show to the woman?",
+                    "options": {
+                        "A": "A list of prices",
+                        "B": "A license",
+                        "C": "Some references",
+                        "D": "Some photographs"
+                    },
+                    "ans": "D"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Br: Good morning. You've reached Accounts Payable.\nM-Cn: Hi. I'm calling from the editorial department. (50)One of our freelance writers has not received payment yet, so I'm calling to inquire about it. Her contract number is 9356.\nW-Br: OK, let me check. Hmm. It looks like she should have been paid last week. But (51)Adem handles those requests, and he was on vacation. He’s just catching up today.\nM-Cn: (52)Do you have an estimate of how long it will take to process the request?\nW-Br: (52)I’m not sure, but I can speak to Adem.",
+            "questions": [
+                {
+                    "num": "50",
+                    "question": "Why is the man calling?",
+                    "options": {
+                        "A": "To track a shipment",
+                        "B": "To ask about a payment",
+                        "C": "To close an account",
+                        "D": "To request computer help"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "51",
+                    "question": "According to the woman, what caused a delay?",
+                    "options": {
+                        "A": "An employee was out of the office.",
+                        "B": "A software program was updated.",
+                        "C": "A document was mislabeled.",
+                        "D": "A new policy was implemented."
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "52",
+                    "question": "What information will the woman most likely provide later?",
+                    "options": {
+                        "A": "A cost breakdown",
+                        "B": "An account number",
+                        "C": "A time estimate",
+                        "D": "A phone number"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au: I’m the general manager (53)here at Rev It Auto Repair, and this is Mr. Singh, our service manager. We're eager to hear how your product can benefit our shop.\nW-Am: Well, (54)my product is called Video Room. It’s a library of short videos that your business can offer in the waiting room. These videos will explain common auto repairs and educate your customers on the repair process.\nM-Cn: (55)Can we add our own customized content? I’d love to include a description of our exclusive lifetime warranty.\nM-Au: Yes. And (55)can we also add at-home auto- care advice?",
+            "questions": [
+                {
+                    "num": "53",
+                    "question": "Where does the conversation take place?",
+                    "options": {
+                        "A": "At a game arcade",
+                        "B": "At a grocery store",
+                        "C": "At an auto repair shop",
+                        "D": "At a parking garage"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "54",
+                    "question": "What type of product does the woman mention?",
+                    "options": {
+                        "A": "Some videos",
+                        "B": "Some brochures",
+                        "C": "A price scanner",
+                        "D": "A mobile phone application"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "55",
+                    "question": "What do the men want to do?",
+                    "options": {
+                        "A": "Extend business hours",
+                        "B": "Enter a local contest",
+                        "C": "Include customized content",
+                        "D": "Upgrade some equipment"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au: Hi, Carmen. (56)l’ve just reviewed the outline you gave me for the nature documentary we’re making. I think it’ll be a great film, but I’m a bit concerned. I want it to be less than an hour.\nW-Br: (57) I understand. I'll take another look at it and see where I can take out some unnecessary scenes from the storyboard.\nM-Au: Great. In the meantime, (58) I need to follow up with our camera team to make sure they have all the equipment they need to begin filming.",
+            "questions": [
+                {
+                    "num": "56",
+                    "question": "What industry do the speakers most likely work in?",
+                    "options": {
+                        "A": "Fashion photography",
+                        "B": "Information technology",
+                        "C": "Filmmaking",
+                        "D": "Marketing"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "57",
+                    "question": "What does the man imply when he says, “I want it to be less than an hour”?",
+                    "options": {
+                        "A": "He is very busy.",
+                        "B": "He approves an itinerary.",
+                        "C": "A route has a lot of traffic.",
+                        "D": "Some revisions are needed."
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "58",
+                    "question": "Why does the man need to contact a team?",
+                    "options": {
+                        "A": "To explain a permit procedure",
+                        "B": "To confirm equipment availability",
+                        "C": "To introduce a colleague",
+                        "D": "To devise a safety plan"
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au: Kriti and Melissa, (59) I reviewed the results of the soil tests yesterday, and (60)most of the sports fields we manage have healthy soil. But unfortunately, the baseball field on Smith Drive has elevated levels of potassium.\nW-Am: The grass on that field is so brown and weedy. Now we know why.\nW-Br: (60)We’ll need to order some special fertilizer to put on it. Do you think we need approval to do that?\nM-Au: Yes—since it’s an unforeseen expense, it has to be approved by the acquisitions department. (61) Melissa, do you have time to prepare a cost estimate?\nW-Br: (61)Sure. It won’t take long. I'll send it by lunchtime, and I'll cc you both on the e-mail.",
+            "questions": [
+                {
+                    "num": "59",
+                    "question": "What did the man review yesterday?",
+                    "options": {
+                        "A": "A budget",
+                        "B": "A weather report",
+                        "C": "Some test results",
+                        "D": "Some hiring plans"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "60",
+                    "question": "What do the speakers hope to do?",
+                    "options": {
+                        "A": "Improve the condition of a sports field",
+                        "B": "Expand the city’s athletic programs",
+                        "C": "Plan a fund-raising event",
+                        "D": "Acquire more public land"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "61",
+                    "question": "What will Melissa send by e-mail?",
+                    "options": {
+                        "A": "A summary of work tasks",
+                        "B": "A letter of appreciation",
+                        "C": "A news article",
+                        "D": "A cost estimate"
+                    },
+                    "ans": "D"
+                }
+            ]
+        },
+        {
+            "transcript": "w-Am: Rodrigo, (62)you wanted to talk to me about the schedule for the bowling leagues at our alley?\nM-Cn: Yes. As you know, many of the members in the adult league have young children who participate in the junior league. And (63)they explained to me that it would be really convenient if we moved the junior league to the same night that the adult league plays. That way they could all come together on the same night.\nW-Am: (63)That’s a great idea. We have a few available bowling lanes on that day that the junior league can use. (63,64) I’ll e-mail the parents of the junior bowlers and let them know the day will change starting next month.",
+            "questions": [
+                {
+                    "num": "62",
+                    "question": "Where do the speakers work?",
+                    "options": {
+                        "A": "At a bowling alley",
+                        "B": "At a swimming pool",
+                        "C": "At an ice-skating rink",
+                        "D": "At a baseball field"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "63",
+                    "question": "Look at the graphic. On which day will the Junior League meet starting next month?",
+                    "options": {
+                        "A": "Monday",
+                        "B": "Tuesday",
+                        "C": "Wednesday",
+                        "D": "Thursday"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "64",
+                    "question": "What does the woman say she will do?",
+                    "options": {
+                        "A": "Hang a poster",
+                        "B": "Send an e-mail",
+                        "C": "Deliver a package",
+                        "D": "Process a payment"
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Cn: Hi. Where can I find a schedule of library events?\nW-Br: Oh, I’ve got it right here. We usually have events almost every day, but (65) we're closed this Friday. The library is being used for the district elections.\nM-Cn: I see. (66)Are there any movies showing?\nW-Br: (66)Yes, there’s one on Thursday evening.\nM-Cn: Oh, too bad. (67)I’m away for a client meeting on Thursday.\nW-Br: Well, (67)if you like Sumit Mehta’s books, you might be interested in his book signing.\nM-Cn: I do like his novels! (67) Thanks, I’ll come back for that.",
+            "questions": [
+                {
+                    "num": "65",
+                    "question": "According to the woman, why will the library be closed on Friday?",
+                    "options": {
+                        "A": "An election will be held there.",
+                        "B": "Some renovations will take place.",
+                        "C": "Bad weather is expected.",
+                        "D": "A national holiday will be observed."
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "66",
+                    "question": "What schedule conflict does the man mention?",
+                    "options": {
+                        "A": "He has a family obligation.",
+                        "B": "His car will be at a mechanic’s shop.",
+                        "C": "He will be attending a performance.",
+                        "D": "He has a business meeting."
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "67",
+                    "question": "Look at the graphic. When will the man most likely attend a library event?",
+                    "options": {
+                        "A": "On Monday",
+                        "B": "On Tuesday",
+                        "C": "On Wednesday",
+                        "D": "On Thursday"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Br: Good news, Tariq. (68)We'll have enough money to make those repairs to the bridge over the fish pond that you mentioned. (69)We've been awarded a grant to make some repairs to the park grounds.\nM-Au: That's great! (68)That bridge needs a new coat of paint to protect it from the elements. I think I sent you a list of paint colors when I first talked to you about the project.\nW-Br: You did. (70)Because it’s such an iconic symbol of the park, and it’s in so many photographs, we want it to be as close to the original color as when it was first built, even though that’s the most expensive option on the list.",
+            "questions": [
+                {
+                    "num": "68",
+                    "question": "What is the conversation about?",
+                    "options": {
+                        "A": "Extending a fence",
+                        "B": "Building a storage shed",
+                        "C": "Repairing a bridge",
+                        "D": "Updating an entrance area"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "69",
+                    "question": "According to the woman, how is a project being funded?",
+                    "options": {
+                        "A": "With donations from visitors",
+                        "B": "With money from a grant",
+                        "C": "With revenue from ticket sales",
+                        "D": "With proceeds from a charity auction"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "70",
+                    "question": "Look at the graphic. Which color does the woman select?",
+                    "options": {
+                        "A": "Garden Green",
+                        "B": "Misty Blue",
+                        "C": "Sunrise Peach",
+                        "D": "Antique White"
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au: Hi, everyone—big news. (71,72)Our clinic is getting a check-in kiosk. (72)What this means is that patients will be able to check themselves in to their medical appointments by clicking through some buttons in the kiosk. You will no longer have to do it for them. I know all of you have been very busy answering phones, scheduling appointments, and checking patients in, so hopefully, this helps to make your work easier. (73)We'll have a very short training session next Tuesday on how the check-in kiosk works.",
+            "questions": [
+                {
+                    "num": "71",
+                    "question": "Where does the talk most likely take place?",
+                    "options": {
+                        "A": "At a medical clinic",
+                        "B": "At an airport",
+                        "C": "At a fitness center",
+                        "D": "At a bank"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "72",
+                    "question": "What is mainly being discussed?",
+                    "options": {
+                        "A": "A hiring decision",
+                        "B": "A marketing campaign",
+                        "C": "A customer satisfaction survey",
+                        "D": "An electronic check-in system"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "73",
+                    "question": "What will happen next Tuesday?",
+                    "options": {
+                        "A": "A new security system will be installed.",
+                        "B": "A branch location will open.",
+                        "C": "A training session will take place.",
+                        "D": "A product will be delivered."
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Br: (74)Welcome to a new episode of Tomorrow's Technology. Today we'll be talking about drones. If you're planning to buy your first drone, here are a few things you need to know. (75)To begin with, if you want to use the device for commercial purposes, such as photography or videography, then you'll need to apply for a license. (76) I'll share some resources at the end of this podcast to guide your application process.",
+            "questions": [
+                {
+                    "num": "74",
+                    "question": "Who is the podcast intended for?",
+                    "options": {
+                        "A": "Party organizers",
+                        "B": "Travel agents",
+                        "C": "Technology enthusiasts",
+                        "D": "Carpenters"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "75",
+                    "question": "According to the speaker, what will some listeners need?",
+                    "options": {
+                        "A": "An insurance policy",
+                        "B": "A letter of recommendation",
+                        "C": "An event venue",
+                        "D": "A license"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "76",
+                    "question": "What information will the speaker share?",
+                    "options": {
+                        "A": "Application instructions",
+                        "B": "Retail locations",
+                        "C": "Names of instructors",
+                        "D": "User reviews"
+                    },
+                    "ans": "A"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au: (77)Attention, exhibitors. Welcome to the Digital Signage Expo, where representatives selling digital billboards and video displays can interact directly with buyers. The exhibit hall will open in fifteen minutes. (78)To ensure everyone's safety, we request that you clear your exhibit area of boxes and debris and be sure cables and electrical cords are securely taped to the floor. (79) And remember, the exhibit hall will close at five p.m. today so that exhibitors can attend this evening’s reception. That will be held in the building’s main lobby.",
+            "questions": [
+                {
+                    "num": "77",
+                    "question": "Who are the listeners?",
+                    "options": {
+                        "A": "Mechanical engineers",
+                        "B": "Trade show participants",
+                        "C": "Government officials",
+                        "D": "Laboratory assistants"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "78",
+                    "question": "What does the speaker request that the listeners do?",
+                    "options": {
+                        "A": "Take safety precautions",
+                        "B": "Sign a registration sheet",
+                        "C": "Wear name tags",
+                        "D": "Move their vehicles"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "79",
+                    "question": "What will take place in the evening?",
+                    "options": {
+                        "A": "A debate",
+                        "B": "An award ceremony",
+                        "C": "A film screening",
+                        "D": "A reception"
+                    },
+                    "ans": "D"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Cn: (80)Welcome to Money Reveals, the podcast for smart investors. This week, I'll be discussing the best tips for amateur investors, if you're just getting started. But first, this episode is brought to you by CodeWord. (81)Don’t search online for discount coupons any longer! CodeWord is a software application that scans the Internet for promotional codes and applies them to your online shopping cart. If CodeWord finds any discounts, an Apply Coupon button will automatically appear at checkout. (82)What's more, the first 100 listeners to use the download link on my Web site will receive free music festival tickets.",
+            "questions": [
+                {
+                    "num": "80",
+                    "question": "Who most likely is the speaker?",
+                    "options": {
+                        "A": "A customer service representative",
+                        "B": "A software developer",
+                        "C": "A podcast host",
+                        "D": "An event coordinator"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "81",
+                    "question": "According to the speaker, what can a software application be used for?",
+                    "options": {
+                        "A": "Making travel reservations",
+                        "B": "Uploading documents",
+                        "C": "Managing subscriptions",
+                        "D": "Searching for discounts"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "82",
+                    "question": "How can the listeners receive some free tickets?",
+                    "options": {
+                        "A": "By clicking on a link",
+                        "B": "By signing up for a newsletter",
+                        "C": "By buying a product in-store",
+                        "D": "By writing a review"
+                    },
+                    "ans": "A"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Br: Hi. (83) This is So-Jin—in Apartment 2A. I just moved into the complex last month. (83,84) I’m calling about a problem with my kitchen sink. (84) The drain is completely clogged, so the water won't go down. (85) I've tried a few different drain cleaning products, but they didn’t help. I think I've done all I can do. I’m at work now, but I'll be home this afternoon. (85) Could you call me back, so we can arrange a time to meet there? Thanks.",
+            "questions": [
+                {
+                    "num": "83",
+                    "question": "Who is the speaker most likely calling?",
+                    "options": {
+                        "A": "A store owner",
+                        "B": "A property manager",
+                        "C": "A delivery driver",
+                        "D": "A restaurant supplier"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "84",
+                    "question": "What problem does the speaker have?",
+                    "options": {
+                        "A": "Some appliances have not arrived.",
+                        "B": "Some boxes have been damaged.",
+                        "C": "A water cooler is not working.",
+                        "D": "A sink is not draining."
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "85",
+                    "question": "Why does the speaker say, “I think I’ve done all I can do”?",
+                    "options": {
+                        "A": "To request that the listener give her a refund",
+                        "B": "To indicate that she needs the listener’s assistance",
+                        "C": "To explain why she enrolled in a training course",
+                        "D": "To confirm that a task has been completed"
+                    },
+                    "ans": "B"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Cn: (86)Next Tuesday the eleventh is our office cleanup. We'll have bins stationed all around the office for you to put garbage and recycling in. Be sure to shred any documents that have private client information on them. (87)Our office manager Rajeev has rented some extra document shredders for us to use. Thanks for taking care of that, Rajeev. Now, (88)we’ve hired two new accountants who are supposed to start in a month, and we need to make space for their desks. Now that our work is mostly paperless, the south corner of the office has a lot of empty file cabinets.",
+            "questions": [
+                {
+                    "num": "86",
+                    "question": "What will the listeners do next Tuesday?",
+                    "options": {
+                        "A": "Renew their contracts",
+                        "B": "Clean their offices",
+                        "C": "Visit a recycling center",
+                        "D": "Greet new clients"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "87",
+                    "question": "What does the speaker thank Rajeev for doing?",
+                    "options": {
+                        "A": "Paying for refreshments",
+                        "B": "Reserving a meeting room",
+                        "C": "Arranging transportation",
+                        "D": "Renting some equipment"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "88",
+                    "question": "Why does the speaker say, “the south corner of the office has a lot of empty file cabinets”?",
+                    "options": {
+                        "A": "To suggest a location for some desks",
+                        "B": "To indicate where some files should be stored",
+                        "C": "To explain that a task has already been completed",
+                        "D": "To ask for more office supplies to be ordered"
+                    },
+                    "ans": "A"
+                }
+            ]
+        },
+        {
+            "transcript": "M-Au: Hello, and (89)thank you for calling Ziegler Incorporated, the area’s top supplier of office paper. Due to bad weather conditions last week, roads around our warehouse were closed. As a result, (90)customers may be experiencing delays in receiving their recent orders. Now that the roads are clear, we’ve resumed deliveries. However, we'll need a few days to catch up. To make up for this inconvenience, we're offering customers a twenty percent discount on their next purchase. To claim the discount, enter your invoice number on our Web site. (91)Once you do, your discount code will arrive in an e-mail.",
+            "questions": [
+                {
+                    "num": "89",
+                    "question": "What does Ziegler Incorporated sell?",
+                    "options": {
+                        "A": "Office paper",
+                        "B": "Gardening tools",
+                        "C": "Computers",
+                        "D": "Car parts"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "90",
+                    "question": "According to the speaker, what problem is the company experiencing?",
+                    "options": {
+                        "A": "Staffing shortages",
+                        "B": "Shipping delays",
+                        "C": "Limited warehouse space",
+                        "D": "Insufficient inventory"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "91",
+                    "question": "What will arrive in an e-mail?",
+                    "options": {
+                        "A": "Some contact information",
+                        "B": "An order form",
+                        "C": "A discount code",
+                        "D": "A price list"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Am: As members of the city’s Arts Commission, it's our responsibility to manage arts programs and initiatives. (92)The mayor's decision to redevelop the Hoverton District is welcome news across the community. And for our commission, it’s an opportunity to integrate sculptures into public spaces there. (93)We’ll need to determine what overall community themes should be addressed and prioritized. So I think it’s important that we conduct a survey regarding the residents’ preferences. It’s a diverse community with a range of perspectives to consider. (94)And, of course, in order for the artwork to be built, we'll need to hire a skilled artist for the task. I think Alvaro Gomez has won several awards.",
+            "questions": [
+                {
+                    "num": "92",
+                    "question": "What has the mayor decided to do?",
+                    "options": {
+                        "A": "Run for election again",
+                        "B": "Redevelop an area of the city",
+                        "C": "Host an art festival",
+                        "D": "Provide public art classes"
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "93",
+                    "question": "What is the goal of a survey?",
+                    "options": {
+                        "A": "To decide on a theme",
+                        "B": "To raise money for a project",
+                        "C": "To educate the public about a problem",
+                        "D": "To recruit some volunteers"
+                    },
+                    "ans": "A"
+                },
+                {
+                    "num": "94",
+                    "question": "Why does the speaker say, “I think Alvaro Gomez has won several awards”?",
+                    "options": {
+                        "A": "To correct some information",
+                        "B": "To praise a museum exhibit",
+                        "C": "To recommend a suitable candidate",
+                        "D": "To congratulate a colleague"
+                    },
+                    "ans": "C"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Br: Good afternoon, Mr. Kwon,(95)this is Olga Popova from the Smith Theater. You’re next on the wait list for theater tickets. On your preference form, you requested four tickets together in either the orchestra or the mid-balcony. Unfortunately, those sections are completely sold out on the date you requested. (96)But I do have four tickets together in the lower balcony for that date. I’ll be happy to set aside those tickets if you'd like. I can hold this request for 24 hours. (97)Please call our box office as soon as possible to let me know if you're still interested.",
+            "questions": [
+                {
+                    "num": "95",
+                    "question": "Who most likely is the speaker?",
+                    "options": {
+                        "A": "A seating usher",
+                        "B": "A band director",
+                        "C": "A stage actor",
+                        "D": "A sales agent"
+                    },
+                    "ans": "D"
+                },
+                {
+                    "num": "96",
+                    "question": "Look at the graphic. How much do tickets in the available section cost?",
+                    "options": {
+                        "A": "$75",
+                        "B": "$100",
+                        "C": "$125",
+                        "D": "$150"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "97",
+                    "question": "What does the listener need to do within 24 hours?",
+                    "options": {
+                        "A": "Make a phone call",
+                        "B": "Send in a payment",
+                        "C": "Pick up an item",
+                        "D": "Fill out a form"
+                    },
+                    "ans": "A"
+                }
+            ]
+        },
+        {
+            "transcript": "W-Am: Welcome to this bus tour of the Kensey Harbor. (98) Unfortunately, one of the stops on our itinerary, the museum, is closed, and we won't be able to visit it. (99)The museum had a water pipe burst overnight. It looks like repair and cleanup work will last this whole week. I apologize, since I know many of you were looking forward to seeing the museum’s exhibit on local fish. (100)To make up for this, we’re providing complimentary meal vouchers so you can enjoy a free lunch, on us, when we get to the area around the cannery.",
+            "questions": [
+                {
+                    "num": "98",
+                    "question": "Look at the graphic. Which stop has been canceled?",
+                    "options": {
+                        "A": "Stop 1",
+                        "B": "Stop 2",
+                        "C": "Stop 3",
+                        "D": "Stop 4"
+                    },
+                    "ans": "C"
+                },
+                {
+                    "num": "99",
+                    "question": "Why has a stop been canceled?",
+                    "options": {
+                        "A": "A guest speaker is unavailable.",
+                        "B": "A building is undergoing maintenance.",
+                        "C": "An area has closed for a festival.",
+                        "D": "A private event has been scheduled."
+                    },
+                    "ans": "B"
+                },
+                {
+                    "num": "100",
+                    "question": "What will the listeners receive?",
+                    "options": {
+                        "A": "A refund",
+                        "B": "A souvenir",
+                        "C": "A printed map",
+                        "D": "Meal vouchers"
+                    },
+                    "ans": "D"
+                }
+            ]
+        }
+    ]
+}
