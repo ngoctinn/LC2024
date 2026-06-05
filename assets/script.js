@@ -407,188 +407,67 @@ function initApp() {
   initTranslationToggle();
   initAnswerChecker();
   initPracticeMode();
+  scrollToLessonContent();
 }
 
-function initPracticeMode() {
-  const sections = document.querySelectorAll('section');
-  let questionsSection;
+function scrollToLessonContent() {
+  // Find the Chunking section (usually the first section after the audio player)
+  const chunkingSection = document.querySelector('section.glass-card h2 i.fa-microphone-lines')?.closest('section');
+  
+  if (chunkingSection) {
+    // Delay slightly to allow the layout to settle
+    setTimeout(() => {
+      chunkingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 500);
+  }
+}
 
-  sections.forEach(s => {
-    const h2 = s.querySelector('h2');
-    if (h2 && h2.querySelector('.fa-question-circle')) questionsSection = s;
-  });
+function getNavigationInfo() {
+  const currentFileName = window.location.pathname.split("/").pop() || "";
+  const match = currentFileName.match(/LC-T(\d+)-P(\d+)-Q([\d-]+)\.html/);
+  if (!match) return { prev: null, next: null };
 
-  if (!questionsSection) return;
-
-  const questionBlocks = questionsSection.querySelectorAll('.bg-slate-50.p-5');
-  questionBlocks.forEach((block) => {
-    const grid = block.querySelector('.grid');
-    const questionTrans = block.querySelector('.text-slate-500.text-sm.mb-4');
-    const explanation = block.querySelector('.mt-4.p-4, .mt-4.p-3');
-    
-    if (!grid) return;
-
-    // Hide question translation
-    if (questionTrans) questionTrans.classList.add('practice-hidden');
-    // Hide explanation
-    if (explanation) explanation.classList.add('practice-hidden');
-
-    const options = grid.querySelectorAll('div');
-    options.forEach((opt) => {
-      // Detect if this is the correct option
-      const isCorrect = opt.classList.contains('font-bold') || opt.querySelector('.font-bold');
-      
-      // Clean text to separate English and Vietnamese
-      const fullText = opt.innerText.trim();
-      const lines = fullText.split('\n').map(l => l.trim()).filter(Boolean);
-      
-      const letterMatch = lines[0].match(/^\(([A-D])\)/);
-      const letter = letterMatch ? letterMatch[1] : "";
-      const englishText = lines[0].replace(/^\([A-D]\)/, "").trim();
-      const vietnameseText = lines[1] || "";
-
-      // Rebuild option structure
-      opt.className = 'question-option';
-      opt.dataset.letter = letter;
-      if (isCorrect) opt.dataset.correct = "true";
-
-      opt.innerHTML = `
-        <div class="flex items-start">
-          <span class="option-letter">${letter}</span>
-          <div class="flex-grow">
-            <div class="font-medium text-slate-800">${englishText}</div>
-            <div class="text-slate-500 text-sm mt-1 practice-hidden vi-trans">${vietnameseText}</div>
-          </div>
-        </div>
-      `;
-
-      opt.addEventListener('click', () => {
-        if (block.dataset.submitted === "true") return;
-        grid.querySelectorAll('.question-option').forEach(o => o.classList.remove('selected'));
-        opt.classList.add('selected');
-        checkSubmitReady();
+  let allLessons = [];
+  TOEIC_TESTS.forEach((test) => {
+    test.part3.forEach((range) => {
+      allLessons.push({
+        folder: test.folder,
+        file: `LC-${test.prefix}-P3-Q${range}.html`,
+        label: `Q${range}`,
+      });
+    });
+    test.part4.forEach((range) => {
+      allLessons.push({
+        folder: test.folder,
+        file: `LC-${test.prefix}-P4-Q${range}.html`,
+        label: `Q${range}`,
       });
     });
   });
 
-  const submitBtn = document.createElement('button');
-  submitBtn.id = 'submitPracticeBtn';
-  submitBtn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i> Nộp bài & Xem kết quả';
-  submitBtn.disabled = true;
-  questionsSection.appendChild(submitBtn);
+  const currentIndex = allLessons.findIndex((l) => l.file === currentFileName);
+  if (currentIndex === -1) return { prev: null, next: null };
 
-  function checkSubmitReady() {
-    const totalQuestions = questionBlocks.length;
-    const answeredQuestions = questionsSection.querySelectorAll('.question-option.selected').length;
-    submitBtn.disabled = answeredQuestions < totalQuestions;
-  }
+  const projectRoot = getProjectRoot();
+  const getFullUrl = (lesson) =>
+    `${projectRoot}${lesson.folder}/${lesson.file}`;
 
-  submitBtn.addEventListener('click', () => {
-    let score = 0;
-    questionBlocks.forEach((block) => {
-      block.dataset.submitted = "true";
-      
-      // Reveal question translation
-      const qTrans = block.querySelector('.text-slate-500.text-sm.mb-4');
-      if (qTrans) qTrans.classList.remove('practice-hidden');
-
-      const selected = block.querySelector('.question-option.selected');
-      const correct = block.querySelector('.question-option[data-correct="true"]');
-      const explanation = block.querySelector('.practice-hidden:not(.vi-trans)');
-      
-      // Reveal all option translations
-      block.querySelectorAll('.vi-trans').forEach(vi => vi.classList.remove('practice-hidden'));
-
-      if (selected) {
-        if (selected.dataset.correct === "true") {
-          selected.classList.add('correct');
-          score++;
-        } else {
-          selected.classList.add('wrong');
-          if (correct) correct.classList.add('correct');
-        }
-      }
-
-      if (explanation) {
-        explanation.classList.remove('practice-hidden');
-        explanation.classList.add('explanation-card');
-      }
-    });
-
-    submitBtn.innerHTML = `<i class="fas fa-check-double mr-2"></i> Kết quả: ${score}/${questionBlocks.length}`;
-    submitBtn.disabled = true;
-    submitBtn.classList.replace('bg-blue-600', 'bg-green-600');
-  });
-}
-
-if (
-  document.readyState === "loading" &&
-  !document.querySelector(".main-container")
-) {
-  document.addEventListener("DOMContentLoaded", initApp, { once: true });
-} else {
-  initApp();
-}
-
-function initTranslationToggle() {
-  const toggleBtn = document.getElementById("toggleTranslation");
-  const shadowingContainer = document.getElementById("shadowingContainer");
-  if (!toggleBtn || !shadowingContainer) return;
-
-  let isHidden = false;
-  toggleBtn.addEventListener("click", () => {
-    isHidden = !isHidden;
-
-    if (isHidden) {
-      shadowingContainer.classList.add("hidden-vi");
-      toggleBtn.innerHTML = '<i class="fas fa-eye mr-1"></i> Hiện tiếng Việt';
-      toggleBtn.classList.replace("bg-purple-100", "bg-slate-200");
-      toggleBtn.classList.replace("text-purple-700", "text-slate-700");
-      return;
-    }
-
-    shadowingContainer.classList.remove("hidden-vi");
-    toggleBtn.innerHTML = '<i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt';
-    toggleBtn.classList.replace("bg-slate-200", "bg-purple-100");
-    toggleBtn.classList.replace("text-slate-700", "text-purple-700");
-  });
-}
-
-function initAnswerChecker() {
-  const checkBtn = document.getElementById("checkAnswersBtn");
-  const inputs = document.querySelectorAll(".input-blank");
-  if (!checkBtn || inputs.length === 0) return;
-
-  checkBtn.addEventListener("click", () => {
-    let correctCount = 0;
-
-    inputs.forEach((input) => {
-      const correctAnswer = (input.getAttribute("data-answer") || "")
-        .trim()
-        .toLowerCase();
-      const userAnswer = input.value.trim().toLowerCase();
-
-      input.classList.remove("input-correct", "input-wrong");
-      if (userAnswer === correctAnswer) {
-        input.classList.add("input-correct");
-        correctCount += 1;
-      } else {
-        input.classList.add("input-wrong");
-      }
-    });
-
-    if (correctCount === inputs.length) {
-      checkBtn.innerHTML =
-        '<i class="fas fa-star text-yellow-300 mr-2"></i> Xuất Sắc!';
-      checkBtn.classList.replace("bg-cyan-500", "bg-green-500");
-      checkBtn.classList.replace("hover:bg-cyan-600", "hover:bg-green-600");
-      return;
-    }
-
-    checkBtn.innerHTML = `<i class="fas fa-redo mr-2"></i> Đúng ${correctCount}/${inputs.length} - Thử lại`;
-    checkBtn.classList.replace("bg-green-500", "bg-cyan-500");
-    checkBtn.classList.replace("hover:bg-green-600", "hover:bg-cyan-600");
-  });
+  return {
+    prev:
+      currentIndex > 0
+        ? {
+            ...allLessons[currentIndex - 1],
+            url: getFullUrl(allLessons[currentIndex - 1]),
+          }
+        : null,
+    next:
+      currentIndex < allLessons.length - 1
+        ? {
+            ...allLessons[currentIndex + 1],
+            url: getFullUrl(allLessons[currentIndex + 1]),
+          }
+        : null,
+  };
 }
 
 function injectAudioPlayer() {
@@ -602,58 +481,99 @@ function injectAudioPlayer() {
   const audioFile = `Test_${testNum}-${qRange}.mp3`;
   const audioPath = `${getProjectRoot()}audio/Test_${testNum}/${audioFile}`;
 
+  const { prev, next } = getNavigationInfo();
+
   const audioHTML = `
     <div class="sticky-audio-container">
-      <section class="glass-card p-4 md:p-6 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-100 shadow-inner">
-        <div class="flex items-center gap-6">
-          <div class="flex-grow w-full">
-            <audio id="mainAudio" controls class="w-full h-10 mb-4 rounded-lg">
-              <source src="${audioPath}" type="audio/mpeg">
-            </audio>
-
-            <div class="flex flex-wrap gap-2 items-center justify-start">
-              <button id="back5s" class="bg-slate-600 hover:bg-slate-700 text-white px-3 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center" title="Lùi 5s - Phím tắt: ←">
-                <i class="fas fa-backward mr-1"></i> -5s
-              </button>
-
-              <button id="skipIntroBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md transition transform active:scale-95 flex items-center" title="Bắt đầu - Phím tắt: S">
-                <i class="fas fa-forward-step mr-2"></i> Bắt đầu <span class="ml-1 opacity-60 font-normal">(S)</span>
-              </button>
-
-              <button id="forward5s" class="bg-slate-600 hover:bg-slate-700 text-white px-3 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center" title="Tiến 5s - Phím tắt: →">
-                +5s <i class="fas fa-forward ml-1"></i>
-              </button>
-
-              <div class="h-6 w-px bg-slate-300 mx-2"></div>
-
-              <button id="setPointABtn" class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center" title="Phím tắt: A">
-                <i class="fas fa-map-pin mr-2"></i> Điểm A <span class="ml-1 opacity-60 font-normal">(A)</span> <span id="labelA" class="ml-2 bg-black/20 px-1.5 py-0.5 rounded text-[10px]">--:--</span>
-              </button>
-
-              <button id="setPointBBtn" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center" title="Phím tắt: B">
-                <i class="fas fa-map-pin mr-2"></i> Điểm B <span class="ml-1 opacity-60 font-normal">(B)</span> <span id="labelB" class="ml-2 bg-black/20 px-1.5 py-0.5 rounded text-[10px]">--:--</span>
-              </button>
-
-              <button id="clearLoopBtn" class="bg-slate-400 hover:bg-slate-500 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center opacity-50 pointer-events-none" title="Phím tắt: C">
-                <i class="fas fa-times-circle mr-2"></i> Xóa <span class="ml-1 opacity-60 font-normal">(C)</span>
-              </button>
-
-              <div class="h-6 w-px bg-slate-300 mx-2"></div>
-
-              <div class="flex items-center bg-white/50 px-3 py-1.5 rounded-lg border border-slate-200">
-                <span class="text-[10px] font-bold text-slate-500 uppercase mr-3">Speed</span>
-                <button id="speedDown" class="w-6 h-6 flex items-center justify-center rounded bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 transition">-</button>
-                <span id="speedValue" class="mx-3 text-xs font-bold text-blue-700 min-w-[35px] text-center">1.1x</span>
-                <button id="speedUp" class="w-6 h-6 flex items-center justify-center rounded bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 transition">+</button>
-              </div>
-
-              <div id="loopStatus" class="ml-auto text-[10px] font-bold text-indigo-600 uppercase tracking-tighter hidden animate-bounce">
-                <i class="fas fa-sync fa-spin mr-1"></i> Đang Lặp A-B
-              </div>
+      <div class="audio-bar-wrapper">
+        <!-- Navigation Back -->
+        <div class="nav-group">
+          ${
+            prev
+              ? `
+            <a href="${prev.url}" class="audio-btn nav-prev-btn" title="Bài trước: ${prev.label} (Alt + ←)">
+              <i class="fas fa-chevron-left mr-2"></i> <span>PREV</span>
+            </a>
+          `
+              : `
+            <div class="audio-btn opacity-20 pointer-events-none">
+              <i class="fas fa-chevron-left mr-2"></i> <span>PREV</span>
             </div>
-          </div>
+          `
+          }
         </div>
-      </section>
+
+        <div class="audio-divider"></div>
+
+        <!-- Audio Player -->
+        <div class="audio-player-unit">
+          <audio id="mainAudio" controls>
+            <source src="${audioPath}" type="audio/mpeg">
+          </audio>
+        </div>
+
+        <div class="audio-divider"></div>
+
+        <!-- Primary Controls -->
+        <div class="audio-group">
+          <button id="back5s" class="audio-btn" title="Lùi 5s (←)">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="skipIntroBtn" class="audio-btn start-btn" title="Bắt đầu (S)">
+            <i class="fas fa-play text-[10px]"></i> <span>START</span>
+          </button>
+          <button id="forward5s" class="audio-btn" title="Tiến 5s (→)">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+
+        <div class="audio-divider"></div>
+
+        <!-- Loop Controls -->
+        <div class="audio-group">
+          <button id="setPointABtn" class="audio-btn point-btn" title="Điểm A (A)">
+            A <span id="labelA">--:--</span>
+          </button>
+          <button id="setPointBBtn" class="audio-btn point-btn" title="Điểm B (B)">
+            B <span id="labelB">--:--</span>
+          </button>
+          <button id="clearLoopBtn" class="audio-btn clear-btn opacity-40 pointer-events-none" title="Xóa lặp (C)">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="audio-divider"></div>
+
+        <!-- Speed Controls -->
+        <div class="audio-speed-unit">
+          <button id="speedDown" class="speed-btn">-</button>
+          <span id="speedValue">1.1x</span>
+          <button id="speedUp" class="speed-btn">+</button>
+        </div>
+
+        <div class="audio-divider"></div>
+
+        <!-- Navigation Next -->
+        <div class="nav-group">
+          ${
+            next
+              ? `
+            <a href="${next.url}" class="audio-btn nav-next-btn" title="Bài tiếp theo: ${next.label} (Alt + →)">
+              <span>NEXT</span> <i class="fas fa-chevron-right ml-2"></i>
+            </a>
+          `
+              : `
+            <div class="audio-btn opacity-20 pointer-events-none">
+              <span>NEXT</span> <i class="fas fa-chevron-right ml-2"></i>
+            </div>
+          `
+          }
+        </div>
+
+        <div id="loopStatus" class="audio-status-tag hidden">
+          <i class="fas fa-sync fa-spin"></i>
+        </div>
+      </div>
     </div>
   `;
 
@@ -662,6 +582,26 @@ function injectAudioPlayer() {
 
   container.insertAdjacentHTML("afterbegin", audioHTML);
   initAudioControls();
+
+  // Global keyboard navigation
+  document.addEventListener("keydown", (event) => {
+    if (
+      event.target instanceof HTMLElement &&
+      (event.target.tagName === "INPUT" || event.target.tagName === "TEXTAREA")
+    ) {
+      return;
+    }
+
+    if (event.altKey) {
+      if (event.key === "ArrowLeft" && prev) {
+        event.preventDefault();
+        window.location.href = prev.url;
+      } else if (event.key === "ArrowRight" && next) {
+        event.preventDefault();
+        window.location.href = next.url;
+      }
+    }
+  });
 }
 
 function initAudioControls() {
@@ -838,6 +778,179 @@ function initAudioControls() {
   actionSkip();
 }
 
+function initPracticeMode() {
+  const sections = document.querySelectorAll('section');
+  let questionsSection;
+
+  sections.forEach(s => {
+    const h2 = s.querySelector('h2');
+    if (h2 && h2.querySelector('.fa-question-circle')) questionsSection = s;
+  });
+
+  if (!questionsSection) return;
+
+  const questionBlocks = questionsSection.querySelectorAll('.bg-slate-50.p-5');
+  questionBlocks.forEach((block) => {
+    const grid = block.querySelector('.grid');
+    const questionTrans = block.querySelector('.text-slate-500.text-sm.mb-4');
+    const explanation = block.querySelector('.mt-4.p-4, .mt-4.p-3');
+    
+    if (!grid) return;
+
+    // Hide question translation
+    if (questionTrans) questionTrans.classList.add('practice-hidden');
+    // Hide explanation
+    if (explanation) explanation.classList.add('practice-hidden');
+
+    const options = grid.querySelectorAll('div');
+    options.forEach((opt) => {
+      // Detect if this is the correct option
+      const isCorrect = opt.classList.contains('font-bold') || opt.querySelector('.font-bold');
+      
+      // Clean text to separate English and Vietnamese
+      const fullText = opt.innerText.trim();
+      const lines = fullText.split('\n').map(l => l.trim()).filter(Boolean);
+      
+      const letterMatch = lines[0].match(/^\(([A-D])\)/);
+      const letter = letterMatch ? letterMatch[1] : "";
+      const englishText = lines[0].replace(/^\([A-D]\)/, "").trim();
+      const vietnameseText = lines[1] || "";
+
+      // Rebuild option structure
+      opt.className = 'question-option';
+      opt.dataset.letter = letter;
+      if (isCorrect) opt.dataset.correct = "true";
+
+      opt.innerHTML = `
+        <div class="flex items-start">
+          <span class="option-letter">${letter}</span>
+          <div class="flex-grow">
+            <div class="font-medium text-slate-800">${englishText}</div>
+            <div class="text-slate-500 text-sm mt-1 practice-hidden vi-trans">${vietnameseText}</div>
+          </div>
+        </div>
+      `;
+
+      opt.addEventListener('click', () => {
+        if (block.dataset.submitted === "true") return;
+        grid.querySelectorAll('.question-option').forEach(o => o.classList.remove('selected'));
+        opt.classList.add('selected');
+        checkSubmitReady();
+      });
+    });
+  });
+
+  const submitBtn = document.createElement('button');
+  submitBtn.id = 'submitPracticeBtn';
+  submitBtn.innerHTML = '<i class="fas fa-paper-plane mr-2"></i> Nộp bài & Xem kết quả';
+  submitBtn.disabled = true;
+  questionsSection.appendChild(submitBtn);
+
+  function checkSubmitReady() {
+    const totalQuestions = questionBlocks.length;
+    const answeredQuestions = questionsSection.querySelectorAll('.question-option.selected').length;
+    submitBtn.disabled = answeredQuestions < totalQuestions;
+  }
+
+  submitBtn.addEventListener('click', () => {
+    let score = 0;
+    questionBlocks.forEach((block) => {
+      block.dataset.submitted = "true";
+      
+      // Reveal question translation
+      const qTrans = block.querySelector('.text-slate-500.text-sm.mb-4');
+      if (qTrans) qTrans.classList.remove('practice-hidden');
+
+      const selected = block.querySelector('.question-option.selected');
+      const correct = block.querySelector('.question-option[data-correct="true"]');
+      const explanation = block.querySelector('.practice-hidden:not(.vi-trans)');
+      
+      // Reveal all option translations
+      block.querySelectorAll('.vi-trans').forEach(vi => vi.classList.remove('practice-hidden'));
+
+      if (selected) {
+        if (selected.dataset.correct === "true") {
+          selected.classList.add('correct');
+          score++;
+        } else {
+          selected.classList.add('wrong');
+          if (correct) correct.classList.add('correct');
+        }
+      }
+
+      if (explanation) {
+        explanation.classList.remove('practice-hidden');
+        explanation.classList.add('explanation-card');
+      }
+    });
+
+    submitBtn.innerHTML = `<i class="fas fa-check-double mr-2"></i> Kết quả: ${score}/${questionBlocks.length}`;
+    submitBtn.disabled = true;
+    submitBtn.classList.replace('bg-blue-600', 'bg-green-600');
+  });
+}
+
+function initTranslationToggle() {
+  const toggleBtn = document.getElementById("toggleTranslation");
+  const shadowingContainer = document.getElementById("shadowingContainer");
+  if (!toggleBtn || !shadowingContainer) return;
+
+  let isHidden = false;
+  toggleBtn.addEventListener("click", () => {
+    isHidden = !isHidden;
+
+    if (isHidden) {
+      shadowingContainer.classList.add("hidden-vi");
+      toggleBtn.innerHTML = '<i class="fas fa-eye mr-1"></i> Hiện tiếng Việt';
+      toggleBtn.classList.replace("bg-purple-100", "bg-slate-200");
+      toggleBtn.classList.replace("text-purple-700", "text-slate-700");
+      return;
+    }
+
+    shadowingContainer.classList.remove("hidden-vi");
+    toggleBtn.innerHTML = '<i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt';
+    toggleBtn.classList.replace("bg-slate-200", "bg-purple-100");
+    toggleBtn.classList.replace("text-slate-700", "text-purple-700");
+  });
+}
+
+function initAnswerChecker() {
+  const checkBtn = document.getElementById("checkAnswersBtn");
+  const inputs = document.querySelectorAll(".input-blank");
+  if (!checkBtn || inputs.length === 0) return;
+
+  checkBtn.addEventListener("click", () => {
+    let correctCount = 0;
+
+    inputs.forEach((input) => {
+      const correctAnswer = (input.getAttribute("data-answer") || "")
+        .trim()
+        .toLowerCase();
+      const userAnswer = input.value.trim().toLowerCase();
+
+      input.classList.remove("input-correct", "input-wrong");
+      if (userAnswer === correctAnswer) {
+        input.classList.add("input-correct");
+        correctCount += 1;
+      } else {
+        input.classList.add("input-wrong");
+      }
+    });
+
+    if (correctCount === inputs.length) {
+      checkBtn.innerHTML =
+        '<i class="fas fa-star text-yellow-300 mr-2"></i> Xuất Sắc!';
+      checkBtn.classList.replace("bg-cyan-500", "bg-green-500");
+      checkBtn.classList.replace("hover:bg-cyan-600", "hover:bg-green-600");
+      return;
+    }
+
+    checkBtn.innerHTML = `<i class="fas fa-redo mr-2"></i> Đúng ${correctCount}/${inputs.length} - Thử lại`;
+    checkBtn.classList.replace("bg-green-500", "bg-cyan-500");
+    checkBtn.classList.replace("hover:bg-green-600", "hover:bg-cyan-600");
+  });
+}
+
 function injectSidebar() {
   const currentFileName = window.location.pathname.split("/").pop() || "";
   const projectRoot = getProjectRoot();
@@ -960,4 +1073,13 @@ function bindSidebarEvents(visitedLessons) {
       sidebar.scrollTo({ top: 0, behavior: "smooth" });
     }
   });
+}
+
+if (
+  document.readyState === "loading" &&
+  !document.querySelector(".main-container")
+) {
+  document.addEventListener("DOMContentLoaded", initApp, { once: true });
+} else {
+  initApp();
 }
