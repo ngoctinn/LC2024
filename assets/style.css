@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 html {
-    font-size: 17px; /* Tăng kích thước cơ bản từ mặc định 16px */
+    font-size: 17px;
 }
 
 body { 
@@ -10,7 +10,7 @@ body {
     color: #1e293b; 
     line-height: 1.6;
     margin: 0;
-    padding: 0 !important; /* Loại bỏ padding từ HTML để sidebar sát mép */
+    padding: 0 !important;
 }
 
 /* Sidebar Layout */
@@ -29,14 +29,26 @@ body {
     border-right: 1px solid #e2e8f0;
     overflow-y: auto;
     flex-shrink: 0;
-    padding: 1.5rem;
+    padding: 1.5rem 1rem;
     z-index: 50;
+    scrollbar-width: thin;
 }
 
 .main-content {
     flex-grow: 1;
     padding: 2rem;
     max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Sticky Audio Player */
+.sticky-audio-container {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background-color: #f8fafc; /* Match body bg */
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 /* Sidebar Tree Styles */
@@ -52,17 +64,17 @@ body {
     letter-spacing: 0.05em;
     padding: 0.75rem 0.5rem 0.25rem;
     display: flex;
-    items-center: center;
+    align-items: center;
 }
 
 .tree-link {
     display: flex;
     align-items: center;
-    padding: 0.6rem 0.75rem;
+    padding: 0.5rem 0.75rem;
     border-radius: 8px;
     color: #475569;
     font-weight: 500;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     transition: all 0.2s ease;
 }
 
@@ -75,18 +87,12 @@ body {
     background-color: #eff6ff;
     color: #2563eb;
     font-weight: 600;
+    box-shadow: inset 0 0 0 1px #dbeafe;
 }
 
-.tree-link i {
-    width: 20px;
-    margin-right: 0.75rem;
-    font-size: 1rem;
-    opacity: 0.7;
-}
-
-/* Tăng chiều rộng container lên 6xl (1152px) */
+/* Main Container */
 .main-container {
-    max-width: 72rem; /* tương đương max-w-6xl */
+    max-width: 72rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -94,23 +100,20 @@ body {
 .chunk-vi { 
     display: block; 
     color: #64748b;
-    font-size: 1.05rem; /* Tăng nhẹ font tiếng Việt */
+    font-size: 1.05rem;
     margin-top: 0.25rem;
     margin-bottom: 1.25rem;
 }
 
-/* Typography Enhancements */
+/* Typography */
 strong {
     font-weight: 600;
-    font-size: 1.1rem; /* Tăng font cho phần tiếng Anh */
+    font-size: 1.1rem;
 }
-
-h1 { font-size: 2.5rem !important; }
-h2 { font-size: 1.8rem !important; }
-h3 { font-size: 1.4rem !important; }
 
 .hidden-vi .chunk-vi { display: none; }
 
+/* Inputs for Chunking Challenge */
 .input-blank {
     border: none;
     border-bottom: 2px solid #94a3b8;
@@ -119,48 +122,77 @@ h3 { font-size: 1.4rem !important; }
     text-align: center;
     font-weight: 600;
     color: #2563eb;
-    width: 140px;
+    min-width: 100px;
     padding: 0 4px;
     transition: all 0.3s ease;
     font-size: 1.1rem;
 }
 
-.input-blank:focus { border-bottom-color: #3b82f6; }
+.input-blank:focus { border-bottom-color: #3b82f6; background-color: #f0f9ff; }
 
 .input-correct { 
     border-bottom-color: #16a34a !important; 
     color: #16a34a; 
     background-color: #f0fdf4;
-    border-radius: 4px 4px 0 0;
 }
 
 .input-wrong { 
     border-bottom-color: #dc2626 !important; 
     color: #dc2626; 
     background-color: #fef2f2;
-    border-radius: 4px 4px 0 0;
 }
 
 .glass-card { 
     background: #ffffff; 
     border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03); 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); 
     border-radius: 12px;
 }
 
-.table-header { background-color: #f1f5f9; }
-
-/* Dashboard Styles */
-.test-card {
-    transition: all 0.3s ease;
+/* Integrated Table Styles */
+.chunk-table th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
 }
-.test-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+
+.chunk-table td {
+    padding: 1rem 1.5rem;
+    vertical-align: top;
 }
 
+.paraphrase-tag {
+    display: inline-block;
+    padding: 0.125rem 0.5rem;
+    background-color: #f0fdf4;
+    color: #166534;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+/* Sidebar never collapses on desktop, stays visible */
 @media (max-width: 1024px) {
     .sidebar {
-        display: none; /* Ẩn sidebar trên mobile để đơn giản hóa, có thể thêm toggle sau */
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-wrapper {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        position: relative;
+    }
+    .main-content {
+        padding: 1rem;
     }
 }

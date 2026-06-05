@@ -22,11 +22,11 @@
             <div class="overflow-x-auto">
                 <table class="min-w-full bg-white border border-slate-200">
                     <thead>
-                        <tr class="bg-slate-100">
-                            <th class="py-2 px-4 border">Product</th>
-                            <th class="py-2 px-4 border">Price</th>
-                        </tr>
-                    </thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                     <tbody>
                         <tr>
                             <td class="py-2 px-4 border text-center">Metal Bottle</td>
@@ -45,12 +45,11 @@
             </div>
         </section>
 
-        <!-- 1. SHADOWING FLOW -->
+        <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING
-                </h2>
+                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING</h2>
                 <button id="toggleTranslation" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-purple-200 transition">
                     <i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt
                 </button>
@@ -151,87 +150,74 @@
             </div>
         </section>
 
-        <!-- 2. BUSINESS VOCAB -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-briefcase text-orange-500 mr-2"></i> 2. TỪ VỰNG TRỌNG TÂM
-                </h2>
+                    <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
             <table class="w-full text-left border-collapse">
-                
+                <thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>customized</strong> <br><span class="text-slate-400 text-sm">/ˈkʌstəmaɪzd/</span></td>
-                        <td class="py-4 px-6">Được tùy chỉnh.</td>
-                        <td class="py-4 px-6">personalized</td>
+                        <td class="py-4 px-6"><strong>give every employee a gift</strong></td>
+                        <td class="py-4 px-6">tặng cho mỗi nhân viên một món quà <br> <span class="paraphrase-tag">Paraphrase</span> <strong>choose a gift for employees</strong> (Q62)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>employee gift</strong> <br><span class="text-slate-400 text-sm">/ɪmˈplɔɪiː ɡɪft/</span></td>
-                        <td class="py-4 px-6">Quà tặng nhân viên.</td>
-                        <td class="py-4 px-6">corporate present</td>
+                        <td class="py-4 px-6"><strong>host our annual staff basketball tournament</strong></td>
+                        <td class="py-4 px-6">tổ chức giải bóng rổ nhân viên thường niên</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>annual staff tournament</strong> <br><span class="text-slate-400 text-sm">/ˈænjuəl stɑːf ˈtʊənəmənt/</span></td>
-                        <td class="py-4 px-6">Giải đấu nhân viên thường niên.</td>
-                        <td class="py-4 px-6">yearly sports competition</td>
+                        <td class="py-4 px-6"><strong>water bottle might be good</strong></td>
+                        <td class="py-4 px-6">một bình nước có thể sẽ tốt</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>water bottle</strong> <br><span class="text-slate-400 text-sm">/ˈwɔːtə(r) ˈbɒtl/</span></td>
-                        <td class="py-4 px-6">Bình nước.</td>
-                        <td class="py-4 px-6">liquid container</td>
+                        <td class="py-4 px-6"><strong>carry a few drink containers</strong></td>
+                        <td class="py-4 px-6">có bán một vài loại bình đựng đồ uống</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>drink containers</strong> <br><span class="text-slate-400 text-sm">/drɪŋk kənˈteɪnəz/</span></td>
-                        <td class="py-4 px-6">Bình đựng đồ uống.</td>
-                        <td class="py-4 px-6">beverage vessels</td>
+                        <td class="py-4 px-6"><strong>under the Lifestyle tab</strong></td>
+                        <td class="py-4 px-6">trong tab Lối sống (trên trang web)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>lifestyle tab</strong> <br><span class="text-slate-400 text-sm">/ˈlaɪfstaɪl tæb/</span></td>
-                        <td class="py-4 px-6">Thẻ lối sống (trên trang web).</td>
-                        <td class="py-4 px-6">web page section</td>
+                        <td class="py-4 px-6"><strong>pull it up now</strong></td>
+                        <td class="py-4 px-6">mở nó lên ngay bây giờ</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>wide-mouthed lid</strong> <br><span class="text-slate-400 text-sm">/waɪd maʊθd lɪd/</span></td>
-                        <td class="py-4 px-6">Nắp miệng rộng.</td>
-                        <td class="py-4 px-6">large opening cap</td>
+                        <td class="py-4 px-6"><strong>recommend the metal bottle</strong></td>
+                        <td class="py-4 px-6">khuyên dùng bình kim loại <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Metal Bottle</strong> (Q63)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>straw</strong> <br><span class="text-slate-400 text-sm">/strɔː/</span></td>
-                        <td class="py-4 px-6">Ống hút.</td>
-                        <td class="py-4 px-6">drinking tube</td>
+                        <td class="py-4 px-6"><strong>wide-mouthed lid</strong></td>
+                        <td class="py-4 px-6">nắp miệng rộng</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>company logo</strong> <br><span class="text-slate-400 text-sm">/ˈkʌmpəni ˈləʊɡəʊ/</span></td>
-                        <td class="py-4 px-6">Logo công ty.</td>
-                        <td class="py-4 px-6">corporate emblem</td>
+                        <td class="py-4 px-6"><strong>one with the straw</strong></td>
+                        <td class="py-4 px-6">loại có ống hút</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>graphic file</strong> <br><span class="text-slate-400 text-sm">/ˈɡræfɪk faɪl/</span></td>
-                        <td class="py-4 px-6">Tệp đồ họa.</td>
-                        <td class="py-4 px-6">digital image for printing</td>
+                        <td class="py-4 px-6"><strong>company logo on it</strong></td>
+                        <td class="py-4 px-6">logo công ty trên đó</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>pull it up</strong> <br><span class="text-slate-400 text-sm">/pʊl ɪt ʌp/</span></td>
-                        <td class="py-4 px-6">Mở lên (tệp, trang web).</td>
-                        <td class="py-4 px-6">open, display</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>carry</strong> <br><span class="text-slate-400 text-sm">/ˈkæri/</span></td>
-                        <td class="py-4 px-6">Có bán, cung cấp.</td>
-                        <td class="py-4 px-6">sell, stock</td>
+                        <td class="py-4 px-6"><strong>send me the graphic file</strong></td>
+                        <td class="py-4 px-6">gửi cho tôi tệp đồ họa <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Send a digital file</strong> (Q64)</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- 3. FILL-IN-THE-BLANK CHALLENGE -->
+        <!-- 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE) -->
         <section class="glass-card p-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
                     <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN TỪ
-                    </h2>
+                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE)</h2>
                 </div>
                 <button id="checkAnswersBtn" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
@@ -253,7 +239,7 @@
                     <span class="text-blue-600 font-bold">M:</span> Thanks for calling Customized Concepts. How can I help you?
                 </p>
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> My company wants to give every <input type="text" data-answer="employee gift" class="input-blank mx-1 w-[160px]">, something useful but not too big. Since we’re about to host our annual staff <input type="text" data-answer="basketball tournament" class="input-blank mx-1 w-[200px]">, I thought a water bottle might be good.
+                    <span class="text-pink-600 font-bold">W:</span> My company wants to <input type="text" data-answer="give every employee a gift" class="input-blank mx-1 w-[260px]">, something useful but not too big. Since we’re about to host our annual staff <input type="text" data-answer="basketball tournament" class="input-blank mx-1 w-[220px]">, I thought a water bottle might be good.
                 </p>
                 <p class="mb-4">
                     <span class="text-blue-600 font-bold">M:</span> We carry a few <input type="text" data-answer="drink containers" class="input-blank mx-1 w-[160px]">. If you’re at our Web site, you'll see them under the Lifestyle tab.
@@ -276,11 +262,10 @@
             </div>
         </section>
 
-        <!-- 4. QUESTIONS -->
+        <!-- 4. GIẢI THÍCH CHI TIẾT -->
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
-                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. CÂU HỎI BÀI TẬP
-            </h2>
+                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
                 
                 <!-- Q62 -->
@@ -304,6 +289,9 @@
                             (D) To report a problem with an order
                             <span class="text-slate-500 text-sm block mt-1">Để báo cáo vấn đề với một đơn hàng</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người phụ nữ nói: "My company wants to give every employee a gift... I thought a water bottle might be good" (Công ty tôi muốn tặng quà cho mỗi nhân viên... tôi nghĩ một bình nước có thể sẽ tốt).
                     </div>
                 </div>
 
@@ -329,6 +317,9 @@
                             <span class="text-slate-500 text-sm block mt-1">Áo thun</span>
                         </div>
                     </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người đàn ông nói: "I recommend the metal bottle" (Tôi khuyên bạn nên chọn bình kim loại). Theo biểu đồ, Metal Bottle có giá $24.
+                    </div>
                 </div>
 
                 <!-- Q64 -->
@@ -352,6 +343,9 @@
                             (D) Pay for a membership
                             <span class="text-slate-500 text-sm block mt-1">Thanh toán phí thành viên</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người đàn ông nói: "You'll just need to send me the graphic file" (Bạn chỉ cần gửi cho tôi tệp đồ họa) và người phụ nữ trả lời: "I can do that" (Tôi có thể làm việc đó).
                     </div>
                 </div>
 

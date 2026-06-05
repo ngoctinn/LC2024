@@ -14,12 +14,11 @@
         
         
 
-        <!-- 1. SHADOWING FLOW -->
+        <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING
-                </h2>
+                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING</h2>
                 <button id="toggleTranslation" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-purple-200 transition">
                     <i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt
                 </button>
@@ -94,87 +93,70 @@
             </div>
         </section>
 
-        <!-- 2. BUSINESS VOCAB -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-briefcase text-orange-500 mr-2"></i> 2. TỪ VỰNG TRỌNG TÂM
-                </h2>
+                    <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
             <table class="w-full text-left border-collapse">
-                
+                <thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>music festival</strong> <br><span class="text-slate-400 text-sm">/ˈmjuːzɪk ˈfestɪvl/</span></td>
-                        <td class="py-4 px-6">Lễ hội âm nhạc.</td>
-                        <td class="py-4 px-6">musical event</td>
+                        <td class="py-4 px-6"><strong>about to pack van number five</strong></td>
+                        <td class="py-4 px-6">định đóng gói xe van số năm</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>flat tire</strong> <br><span class="text-slate-400 text-sm">/ˌflæt ˈtaɪə(r)/</span></td>
-                        <td class="py-4 px-6">Xẹp lốp, thủng lốp.</td>
-                        <td class="py-4 px-6">punctured tire</td>
+                        <td class="py-4 px-6"><strong>noticed it’s got a flat tire</strong></td>
+                        <td class="py-4 px-6">nhận thấy nó bị xẹp lốp <br> <span class="paraphrase-tag">Paraphrase</span> <strong>A vehicle has a flat tire</strong> (Q53)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>pack</strong> <br><span class="text-slate-400 text-sm">/pæk/</span></td>
-                        <td class="py-4 px-6">Đóng gói, xếp đồ.</td>
-                        <td class="py-4 px-6">load, fill</td>
+                        <td class="py-4 px-6"><strong>set up lunch for the performers</strong></td>
+                        <td class="py-4 px-6">chuẩn bị bữa trưa cho các nghệ sĩ biểu diễn <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Providing lunch for performers</strong> (Q54)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>performers</strong> <br><span class="text-slate-400 text-sm">/pəˈfɔːməz/</span></td>
-                        <td class="py-4 px-6">Nghệ sĩ biểu diễn.</td>
-                        <td class="py-4 px-6">entertainers, artists</td>
+                        <td class="py-4 px-6"><strong>got a lot of catering jobs today</strong></td>
+                        <td class="py-4 px-6">có rất nhiều công việc cung cấp đồ ăn hôm nay</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>catering jobs</strong> <br><span class="text-slate-400 text-sm">/ˈkeɪtərɪŋ dʒɒbz/</span></td>
-                        <td class="py-4 px-6">Công việc cung cấp đồ ăn.</td>
-                        <td class="py-4 px-6">food service assignments</td>
+                        <td class="py-4 px-6"><strong>need help loading</strong></td>
+                        <td class="py-4 px-6">cần giúp xếp hàng lên xe <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Help load some supplies</strong> (Q55)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>available</strong> <br><span class="text-slate-400 text-sm">/əˈveɪləbl/</span></td>
-                        <td class="py-4 px-6">Có sẵn, còn trống.</td>
-                        <td class="py-4 px-6">free, vacant</td>
+                        <td class="py-4 px-6"><strong>food’s already in coolers</strong></td>
+                        <td class="py-4 px-6">thức ăn đã ở trong thùng giữ lạnh rồi</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>loading</strong> <br><span class="text-slate-400 text-sm">/ˈləʊdɪŋ/</span></td>
-                        <td class="py-4 px-6">Xếp hàng lên xe.</td>
-                        <td class="py-4 px-6">packing onto a vehicle</td>
+                        <td class="py-4 px-6"><strong>serving utensils and napkins</strong></td>
+                        <td class="py-4 px-6">dụng cụ phục vụ và khăn ăn</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>coolers</strong> <br><span class="text-slate-400 text-sm">/ˈkuːləz/</span></td>
-                        <td class="py-4 px-6">Thùng giữ lạnh.</td>
-                        <td class="py-4 px-6">ice boxes</td>
+                        <td class="py-4 px-6"><strong>brought to the parking area</strong></td>
+                        <td class="py-4 px-6">mang ra khu vực đậu xe</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>serving utensils</strong> <br><span class="text-slate-400 text-sm">/ˈsɜːvɪŋ juːˈtenslz/</span></td>
-                        <td class="py-4 px-6">Dụng cụ phục vụ.</td>
-                        <td class="py-4 px-6">cutlery for serving</td>
+                        <td class="py-4 px-6"><strong>music festival</strong></td>
+                        <td class="py-4 px-6">lễ hội âm nhạc</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>napkins</strong> <br><span class="text-slate-400 text-sm">/ˈnæpkɪnz/</span></td>
-                        <td class="py-4 px-6">Khăn ăn.</td>
-                        <td class="py-4 px-6">paper tissues</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>parking area</strong> <br><span class="text-slate-400 text-sm">/ˈpɑːkɪŋ ˈeəriə/</span></td>
-                        <td class="py-4 px-6">Khu vực đậu xe.</td>
-                        <td class="py-4 px-6">car park</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>kitchen</strong> <br><span class="text-slate-400 text-sm">/ˈkɪtʃɪn/</span></td>
-                        <td class="py-4 px-6">Nhà bếp.</td>
-                        <td class="py-4 px-6">cooking area</td>
+                        <td class="py-4 px-6"><strong>what's available</strong></td>
+                        <td class="py-4 px-6">cái nào còn trống</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- 3. FILL-IN-THE-BLANK CHALLENGE -->
+        <!-- 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE) -->
         <section class="glass-card p-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
                     <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN TỪ
-                    </h2>
+                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE)</h2>
                 </div>
                 <button id="checkAnswersBtn" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
@@ -188,7 +170,7 @@
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">performers</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">catering jobs</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">serving utensils</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">napkins</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">loading</span>
             </div>
 
             <div class="bg-blue-50 p-6 rounded-lg text-lg leading-loose font-medium text-slate-700">
@@ -202,19 +184,18 @@
                     <span class="text-pink-600 font-bold">W:</span> We're supposed to get there by eleven to set up lunch for the <input type="text" data-answer="performers" class="input-blank mx-1 w-[120px]">. Is there another van we can take?
                 </p>
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> Let me see what's available. We’ve got a lot of <input type="text" data-answer="catering jobs" class="input-blank mx-1 w-[140px]"> today. Ah, yes—we can use van number three. Do you need help loading?
+                    <span class="text-blue-600 font-bold">M:</span> Let me see what's available. We’ve got a lot of <input type="text" data-answer="catering jobs" class="input-blank mx-1 w-[140px]"> today. Ah, yes—we can use van number three. Do you need help <input type="text" data-answer="loading" class="input-blank mx-1 w-[100px]">?
                 </p>
                 <p>
-                    <span class="text-pink-600 font-bold">W:</span> Yes, thanks. The food’s already in coolers, but everything’s in the kitchen with the <input type="text" data-answer="serving utensils" class="input-blank mx-1 w-[160px]"> and <input type="text" data-answer="napkins" class="input-blank mx-1 w-[100px]">. It all needs to be brought to the parking area.
+                    <span class="text-pink-600 font-bold">W:</span> Yes, thanks. The food’s already in coolers, but everything’s in the kitchen with the <input type="text" data-answer="serving utensils" class="input-blank mx-1 w-[160px]"> and napkins. It all needs to be brought to the parking area.
                 </p>
             </div>
         </section>
 
-        <!-- 4. QUESTIONS -->
+        <!-- 4. GIẢI THÍCH CHI TIẾT -->
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
-                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. CÂU HỎI BÀI TẬP
-            </h2>
+                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
                 
                 <!-- Q53 -->
@@ -238,6 +219,10 @@
                             (D) Some food was delivered to the wrong address
                             <span class="text-slate-500 text-sm block mt-1">Một số thức ăn đã được giao nhầm địa chỉ</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người phụ nữ thông báo cho Koji: "We were about to pack van number five... when we noticed it’s got a <strong>flat tire</strong>". Vậy đáp án là (B).</p>
                     </div>
                 </div>
 
@@ -263,6 +248,10 @@
                             <span class="text-slate-500 text-sm block mt-1">Sửa chữa một chiếc xe van</span>
                         </div>
                     </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người phụ nữ nói: "We're supposed to get there by eleven to <strong>set up lunch for the performers</strong>". Đáp án là (A).</p>
+                    </div>
                 </div>
 
                 <!-- Q55 -->
@@ -286,6 +275,10 @@
                             (D) Cook a meal
                             <span class="text-slate-500 text-sm block mt-1">Nấu một bữa ăn</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông hỏi: "Do you need <strong>help loading</strong>?". Sau đó anh ta khẳng định: "I can help with that". "Loading" ở đây là xếp thực phẩm và dụng cụ lên xe. Vậy đáp án là (C).</p>
                     </div>
                 </div>
 

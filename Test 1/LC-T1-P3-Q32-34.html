@@ -14,12 +14,11 @@
         
         
 
-        <!-- 1. SHADOWING FLOW -->
+        <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING
-                </h2>
+                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING</h2>
                 <button id="toggleTranslation" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-purple-200 transition">
                     <i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt
                 </button>
@@ -83,87 +82,74 @@
             </div>
         </section>
 
-        <!-- 2. BUSINESS VOCAB -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-briefcase text-orange-500 mr-2"></i> 2. TỪ VỰNG TRỌNG TÂM
-                </h2>
+                    <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
             <table class="w-full text-left border-collapse">
-                
+                <thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>organizing</strong> <br><span class="text-slate-400 text-sm">/ˈɔːr.ɡən.aɪ.zɪŋ/</span></td>
-                        <td class="py-4 px-6">Tổ chức.</td>
-                        <td class="py-4 px-6">arranging, planning</td>
+                        <td class="py-4 px-6"><strong>organizing the annual company picnic</strong></td>
+                        <td class="py-4 px-6">tổ chức buổi dã ngoại thường niên của công ty <br> <span class="paraphrase-tag">Paraphrase</span> <strong>event</strong> (Q32)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>annual</strong> <br><span class="text-slate-400 text-sm">/ˈænjuəl/</span></td>
-                        <td class="py-4 px-6">Hàng năm, thường niên.</td>
-                        <td class="py-4 px-6">yearly, every year</td>
+                        <td class="py-4 px-6"><strong>everybody seemed to enjoy it</strong></td>
+                        <td class="py-4 px-6">mọi người dường như đã rất thích nó</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>company picnic</strong> <br><span class="text-slate-400 text-sm">/ˈkʌmpəni ˈpɪknɪk/</span></td>
-                        <td class="py-4 px-6">Buổi dã ngoại công ty.</td>
-                        <td class="py-4 px-6">outdoor staff gathering</td>
+                        <td class="py-4 px-6"><strong>we deserved it</strong></td>
+                        <td class="py-4 px-6">chúng ta xứng đáng với điều đó</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>deserved</strong> <br><span class="text-slate-400 text-sm">/dɪˈzɜːrvd/</span></td>
-                        <td class="py-4 px-6">Xứng đáng.</td>
-                        <td class="py-4 px-6">earned, merited</td>
+                        <td class="py-4 px-6"><strong>working so hard this year</strong></td>
+                        <td class="py-4 px-6">làm việc rất chăm chỉ trong năm nay <br> <span class="paraphrase-tag">Paraphrase</span> <strong>have been working hard</strong> (Q33)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>especially</strong> <br><span class="text-slate-400 text-sm">/ɪˈspeʃ.əl.i/</span></td>
-                        <td class="py-4 px-6">Đặc biệt là.</td>
-                        <td class="py-4 px-6">particularly</td>
+                        <td class="py-4 px-6"><strong>especially the peach pie</strong></td>
+                        <td class="py-4 px-6">đặc biệt là món bánh đào</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>sharing</strong> <br><span class="text-slate-400 text-sm">/ˈʃer.ɪŋ/</span></td>
-                        <td class="py-4 px-6">Chia sẻ.</td>
-                        <td class="py-4 px-6">distributing info</td>
+                        <td class="py-4 px-6"><strong>sharing the recipe</strong></td>
+                        <td class="py-4 px-6">chia sẻ công thức nấu ăn</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>recipe</strong> <br><span class="text-slate-400 text-sm">/ˈresəpi/</span></td>
-                        <td class="py-4 px-6">Công thức nấu ăn.</td>
-                        <td class="py-4 px-6">cooking instructions</td>
+                        <td class="py-4 px-6"><strong>found the recipe online</strong></td>
+                        <td class="py-4 px-6">tìm thấy công thức trực tuyến</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>delicious</strong> <br><span class="text-slate-400 text-sm">/dɪˈlɪʃ.əs/</span></td>
-                        <td class="py-4 px-6">Ngon miệng.</td>
-                        <td class="py-4 px-6">tasty, flavorful</td>
+                        <td class="py-4 px-6"><strong>send you a link to the Web page</strong></td>
+                        <td class="py-4 px-6">gửi cho bạn một liên kết đến trang web <br> <span class="paraphrase-tag">Paraphrase</span> <strong>link to a website</strong> (Q34)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>link</strong> <br><span class="text-slate-400 text-sm">/lɪŋk/</span></td>
-                        <td class="py-4 px-6">Liên kết.</td>
-                        <td class="py-4 px-6">URL, connection</td>
+                        <td class="py-4 px-6"><strong>really helpful video</strong></td>
+                        <td class="py-4 px-6">video thực sự hữu ích</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>helpful</strong> <br><span class="text-slate-400 text-sm">/ˈhelp.fəl/</span></td>
-                        <td class="py-4 px-6">Hữu ích.</td>
-                        <td class="py-4 px-6">useful, beneficial</td>
+                        <td class="py-4 px-6"><strong>walks you through all the steps</strong></td>
+                        <td class="py-4 px-6">hướng dẫn bạn tất cả các bước</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>walks you through</strong> <br><span class="text-slate-400 text-sm">/wɔːks juː θruː/</span></td>
-                        <td class="py-4 px-6">Hướng dẫn chi tiết.</td>
-                        <td class="py-4 px-6">explains step-by-step</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>recommend</strong> <br><span class="text-slate-400 text-sm">/ˌrekəˈmend/</span></td>
-                        <td class="py-4 px-6">Khuyên, đề xuất.</td>
-                        <td class="py-4 px-6">suggest, advise</td>
+                        <td class="py-4 px-6"><strong>recommend you watch it first</strong></td>
+                        <td class="py-4 px-6">khuyên bạn nên xem nó trước</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- 3. FILL-IN-THE-BLANK CHALLENGE -->
+        <!-- 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE) -->
         <section class="glass-card p-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
                     <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN TỪ
-                    </h2>
+                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE)</h2>
                 </div>
                 <button id="checkAnswersBtn" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
@@ -172,26 +158,26 @@
             
             <!-- Word Bank -->
             <div class="mb-6 flex flex-wrap gap-2 justify-center bg-slate-50 p-4 rounded-lg border border-slate-100">
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">annual</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">deserved</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">recipe</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">link</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">annual company picnic</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">deserved it</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">sharing the recipe</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">link to the Web page</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">walks you through</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">recommend</span>
             </div>
 
             <div class="bg-blue-50 p-6 rounded-lg text-lg leading-loose font-medium text-slate-700">
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> Thank you so much for organizing the <input type="text" data-answer="annual" class="input-blank mx-1 w-[100px]"> company picnic, Jingdao. Everybody seemed to enjoy it.
+                    <span class="text-pink-600 font-bold">W:</span> Thank you so much for organizing the <input type="text" data-answer="annual company picnic" class="input-blank mx-1 w-[220px]">, Jingdao. Everybody seemed to enjoy it.
                 </p>
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> Well, we <input type="text" data-answer="deserved" class="input-blank mx-1 w-[120px]"> it after working so hard this year.
+                    <span class="text-blue-600 font-bold">M:</span> Well, we <input type="text" data-answer="deserved it" class="input-blank mx-1 w-[120px]"> after working so hard this year.
                 </p>
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> I agree. The food was great, by the way. Especially the peach pie you made. Would you mind sharing the <input type="text" data-answer="recipe" class="input-blank mx-1 w-[100px]">? It was delicious.
+                    <span class="text-pink-600 font-bold">W:</span> I agree. The food was great, by the way. Especially the peach pie you made. Would you mind <input type="text" data-answer="sharing the recipe" class="input-blank mx-1 w-[180px]">? It was delicious.
                 </p>
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> I found the recipe online. I'll send you a <input type="text" data-answer="link" class="input-blank mx-1 w-[80px]"> to the Web page. There’s a really helpful video that <input type="text" data-answer="walks you through" class="input-blank mx-1 w-[180px]"> all the steps. I <input type="text" data-answer="recommend" class="input-blank mx-1 w-[130px]"> you watch it first.
+                    <span class="text-blue-600 font-bold">M:</span> I found the recipe online. I'll send you a <input type="text" data-answer="link to the Web page" class="input-blank mx-1 w-[200px]">. There’s a really helpful video that <input type="text" data-answer="walks you through" class="input-blank mx-1 w-[180px]"> all the steps. I <input type="text" data-answer="recommend" class="input-blank mx-1 w-[130px]"> you watch it first.
                 </p>
                 <p>
                     <span class="text-pink-600 font-bold">W:</span> All right, thanks.
@@ -199,11 +185,10 @@
             </div>
         </section>
 
-        <!-- 4. QUESTIONS -->
+        <!-- 4. GIẢI THÍCH CHI TIẾT -->
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
-                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. CÂU HỎI BÀI TẬP
-            </h2>
+                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
                 
                 <!-- Q32 -->
@@ -227,6 +212,10 @@
                             (D) A product launch
                             <span class="text-slate-500 text-sm block mt-1">Một buổi ra mắt sản phẩm</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người phụ nữ mở đầu bằng lời cảm ơn: "Thank you so much for organizing the annual <strong>company picnic</strong>". Vậy sự kiện được thảo luận là (B).</p>
                     </div>
                 </div>
 
@@ -252,6 +241,10 @@
                             <span class="text-slate-500 text-sm block mt-1">Công ty đã giành được một giải thưởng</span>
                         </div>
                     </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông giải thích: "Well, we deserved it <strong>after working so hard</strong> this year". Đáp án là (B).</p>
+                    </div>
                 </div>
 
                 <!-- Q34 -->
@@ -275,6 +268,10 @@
                             (D) A printed recipe
                             <span class="text-slate-500 text-sm block mt-1">Một công thức in sẵn</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông nói: "I'll send you a <strong>link to the Web page</strong>". Đáp án tương ứng là (C).</p>
                     </div>
                 </div>
 

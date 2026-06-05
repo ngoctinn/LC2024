@@ -22,11 +22,11 @@
             <div class="overflow-x-auto">
                 <table class="min-w-full bg-white border border-slate-200">
                     <thead>
-                        <tr class="bg-slate-100">
-                            <th class="py-2 px-4 border">Title</th>
-                            <th class="py-2 px-4 border">Artist</th>
-                        </tr>
-                    </thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                     <tbody>
                         <tr>
                             <td class="py-2 px-4 border text-center">A Careful Glance</td>
@@ -50,12 +50,11 @@
             <p class="mt-2 text-sm text-slate-500 italic">* Note: "Stormy Sea" is being removed from the exhibit.</p>
         </section>
 
-        <!-- 1. SHADOWING FLOW -->
+        <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING
-                </h2>
+                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING</h2>
                 <button id="toggleTranslation" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-purple-200 transition">
                     <i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt
                 </button>
@@ -131,87 +130,62 @@
             </div>
         </section>
 
-        <!-- 2. BUSINESS VOCAB -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-briefcase text-orange-500 mr-2"></i> 2. TỪ VỰNG TRỌNG TÂM
-                </h2>
+                    <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
             <table class="w-full text-left border-collapse">
-                
+                <thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>audio guide</strong> <br><span class="text-slate-400 text-sm">/ˈɔːdiəʊ ɡaɪd/</span></td>
-                        <td class="py-4 px-6">Bản hướng dẫn âm thanh.</td>
-                        <td class="py-4 px-6">recorded tour</td>
+                        <td class="py-4 px-6"><strong>finished recording the audio guide</strong></td>
+                        <td class="py-4 px-6">vừa ghi âm xong bản hướng dẫn âm thanh <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Recording an audio guide</strong> (Q65)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>modern art exhibit</strong> <br><span class="text-slate-400 text-sm">/ˈmɒdn ɑːt ɪɡˈzɪbɪt/</span></td>
-                        <td class="py-4 px-6">Triển lãm nghệ thuật hiện đại.</td>
-                        <td class="py-4 px-6">contemporary gallery</td>
+                        <td class="py-4 px-6"><strong>modern art exhibit</strong></td>
+                        <td class="py-4 px-6">triển lãm nghệ thuật hiện đại</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>pencil drawings</strong> <br><span class="text-slate-400 text-sm">/ˈpensl ˈdrɔːɪŋz/</span></td>
-                        <td class="py-4 px-6">Các bức vẽ bằng bút chì.</td>
-                        <td class="py-4 px-6">sketches</td>
+                        <td class="py-4 px-6"><strong>scheduling mix-up</strong></td>
+                        <td class="py-4 px-6">nhầm lẫn về lịch trình</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>audio devices</strong> <br><span class="text-slate-400 text-sm">/ˈɔːdiəʊ dɪˈvaɪsɪz/</span></td>
-                        <td class="py-4 px-6">Các thiết bị âm thanh.</td>
-                        <td class="py-4 px-6">sound players</td>
+                        <td class="py-4 px-6"><strong>promised to another museum</strong></td>
+                        <td class="py-4 px-6">đã hứa cho một bảo tàng khác</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>scheduling mix-up</strong> <br><span class="text-slate-400 text-sm">/ˈʃedjuːlɪŋ ˈmɪks ʌp/</span></td>
-                        <td class="py-4 px-6">Nhầm lẫn về lịch trình.</td>
-                        <td class="py-4 px-6">calendar error</td>
+                        <td class="py-4 px-6"><strong>favorite pieces</strong></td>
+                        <td class="py-4 px-6">những tác phẩm yêu thích</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>museum</strong> <br><span class="text-slate-400 text-sm">/mjuˈziːəm/</span></td>
-                        <td class="py-4 px-6">Bảo tàng.</td>
-                        <td class="py-4 px-6">art gallery</td>
+                        <td class="py-4 px-6"><strong>remove it</strong></td>
+                        <td class="py-4 px-6">gỡ bỏ nó <br> <span class="paraphrase-tag">Paraphrase</span> <strong>removed from the exhibit</strong> (Q66)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>favorite pieces</strong> <br><span class="text-slate-400 text-sm">/ˈfeɪvərɪt ˈpiːsɪz/</span></td>
-                        <td class="py-4 px-6">Các tác phẩm yêu thích.</td>
-                        <td class="py-4 px-6">preferred artworks</td>
+                        <td class="py-4 px-6"><strong>make that change to the audio-guide recording</strong></td>
+                        <td class="py-4 px-6">thực hiện thay đổi đó đối với bản ghi âm hướng dẫn âm thanh <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Edit a recording</strong> (Q67)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>remove</strong> <br><span class="text-slate-400 text-sm">/rɪˈmuːv/</span></td>
-                        <td class="py-4 px-6">Gỡ bỏ, loại bỏ.</td>
-                        <td class="py-4 px-6">take down</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>recording</strong> <br><span class="text-slate-400 text-sm">/rɪˈkɔːdɪŋ/</span></td>
-                        <td class="py-4 px-6">Bản ghi âm.</td>
-                        <td class="py-4 px-6">audio file</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>right away</strong> <br><span class="text-slate-400 text-sm">/raɪt əˈweɪ/</span></td>
-                        <td class="py-4 px-6">Ngay lập tức.</td>
-                        <td class="py-4 px-6">immediately</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>include</strong> <br><span class="text-slate-400 text-sm">/ɪnˈkluːd/</span></td>
-                        <td class="py-4 px-6">Bao gồm.</td>
-                        <td class="py-4 px-6">feature, contain</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>loaded</strong> <br><span class="text-slate-400 text-sm">/ˈləʊdɪd/</span></td>
-                        <td class="py-4 px-6">Được tải lên.</td>
-                        <td class="py-4 px-6">transferred to a device</td>
+                        <td class="py-4 px-6"><strong>do that right away</strong></td>
+                        <td class="py-4 px-6">làm việc đó ngay lập tức</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- 3. FILL-IN-THE-BLANK CHALLENGE -->
+        <!-- 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE) -->
         <section class="glass-card p-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
                     <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN TỪ
-                    </h2>
+                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE)</h2>
                 </div>
                 <button id="checkAnswersBtn" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
@@ -230,7 +204,7 @@
 
             <div class="bg-blue-50 p-6 rounded-lg text-lg leading-loose font-medium text-slate-700">
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> Yun, I just finished recording the <input type="text" data-answer="audio guide" class="input-blank mx-1 w-[120px]"> for the pencil drawings that'll be included in our <input type="text" data-answer="modern art exhibit" class="input-blank mx-1 w-[180px]"> next week.
+                    <span class="text-pink-600 font-bold">W:</span> Yun, I just <input type="text" data-answer="finished recording the audio guide" class="input-blank mx-1 w-[260px]"> for the pencil drawings that'll be included in our <input type="text" data-answer="modern art exhibit" class="input-blank mx-1 w-[180px]"> next week.
                 </p>
                 <p class="mb-4">
                     <span class="text-blue-600 font-bold">M:</span> That's great. But, unfortunately, we have to make one change. The drawing by Claudia Hoffman will no longer be in the exhibit. There was a <input type="text" data-answer="scheduling mix-up" class="input-blank mx-1 w-[180px]">, and it was promised to <input type="text" data-answer="another museum" class="input-blank mx-1 w-[160px]"> starting next week.
@@ -244,11 +218,10 @@
             </div>
         </section>
 
-        <!-- 4. QUESTIONS -->
+        <!-- 4. GIẢI THÍCH CHI TIẾT -->
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
-                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. CÂU HỎI BÀI TẬP
-            </h2>
+                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
                 
                 <!-- Q65 -->
@@ -272,6 +245,9 @@
                             (D) Booking travel for an artist
                             <span class="text-slate-500 text-sm block mt-1">Đặt chuyến đi cho một nghệ sĩ</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người phụ nữ nói: "I just finished recording the audio guide" (Tôi vừa hoàn thành việc ghi âm bản hướng dẫn âm thanh).
                     </div>
                 </div>
 
@@ -297,6 +273,9 @@
                             <span class="text-slate-500 text-sm block mt-1">Khoảnh khắc</span>
                         </div>
                     </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người đàn ông nói: "The drawing by Claudia Hoffman will no longer be in the exhibit" (Bức vẽ của Claudia Hoffman sẽ không còn trong triển lãm nữa). Theo biểu đồ, Claudia Hoffman là nghệ sĩ của tác phẩm "Stormy Sea".
+                    </div>
                 </div>
 
                 <!-- Q67 -->
@@ -320,6 +299,9 @@
                             (D) Load files onto a device
                             <span class="text-slate-500 text-sm block mt-1">Tải tệp lên thiết bị</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Sau khi người đàn ông thông báo về sự thay đổi, người phụ nữ nói: "I'll make that change to the audio-guide recording. I'll do that right away" (Tôi sẽ thực hiện thay đổi đó đối với bản ghi âm hướng dẫn âm thanh. Tôi sẽ làm việc đó ngay lập tức).
                     </div>
                 </div>
 

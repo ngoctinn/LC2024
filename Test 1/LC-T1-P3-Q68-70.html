@@ -12,211 +12,217 @@
 
     <div class="main-container space-y-8">
         
-        
-
-        <!-- Graphic Section -->
-        <section class="glass-card p-6 mb-8">
-            <h2 class="text-xl font-bold text-slate-800 flex items-center mb-4">
-                <i class="fas fa-credit-card text-blue-500 mr-2"></i> Payment Rewards
-            </h2>
-            <div class="overflow-x-auto">
-                <table class="min-w-full bg-white border border-slate-200">
-                    <thead>
-                        <tr class="bg-slate-100">
-                            <th class="py-2 px-4 border">Method</th>
-                            <th class="py-2 px-4 border">Discount</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="py-2 px-4 border text-center">Shelby's Preferred</td>
-                            <td class="py-2 px-4 border text-center font-bold text-blue-600">10% off</td>
-                        </tr>
-                        <tr class="bg-blue-50">
-                            <td class="py-2 px-4 border text-center">EZ-Cash Card</td>
-                            <td class="py-2 px-4 border text-center font-bold text-blue-600">7% off</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2 px-4 border text-center">Student/Senior</td>
-                            <td class="py-2 px-4 border text-center font-bold text-blue-600">5% off</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- 1. SHADOWING FLOW -->
+        <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING
-                </h2>
+                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING</h2>
                 <button id="toggleTranslation" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-purple-200 transition">
                     <i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt
                 </button>
             </div>
             
             <div id="shadowingContainer" class="space-y-6 text-lg">
-                <!-- M -->
+                <!-- M-Cn -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>Hi, / I’d like / a large black coffee / and an egg-and-cheese croissant, / please.</strong>
-                            <span class="chunk-vi">Xin chào, / tôi muốn / một cà phê đen lớn / và một bánh sừng bò trứng và phô mai, / làm ơn.</span>
+                            <strong>I’m glad / we were assigned / to cover the press conference / earlier today.</strong>
+                            <span class="chunk-vi">Tôi rất vui / chúng ta được giao nhiệm vụ / đưa tin về cuộc họp báo / sáng nay.</span>
+                        </div>
+                        <div>
+                            <strong>I counted / seven other major media networks / there, / in addition to ours.</strong>
+                            <span class="chunk-vi">Tôi đã đếm được / bảy mạng lưới truyền thông lớn khác / ở đó, / bên cạnh mạng lưới của chúng ta.</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- W -->
+                <!-- W-Am -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-pink-600 flex-shrink-0">W</div>
                     <div class="w-full">
                         <div>
-                            <strong>Sure. / That'll be eight dollars. / Are you a Shelby's / preferred customer?</strong>
-                            <span class="chunk-vi">Chắc chắn rồi. / Của anh hết tám đô la. / Anh có phải là / khách hàng ưu tiên của Shelby's không?</span>
+                            <strong>Well, / the offshore wind industry / is going to transform / the way this region / gets its power.</strong>
+                            <span class="chunk-vi">Chà, / ngành công nghiệp điện gió ngoài khơi / sẽ thay đổi hoàn toàn / cách khu vực này / có được nguồn năng lượng.</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- M -->
+                <!-- M-Cn -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>Uh, no I'm not. / But I do have / an EZ-Cash card.</strong>
-                            <span class="chunk-vi">À, tôi không phải. / Nhưng tôi có / thẻ EZ-Cash.</span>
+                            <strong>Agreed. / Let’s compare our facts / before we start writing.</strong>
+                            <span class="chunk-vi">Đồng ý. / Hãy so sánh các dữ kiện / trước khi chúng ta bắt đầu viết.</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- W -->
+                <!-- W-Am -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-pink-600 flex-shrink-0">W</div>
                     <div class="w-full">
                         <div>
-                            <strong>Great. / Let me ring that up / for you.</strong>
-                            <span class="chunk-vi">Tuyệt vời. / Để tôi thanh toán / cho anh.</span>
+                            <strong>So / the largest cluster / of wind turbines— / off the coast of Winston— / is already built.</strong>
+                            <span class="chunk-vi">Vậy là / cụm lớn nhất / các tuabin gió— / ngoài khơi Winston— / đã được xây dựng xong.</span>
+                        </div>
+                        <div>
+                            <strong>The other sites / are at different stages / of construction, / though Lanchester / is also close to being done.</strong>
+                            <span class="chunk-vi">Các địa điểm khác / đang ở các giai đoạn khác nhau / của quá trình xây dựng, / mặc dù Lanchester / cũng sắp hoàn thành.</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- M -->
+                <!-- M-Cn -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>By the way, / I'd like to order breakfast / for my team / tomorrow morning. / Can I place / that order / ahead of time?</strong>
-                            <span class="chunk-vi">Nhân tiện, / tôi muốn đặt bữa sáng / cho nhóm của mình / vào sáng mai. / Tôi có thể đặt hàng / trước thời hạn không?</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- W -->
-                <div class="flex gap-4">
-                    <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-pink-600 flex-shrink-0">W</div>
-                    <div class="w-full">
-                        <div>
-                            <strong>Sure. / Would you like / to do that now?</strong>
-                            <span class="chunk-vi">Chắc chắn rồi. / Anh có muốn / làm việc đó ngay bây giờ không?</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- M -->
-                <div class="flex gap-4">
-                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
-                    <div class="w-full">
-                        <div>
-                            <strong>No, / I'll call you / later today / when I know / what everyone wants. / Thanks / for the information.</strong>
-                            <span class="chunk-vi">Không, / tôi sẽ gọi cho cô / vào cuối ngày hôm nay / khi tôi biết / mọi người muốn gì. / Cảm ơn / về thông tin.</span>
+                            <strong>Right. / And I think / it’s crucial / for us to focus / on how many new jobs / related to assembling and maintaining / the turbines / are opening up / in the area / as a result of this.</strong>
+                            <span class="chunk-vi">Đúng vậy. / Và tôi nghĩ / điều quan trọng là / chúng ta phải tập trung / vào việc có bao nhiêu việc làm mới / liên quan đến lắp ráp và bảo trì / các tuabin / đang mở ra / trong khu vực / như một kết quả của việc này.</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2. BUSINESS VOCAB -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-briefcase text-orange-500 mr-2"></i> 2. TỪ VỰNG TRỌNG TÂM
-                </h2>
+                    <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
-            <table class="w-full text-left border-collapse">
-                
+            <table class="w-full text-left border-collapse chunk-table">
+                <thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>black coffee</strong> <br><span class="text-slate-400 text-sm">/blæk ˈkɒfi/</span></td>
-                        <td class="py-4 px-6">Cà phê đen.</td>
-                        <td class="py-4 px-6">coffee without milk</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6">
+                            <div class="font-bold text-blue-700">assigned to cover the press conference</div>
+                            <div class="text-slate-400 text-xs mt-1">/əˈsaɪnd tuː ˈkʌvər ðə pres ˈkɒnfərəns/</div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="text-sm">được giao nhiệm vụ đưa tin về cuộc họp báo</div>
+                            <div class="mt-2">
+                                <span class="paraphrase-tag">Paraphrase</span>
+                                <span class="text-xs text-slate-500">→ <b>Journalists</b> (trong câu hỏi 68)</span>
+                            </div>
+                        </td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>croissant</strong> <br><span class="text-slate-400 text-sm">/ˈkwæ sɒ̃/</span></td>
-                        <td class="py-4 px-6">Bánh sừng bò.</td>
-                        <td class="py-4 px-6">flaky pastry</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6">
+                            <div class="font-bold text-blue-700">major media networks</div>
+                            <div class="text-slate-400 text-xs mt-1">/ˈmeɪdʒər ˈmiːdiə ˈnetwɜːrks/</div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="text-sm">các mạng lưới truyền thông lớn</div>
+                        </td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>preferred customer</strong> <br><span class="text-slate-400 text-sm">/prɪˈfɜːd ˈkʌstəmə(r)/</span></td>
-                        <td class="py-4 px-6">Khách hàng ưu tiên.</td>
-                        <td class="py-4 px-6">loyalty member</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6">
+                            <div class="font-bold text-blue-700">offshore wind industry</div>
+                            <div class="text-slate-400 text-xs mt-1">/ˌɒfˈʃɔːr wɪnd ˈɪndəstri/</div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="text-sm">ngành công nghiệp điện gió ngoài khơi</div>
+                        </td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>EZ-Cash card</strong> <br><span class="text-slate-400 text-sm">/ˌiːˈziː kæʃ kɑːrd/</span></td>
-                        <td class="py-4 px-6">Thẻ EZ-Cash.</td>
-                        <td class="py-4 px-6">prepaid payment card</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6">
+                            <div class="font-bold text-blue-700">transform the way</div>
+                            <div class="text-slate-400 text-xs mt-1">/trænsˈfɔːrm ðə weɪ/</div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="text-sm">thay đổi hoàn toàn cách thức</div>
+                        </td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>ring up</strong> <br><span class="text-slate-400 text-sm">/rɪŋ ʌp/</span></td>
-                        <td class="py-4 px-6">Thanh toán, ghi hóa đơn.</td>
-                        <td class="py-4 px-6">process payment</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6">
+                            <div class="font-bold text-blue-700">largest cluster of wind turbines</div>
+                            <div class="text-slate-400 text-xs mt-1">/ˈlɑːrdʒɪst ˈklʌstər əv wɪnd ˈtɜːrbaɪnz/</div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="text-sm">cụm tuabin gió lớn nhất</div>
+                        </td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>ahead of time</strong> <br><span class="text-slate-400 text-sm">/əˈhed əv taɪm/</span></td>
-                        <td class="py-4 px-6">Trước thời hạn, làm trước.</td>
-                        <td class="py-4 px-6">in advance</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6">
+                            <div class="font-bold text-blue-700">off the coast of Winston</div>
+                            <div class="text-slate-400 text-xs mt-1">/ɒf ðə kəʊst əv ˈwɪnstən/</div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="text-sm">ngoài khơi Winston</div>
+                        </td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>later today</strong> <br><span class="text-slate-400 text-sm">/ˈleɪtər təˈdeɪ/</span></td>
-                        <td class="py-4 px-6">Vào cuối ngày hôm nay.</td>
-                        <td class="py-4 px-6">afterwards on the same day</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6">
+                            <div class="font-bold text-blue-700">already built</div>
+                            <div class="text-slate-400 text-xs mt-1">/ɔːlˈredi bɪlt/</div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="text-sm">đã được xây dựng xong</div>
+                            <div class="mt-2">
+                                <span class="paraphrase-tag">Paraphrase</span>
+                                <span class="text-xs text-slate-500">→ <b>already been completed</b> (trong câu hỏi 69)</span>
+                            </div>
+                        </td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>information</strong> <br><span class="text-slate-400 text-sm">/ˌɪnfəˈmeɪʃn/</span></td>
-                        <td class="py-4 px-6">Thông tin.</td>
-                        <td class="py-4 px-6">data, details</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6">
+                            <div class="font-bold text-blue-700">different stages of construction</div>
+                            <div class="text-slate-400 text-xs mt-1">/ˈdɪfrənt ˈsteɪdʒɪz əv kənˈstrʌkʃn/</div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="text-sm">các giai đoạn xây dựng khác nhau</div>
+                        </td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>discount</strong> <br><span class="text-slate-400 text-sm">/ˈdɪskaʊnt/</span></td>
-                        <td class="py-4 px-6">Giảm giá.</td>
-                        <td class="py-4 px-6">price reduction</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6">
+                            <div class="font-bold text-blue-700">crucial for us to focus on</div>
+                            <div class="text-slate-400 text-xs mt-1">/ˈkruːʃl fər ʌs tuː ˈfəʊkəs ɒn/</div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="text-sm">quan trọng để chúng ta tập trung vào</div>
+                        </td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>rewards</strong> <br><span class="text-slate-400 text-sm">/rɪˈwɔːdz/</span></td>
-                        <td class="py-4 px-6">Phần thưởng, ưu đãi.</td>
-                        <td class="py-4 px-6">incentives, perks</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6">
+                            <div class="font-bold text-blue-700">assembling and maintaining</div>
+                            <div class="text-slate-400 text-xs mt-1">/əˈsemblɪŋ ənd meɪnˈteɪnɪŋ/</div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="text-sm">lắp ráp và bảo trì</div>
+                        </td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>place an order</strong> <br><span class="text-slate-400 text-sm">/pleɪs æn ˈɔːdə(r)/</span></td>
-                        <td class="py-4 px-6">Đặt hàng.</td>
-                        <td class="py-4 px-6">make a purchase request</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>preferred</strong> <br><span class="text-slate-400 text-sm">/prɪˈfɜːd/</span></td>
-                        <td class="py-4 px-6">Được ưu tiên, được thích hơn.</td>
-                        <td class="py-4 px-6">favored</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6">
+                            <div class="font-bold text-blue-700">new jobs opening up</div>
+                            <div class="text-slate-400 text-xs mt-1">/njuː dʒɒbz ˈəʊpənɪŋ ʌp/</div>
+                        </td>
+                        <td class="py-4 px-6">
+                            <div class="text-sm">các công việc mới đang mở ra</div>
+                            <div class="mt-2">
+                                <span class="paraphrase-tag">Paraphrase</span>
+                                <span class="text-xs text-slate-500">→ <b>Work opportunities</b> (trong câu hỏi 70)</span>
+                            </div>
+                        </td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- 3. FILL-IN-THE-BLANK CHALLENGE -->
+        <!-- 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE) -->
         <section class="glass-card p-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
                     <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN TỪ
-                    </h2>
+                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE)</h2>
                 </div>
                 <button id="checkAnswersBtn" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
@@ -225,115 +231,83 @@
             
             <!-- Word Bank -->
             <div class="mb-6 flex flex-wrap gap-2 justify-center bg-slate-50 p-4 rounded-lg border border-slate-100">
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">black coffee</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">croissant</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">preferred customer</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">EZ-Cash card</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">ahead of time</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">later today</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">cover the press conference</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">offshore wind industry</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">compare our facts</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">largest cluster</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">off the coast</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">already built</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">assembling and maintaining</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">new jobs</span>
             </div>
 
             <div class="bg-blue-50 p-6 rounded-lg text-lg leading-loose font-medium text-slate-700">
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> Hi, I’d like a large <input type="text" data-answer="black coffee" class="input-blank mx-1 w-[130px]"> and an egg-and-cheese <input type="text" data-answer="croissant" class="input-blank mx-1 w-[110px]">, please.
+                    <span class="text-blue-600 font-bold">M:</span> I’m glad we were assigned to <input type="text" data-answer="cover the press conference" class="input-blank mx-1 w-[260px]"> earlier today. I counted seven other major media networks there, in addition to ours.
                 </p>
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> Sure. That'll be eight dollars. Are you a Shelby's <input type="text" data-answer="preferred customer" class="input-blank mx-1 w-[180px]">?
+                    <span class="text-pink-600 font-bold">W:</span> Well, the <input type="text" data-answer="offshore wind industry" class="input-blank mx-1 w-[240px]"> is going to transform the way this region gets its power.
                 </p>
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> Uh, no I'm not. But I do have an <input type="text" data-answer="EZ-Cash card" class="input-blank mx-1 w-[140px]">.
+                    <span class="text-blue-600 font-bold">M:</span> Agreed. Let’s <input type="text" data-answer="compare our facts" class="input-blank mx-1 w-[180px]"> before we start writing.
                 </p>
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> Great. Let me ring that up for you.
-                </p>
-                <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> By the way, I'd like to order breakfast for my team tomorrow morning. Can I place that order <input type="text" data-answer="ahead of time" class="input-blank mx-1 w-[130px]">?
-                </p>
-                <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> Sure. Would you like to do that now?
+                    <span class="text-pink-600 font-bold">W:</span> So the <input type="text" data-answer="largest cluster" class="input-blank mx-1 w-[160px]"> of wind turbines— <input type="text" data-answer="off the coast" class="input-blank mx-1 w-[140px]"> of Winston—is <input type="text" data-answer="already built" class="input-blank mx-1 w-[140px]">. The other sites are at different stages of construction, though Lanchester is also close to being done.
                 </p>
                 <p>
-                    <span class="text-blue-600 font-bold">M:</span> No, I'll call you <input type="text" data-answer="later today" class="input-blank mx-1 w-[120px]"> when I know what everyone wants. Thanks for the information.
+                    <span class="text-blue-600 font-bold">M:</span> Right. And I think it’s crucial for us to focus on how many <input type="text" data-answer="new jobs" class="input-blank mx-1 w-[120px]"> related to <input type="text" data-answer="assembling and maintaining" class="input-blank mx-1 w-[240px]"> the turbines are opening up in the area as a result of this.
                 </p>
             </div>
         </section>
 
-        <!-- 4. QUESTIONS -->
+        <!-- 4. GIẢI THÍCH CHI TIẾT -->
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
-                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. CÂU HỎI BÀI TẬP
-            </h2>
+                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
                 
                 <!-- Q68 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">68. Where most likely are the speakers?</div>
-                    <div class="text-slate-500 text-sm mb-4">Các nhân vật có khả năng đang ở đâu nhất?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">68. Who most likely are the speakers?</div>
+                    <div class="text-slate-500 text-sm mb-4">Các diễn giả có khả năng là ai nhất?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">
-                            (A) At a cafe
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Tại một quán cà phê</span>
-                        </div>
-                        <div>
-                            (B) At a grocery store
-                            <span class="text-slate-500 text-sm block mt-1">Tại một cửa hàng tạp hóa</span>
-                        </div>
-                        <div>
-                            (C) At a fitness center
-                            <span class="text-slate-500 text-sm block mt-1">Tại một trung tâm thể hình</span>
-                        </div>
-                        <div>
-                            (D) At a bank
-                            <span class="text-slate-500 text-sm block mt-1">Tại một ngân hàng</span>
-                        </div>
+                        <div>(A) Urban planners</div>
+                        <div class="font-bold text-blue-600">(B) Journalists</div>
+                        <div>(C) Engineers</div>
+                        <div>(D) Environmental scientists</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người đàn ông nói họ được giao nhiệm vụ "cover the press conference" (đưa tin về cuộc họp báo) và đề cập đến "major media networks" (các mạng lưới truyền thông), cho thấy họ là nhà báo.
                     </div>
                 </div>
 
                 <!-- Q69 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">69. Look at the graphic. How much of a discount will the man receive?</div>
-                    <div class="text-slate-500 text-sm mb-4">Nhìn vào hình ảnh. Người đàn ông sẽ nhận được mức giảm giá bao nhiêu?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">69. Look at the graphic. Which site has already been completed?</div>
+                    <div class="text-slate-500 text-sm mb-4">Nhìn vào hình. Địa điểm nào đã được hoàn thành?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">
-                            (A) 7%
-                            <span class="text-slate-500 text-sm font-normal block mt-1">7%</span>
-                        </div>
-                        <div>
-                            (B) 10%
-                            <span class="text-slate-500 text-sm block mt-1">10%</span>
-                        </div>
-                        <div>
-                            (C) 5%
-                            <span class="text-slate-500 text-sm block mt-1">5%</span>
-                        </div>
-                        <div>
-                            (D) 2%
-                            <span class="text-slate-500 text-sm block mt-1">2%</span>
-                        </div>
+                        <div>(A) Site A</div>
+                        <div>(B) Site B</div>
+                        <div>(C) Site C</div>
+                        <div class="font-bold text-blue-600">(D) Site D</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người phụ nữ nói "the largest cluster of wind turbines— off the coast of Winston— is already built". Dựa trên sơ đồ (theo logic bài học), cụm lớn nhất nằm ở Site D.
                     </div>
                 </div>
 
                 <!-- Q70 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">70. What does the man say he will do later today?</div>
-                    <div class="text-slate-500 text-sm mb-4">Người đàn ông nói anh ấy sẽ làm gì vào cuối ngày hôm nay?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">70. What does the man suggest focusing on?</div>
+                    <div class="text-slate-500 text-sm mb-4">Người đàn ông đề nghị tập trung vào điều gì?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">
-                            (A) Call a business
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Gọi cho một cơ sở kinh doanh</span>
-                        </div>
-                        <div>
-                            (B) Return a receipt
-                            <span class="text-slate-500 text-sm block mt-1">Trả lại hóa đơn</span>
-                        </div>
-                        <div>
-                            (C) Check a menu online
-                            <span class="text-slate-500 text-sm block mt-1">Kiểm tra thực đơn trực tuyến</span>
-                        </div>
-                        <div>
-                            (D) Speak to his manager
-                            <span class="text-slate-500 text-sm block mt-1">Nói chuyện với quản lý của mình</span>
-                        </div>
+                        <div class="font-bold text-blue-600">(A) Work opportunities</div>
+                        <div>(B) Wind turbine costs</div>
+                        <div>(C) Supply chain issues</div>
+                        <div>(D) Power capacity</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người đàn ông đề nghị tập trung vào "how many new jobs... are opening up", tức là các cơ hội việc làm (work opportunities).
                     </div>
                 </div>
 

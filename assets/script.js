@@ -54,6 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 5. Scroll active link into view in sidebar
+    const activeLink = document.querySelector('.tree-link.active');
+    if (activeLink) {
+        activeLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
 });
 
 function injectAudioPlayer() {
@@ -70,75 +76,73 @@ function injectAudioPlayer() {
         const audioPath = `${projectRoot}audio/Test_${testNum}/${audioFile}`;
 
         const audioHTML = `
-            <section class="glass-card p-6 mb-8 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-100 shadow-inner">
-                <div class="flex items-center gap-6">
-                    <div class="flex-grow w-full">
-                        <audio id="mainAudio" controls class="w-full h-10 mb-4 rounded-lg">
-                            <source src="${audioPath}" type="audio/mpeg">
-                        </audio>
-                        
-                        <div class="flex flex-wrap gap-2 items-center justify-start">
-                            <button id="back5s" class="bg-slate-600 hover:bg-slate-700 text-white px-3 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center" title="Lùi 5s - Phím tắt: ←">
-                                <i class="fas fa-backward mr-1"></i> -5s
-                            </button>
+            <div class="sticky-audio-container">
+                <section class="glass-card p-4 md:p-6 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-100 shadow-inner">
+                    <div class="flex items-center gap-6">
+                        <div class="flex-grow w-full">
+                            <audio id="mainAudio" controls class="w-full h-10 mb-4 rounded-lg">
+                                <source src="${audioPath}" type="audio/mpeg">
+                            </audio>
+                            
+                            <div class="flex flex-wrap gap-2 items-center justify-start">
+                                <button id="back5s" class="bg-slate-600 hover:bg-slate-700 text-white px-3 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center" title="Lùi 5s - Phím tắt: ←">
+                                    <i class="fas fa-backward mr-1"></i> -5s
+                                </button>
 
-                            <button id="skipIntroBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md transition transform active:scale-95 flex items-center" title="Bắt đầu - Phím tắt: S">
-                                <i class="fas fa-forward-step mr-2"></i> Bắt đầu <span class="ml-1 opacity-60 font-normal">(S)</span>
-                            </button>
+                                <button id="skipIntroBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md transition transform active:scale-95 flex items-center" title="Bắt đầu - Phím tắt: S">
+                                    <i class="fas fa-forward-step mr-2"></i> Bắt đầu <span class="ml-1 opacity-60 font-normal">(S)</span>
+                                </button>
 
-                            <button id="forward5s" class="bg-slate-600 hover:bg-slate-700 text-white px-3 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center" title="Tiến 5s - Phím tắt: →">
-                                +5s <i class="fas fa-forward ml-1"></i>
-                            </button>
-                            
-                            <div class="h-6 w-px bg-slate-300 mx-2"></div>
-                            
-                            <button id="setPointABtn" class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center" title="Phím tắt: A">
-                                <i class="fas fa-map-pin mr-2"></i> Điểm A <span class="ml-1 opacity-60 font-normal">(A)</span> <span id="labelA" class="ml-2 bg-black/20 px-1.5 py-0.5 rounded text-[10px]">--:--</span>
-                            </button>
-                            
-                            <button id="setPointBBtn" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center" title="Phím tắt: B">
-                                <i class="fas fa-map-pin mr-2"></i> Điểm B <span class="ml-1 opacity-60 font-normal">(B)</span> <span id="labelB" class="ml-2 bg-black/20 px-1.5 py-0.5 rounded text-[10px]">--:--</span>
-                            </button>
-                            
-                            <button id="clearLoopBtn" class="bg-slate-400 hover:bg-slate-500 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center opacity-50 pointer-events-none" title="Phím tắt: C">
-                                <i class="fas fa-times-circle mr-2"></i> Xóa <span class="ml-1 opacity-60 font-normal">(C)</span>
-                            </button>
+                                <button id="forward5s" class="bg-slate-600 hover:bg-slate-700 text-white px-3 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center" title="Tiến 5s - Phím tắt: →">
+                                    +5s <i class="fas fa-forward ml-1"></i>
+                                </button>
+                                
+                                <div class="h-6 w-px bg-slate-300 mx-2"></div>
+                                
+                                <button id="setPointABtn" class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center" title="Phím tắt: A">
+                                    <i class="fas fa-map-pin mr-2"></i> Điểm A <span class="ml-1 opacity-60 font-normal">(A)</span> <span id="labelA" class="ml-2 bg-black/20 px-1.5 py-0.5 rounded text-[10px]">--:--</span>
+                                </button>
+                                
+                                <button id="setPointBBtn" class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center" title="Phím tắt: B">
+                                    <i class="fas fa-map-pin mr-2"></i> Điểm B <span class="ml-1 opacity-60 font-normal">(B)</span> <span id="labelB" class="ml-2 bg-black/20 px-1.5 py-0.5 rounded text-[10px]">--:--</span>
+                                </button>
+                                
+                                <button id="clearLoopBtn" class="bg-slate-400 hover:bg-slate-500 text-white px-4 py-2 rounded-lg text-xs font-bold shadow-md transition flex items-center opacity-50 pointer-events-none" title="Phím tắt: C">
+                                    <i class="fas fa-times-circle mr-2"></i> Xóa <span class="ml-1 opacity-60 font-normal">(C)</span>
+                                </button>
 
-                            <div class="h-6 w-px bg-slate-300 mx-2"></div>
+                                <div class="h-6 w-px bg-slate-300 mx-2"></div>
 
-                            <!-- Speed Control -->
-                            <div class="flex items-center bg-white/50 px-3 py-1.5 rounded-lg border border-slate-200">
-                                <span class="text-[10px] font-bold text-slate-500 uppercase mr-3">Speed</span>
-                                <button id="speedDown" class="w-6 h-6 flex items-center justify-center rounded bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 transition">-</button>
-                                <span id="speedValue" class="mx-3 text-xs font-bold text-blue-700 min-w-[35px] text-center">1.1x</span>
-                                <button id="speedUp" class="w-6 h-6 flex items-center justify-center rounded bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 transition">+</button>
-                            </div>
-                            
-                            <div id="loopStatus" class="ml-auto text-[10px] font-bold text-indigo-600 uppercase tracking-tighter hidden animate-bounce">
-                                <i class="fas fa-sync fa-spin mr-1"></i> Đang Lặp A-B
+                                <!-- Speed Control -->
+                                <div class="flex items-center bg-white/50 px-3 py-1.5 rounded-lg border border-slate-200">
+                                    <span class="text-[10px] font-bold text-slate-500 uppercase mr-3">Speed</span>
+                                    <button id="speedDown" class="w-6 h-6 flex items-center justify-center rounded bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 transition">-</button>
+                                    <span id="speedValue" class="mx-3 text-xs font-bold text-blue-700 min-w-[35px] text-center">1.1x</span>
+                                    <button id="speedUp" class="w-6 h-6 flex items-center justify-center rounded bg-white border border-slate-200 text-slate-600 hover:bg-blue-50 transition">+</button>
+                                </div>
+                                
+                                <div id="loopStatus" class="ml-auto text-[10px] font-bold text-indigo-600 uppercase tracking-tighter hidden animate-bounce">
+                                    <i class="fas fa-sync fa-spin mr-1"></i> Đang Lặp A-B
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         `;
 
-        const header = document.querySelector('header');
-        if (header) {
-            header.insertAdjacentHTML('afterend', audioHTML);
+        const container = document.querySelector('.main-container');
+        if (container) {
+            container.insertAdjacentHTML('afterbegin', audioHTML);
             initAudioControls();
-        } else {
-            const container = document.querySelector('.main-container');
-            if (container) {
-                container.insertAdjacentHTML('afterbegin', audioHTML);
-                initAudioControls();
-            }
         }
     }
 }
 
 function initAudioControls() {
     const audio = document.getElementById('mainAudio');
+    if (!audio) return;
+
     const skipBtn = document.getElementById('skipIntroBtn');
     const backBtn = document.getElementById('back5s');
     const forwardBtn = document.getElementById('forward5s');
@@ -165,7 +169,10 @@ function initAudioControls() {
 
     const actionSkip = () => {
         audio.currentTime = 5;
-        audio.play();
+        actionSetA();
+        audio.play().catch(err => {
+            console.log("Auto-play prevented by browser. Click 'Bắt đầu' or press 'S' to start.");
+        });
     };
 
     const actionSeek = (delta) => {
@@ -254,6 +261,11 @@ function initAudioControls() {
             btnClear.classList.remove('opacity-50', 'pointer-events-none');
         }
     }
+
+    // Auto-skip and set point A on load
+    // Note: Most browsers require a user interaction to play audio. 
+    // This will set the time and mark A, and attempt to play.
+    actionSkip();
 }
 
 function injectSidebar() {
@@ -261,7 +273,34 @@ function injectSidebar() {
     const projectRoot = currentPath.substring(0, currentPath.indexOf('/LC2024/') + 8);
     const getPath = (subPath) => projectRoot + subPath;
 
-    const sidebarHTML = `
+    const tests = [
+        {
+            num: '01',
+            color: 'blue',
+            folder: 'Test 1',
+            prefix: 'T1',
+            part3: ['32-34', '35-37', '38-40', '41-43', '44-46', '47-49', '50-52', '53-55', '56-58', '59-61', '62-64', '65-67', '68-70'],
+            part4: ['71-73', '74-76', '77-79', '80-82', '83-85', '86-88', '89-91', '92-94', '95-97', '98-100']
+        },
+        {
+            num: '02',
+            color: 'purple',
+            folder: 'Test 2',
+            prefix: 'T2',
+            part3: ['32-34', '35-37', '38-40', '41-43', '44-46', '47-49', '50-52', '53-55', '56-58', '59-61', '62-64', '65-67', '68-70'],
+            part4: ['71-73', '74-76', '77-79', '80-82', '83-85', '86-88', '89-91', '92-94', '95-97', '98-100']
+        },
+        {
+            num: '03',
+            color: 'green',
+            folder: 'Test 3',
+            prefix: 'T3',
+            part3: ['32-34', '35-37', '38-40', '41-43', '44-46', '47-49', '50-52', '53-55', '56-58', '59-61', '62-64', '65-67', '68-70'],
+            part4: ['71-73', '74-76', '77-79', '80-82', '83-85', '86-88', '89-91', '92-94', '95-97', '98-100']
+        }
+    ];
+
+    let sidebarHTML = `
     <div class="sidebar">
         <div class="mb-8 px-4">
             <a href="${getPath('index.html')}" class="flex items-center text-blue-800 font-bold text-xl hover:text-blue-600 transition">
@@ -270,75 +309,35 @@ function injectSidebar() {
             </a>
         </div>
         
-        <div class="space-y-6">
-            <!-- Test 1 -->
+        <div class="space-y-6 pb-20">
+    `;
+
+    tests.forEach(test => {
+        sidebarHTML += `
             <div class="tree-item">
                 <div class="tree-header px-4">
-                    <i class="fas fa-file-audio mr-2 text-blue-500"></i> Test 01
+                    <i class="fas fa-file-audio mr-2 text-${test.color}-500"></i> Test ${test.num}
                 </div>
                 <div class="ml-4 border-l border-slate-200 pl-2 mt-2 space-y-1">
                     <div class="text-[9px] font-black text-slate-400 px-3 py-1 uppercase tracking-widest">Part 3</div>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q32-34.html')}" class="tree-link ${currentPath.includes('T1-P3-Q32-34') ? 'active' : ''}">Q32-34</a>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q35-37.html')}" class="tree-link ${currentPath.includes('T1-P3-Q35-37') ? 'active' : ''}">Q35-37</a>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q38-40.html')}" class="tree-link ${currentPath.includes('T1-P3-Q38-40') ? 'active' : ''}">Q38-40</a>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q41-43.html')}" class="tree-link ${currentPath.includes('T1-P3-Q41-43') ? 'active' : ''}">Q41-43</a>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q44-46.html')}" class="tree-link ${currentPath.includes('T1-P3-Q44-46') ? 'active' : ''}">Q44-46</a>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q47-49.html')}" class="tree-link ${currentPath.includes('T1-P3-Q47-49') ? 'active' : ''}">Q47-49</a>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q50-52.html')}" class="tree-link ${currentPath.includes('T1-P3-Q50-52') ? 'active' : ''}">Q50-52</a>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q53-55.html')}" class="tree-link ${currentPath.includes('T1-P3-Q53-55') ? 'active' : ''}">Q53-55</a>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q56-58.html')}" class="tree-link ${currentPath.includes('T1-P3-Q56-58') ? 'active' : ''}">Q56-58</a>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q59-61.html')}" class="tree-link ${currentPath.includes('T1-P3-Q59-61') ? 'active' : ''}">Q59-61</a>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q62-64.html')}" class="tree-link ${currentPath.includes('T1-P3-Q62-64') ? 'active' : ''}">Q62-64</a>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q65-67.html')}" class="tree-link ${currentPath.includes('T1-P3-Q65-67') ? 'active' : ''}">Q65-67</a>
-                    <a href="${getPath('Test 1/LC-T1-P3-Q68-70.html')}" class="tree-link ${currentPath.includes('T1-P3-Q68-70') ? 'active' : ''}">Q68-70</a>
+                    ${test.part3.map(q => {
+                        const fileName = `LC-${test.prefix}-P3-Q${q}.html`;
+                        const isActive = currentPath.includes(fileName);
+                        return `<a href="${getPath(`${test.folder}/${fileName}`)}" class="tree-link ${isActive ? 'active' : ''}">Q${q}</a>`;
+                    }).join('')}
                     
                     <div class="text-[9px] font-black text-slate-400 px-3 py-1 uppercase tracking-widest mt-2">Part 4</div>
-                    <a href="${getPath('Test 1/LC-T1-P4-Q71-73.html')}" class="tree-link ${currentPath.includes('T1-P4-Q71-73') ? 'active' : ''}">Q71-73</a>
-                    <a href="${getPath('Test 1/LC-T1-P4-Q77-79.html')}" class="tree-link ${currentPath.includes('T1-P4-Q77-79') ? 'active' : ''}">Q77-79</a>
-                    <a href="${getPath('Test 1/LC-T1-P4-Q80-82.html')}" class="tree-link ${currentPath.includes('T1-P4-Q80-82') ? 'active' : ''}">Q80-82</a>
-                    <a href="${getPath('Test 1/LC-T1-P4-Q83-85.html')}" class="tree-link ${currentPath.includes('T1-P4-Q83-85') ? 'active' : ''}">Q83-85</a>
-                    <a href="${getPath('Test 1/LC-T1-P4-Q86-88.html')}" class="tree-link ${currentPath.includes('T1-P4-Q86-88') ? 'active' : ''}">Q86-88</a>
-                    <a href="${getPath('Test 1/LC-T1-P4-Q89-91.html')}" class="tree-link ${currentPath.includes('T1-P4-Q89-91') ? 'active' : ''}">Q89-91</a>
-                    <a href="${getPath('Test 1/LC-T1-P4-Q92-94.html')}" class="tree-link ${currentPath.includes('T1-P4-Q92-94') ? 'active' : ''}">Q92-94</a>
-                    <a href="${getPath('Test 1/LC-T1-P4-Q95-97.html')}" class="tree-link ${currentPath.includes('T1-P4-Q95-97') ? 'active' : ''}">Q95-97</a>
-                    <a href="${getPath('Test 1/LC-T1-P4-Q98-100.html')}" class="tree-link ${currentPath.includes('T1-P4-Q98-100') ? 'active' : ''}">Q98-100</a>
+                    ${test.part4.map(q => {
+                        const fileName = `LC-${test.prefix}-P4-Q${q}.html`;
+                        const isActive = currentPath.includes(fileName);
+                        return `<a href="${getPath(`${test.folder}/${fileName}`)}" class="tree-link ${isActive ? 'active' : ''}">Q${q}</a>`;
+                    }).join('')}
                 </div>
             </div>
+        `;
+    });
 
-            <!-- Test 2 -->
-            <div class="tree-item">
-                <div class="tree-header px-4">
-                    <i class="fas fa-file-audio mr-2 text-purple-500"></i> Test 02
-                </div>
-                <div class="ml-4 border-l border-slate-200 pl-2 mt-2 space-y-1">
-                    <div class="text-[9px] font-black text-slate-400 px-3 py-1 uppercase tracking-widest">Part 3</div>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q32-34.html')}" class="tree-link ${currentPath.includes('T2-P3-Q32-34') ? 'active' : ''}">Q32-34</a>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q35-37.html')}" class="tree-link ${currentPath.includes('T2-P3-Q35-37') ? 'active' : ''}">Q35-37</a>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q38-40.html')}" class="tree-link ${currentPath.includes('T2-P3-Q38-40') ? 'active' : ''}">Q38-40</a>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q41-43.html')}" class="tree-link ${currentPath.includes('T2-P3-Q41-43') ? 'active' : ''}">Q41-43</a>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q44-46.html')}" class="tree-link ${currentPath.includes('T2-P3-Q44-46') ? 'active' : ''}">Q44-46</a>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q47-49.html')}" class="tree-link ${currentPath.includes('T2-P3-Q47-49') ? 'active' : ''}">Q47-49</a>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q50-52.html')}" class="tree-link ${currentPath.includes('T2-P3-Q50-52') ? 'active' : ''}">Q50-52</a>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q53-55.html')}" class="tree-link ${currentPath.includes('T2-P3-Q53-55') ? 'active' : ''}">Q53-55</a>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q56-58.html')}" class="tree-link ${currentPath.includes('T2-P3-Q56-58') ? 'active' : ''}">Q56-58</a>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q59-61.html')}" class="tree-link ${currentPath.includes('T2-P3-Q59-61') ? 'active' : ''}">Q59-61</a>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q62-64.html')}" class="tree-link ${currentPath.includes('T2-P3-Q62-64') ? 'active' : ''}">Q62-64</a>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q65-67.html')}" class="tree-link ${currentPath.includes('T2-P3-Q65-67') ? 'active' : ''}">Q65-67</a>
-                    <a href="${getPath('Test 2/LC-T2-P3-Q68-70.html')}" class="tree-link ${currentPath.includes('T2-P3-Q68-70') ? 'active' : ''}">Q68-70</a>
-
-                    <div class="text-[9px] font-black text-slate-400 px-3 py-1 uppercase tracking-widest mt-2">Part 4</div>
-                    <a href="${getPath('Test 2/LC-T2-P4-Q71-73.html')}" class="tree-link ${currentPath.includes('T2-P4-Q71-73') ? 'active' : ''}">Q71-73</a>
-                    <a href="${getPath('Test 2/LC-T2-P4-Q74-76.html')}" class="tree-link ${currentPath.includes('T2-P4-Q74-76') ? 'active' : ''}">Q74-76</a>
-                    <a href="${getPath('Test 2/LC-T2-P4-Q77-79.html')}" class="tree-link ${currentPath.includes('T2-P4-Q77-79') ? 'active' : ''}">Q77-79</a>
-                    <a href="${getPath('Test 2/LC-T2-P4-Q80-82.html')}" class="tree-link ${currentPath.includes('T2-P4-Q80-82') ? 'active' : ''}">Q80-82</a>
-                    <a href="${getPath('Test 2/LC-T2-P4-Q83-85.html')}" class="tree-link ${currentPath.includes('T2-P4-Q83-85') ? 'active' : ''}">Q83-85</a>
-                    <a href="${getPath('Test 2/LC-T2-P4-Q86-88.html')}" class="tree-link ${currentPath.includes('T2-P4-Q86-88') ? 'active' : ''}">Q86-88</a>
-                    <a href="${getPath('Test 2/LC-T2-P4-Q89-91.html')}" class="tree-link ${currentPath.includes('T2-P4-Q89-91') ? 'active' : ''}">Q89-91</a>
-                    <a href="${getPath('Test 2/LC-T2-P4-Q92-94.html')}" class="tree-link ${currentPath.includes('T2-P4-Q92-94') ? 'active' : ''}">Q92-94</a>
-                    <a href="${getPath('Test 2/LC-T2-P4-Q95-97.html')}" class="tree-link ${currentPath.includes('T2-P4-Q95-97') ? 'active' : ''}">Q95-97</a>
-                    <a href="${getPath('Test 2/LC-T2-P4-Q98-100.html')}" class="tree-link ${currentPath.includes('T2-P4-Q98-100') ? 'active' : ''}">Q98-100</a>
-                </div>
-            </div>
+    sidebarHTML += `
         </div>
     </div>
     `;

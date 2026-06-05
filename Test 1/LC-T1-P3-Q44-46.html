@@ -14,12 +14,11 @@
         
         
 
-        <!-- 1. SHADOWING FLOW -->
+        <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING
-                </h2>
+                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING</h2>
                 <button id="toggleTranslation" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-purple-200 transition">
                     <i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt
                 </button>
@@ -80,87 +79,70 @@
             </div>
         </section>
 
-        <!-- 2. BUSINESS VOCAB -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-briefcase text-orange-500 mr-2"></i> 2. TỪ VỰNG TRỌNG TÂM
-                </h2>
+                    <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
             <table class="w-full text-left border-collapse">
-                
+                <thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>demonstrate</strong> <br><span class="text-slate-400 text-sm">/ˈdemənstreɪt/</span></td>
-                        <td class="py-4 px-6">Thuyết trình, biểu diễn.</td>
-                        <td class="py-4 px-6">show how it works</td>
+                        <td class="py-4 px-6"><strong>demonstrate your company’s new compact printer</strong></td>
+                        <td class="py-4 px-6">thuyết trình về máy in nhỏ gọn mới của công ty bạn <br> <span class="paraphrase-tag">Paraphrase</span> <strong>small in size</strong> (Q45)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>compact</strong> <br><span class="text-slate-400 text-sm">/kəmˈpækt/</span></td>
-                        <td class="py-4 px-6">Nhỏ gọn.</td>
-                        <td class="py-4 px-6">small, space-saving</td>
+                        <td class="py-4 px-6"><strong>busy because we're having a big sale</strong></td>
+                        <td class="py-4 px-6">bận rộn vì chúng tôi đang có một đợt giảm giá lớn</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>limited space</strong> <br><span class="text-slate-400 text-sm">/ˈlɪmɪtɪd speɪs/</span></td>
-                        <td class="py-4 px-6">Không gian hạn chế.</td>
-                        <td class="py-4 px-6">small area</td>
+                        <td class="py-4 px-6"><strong>laptop computers and tablets</strong></td>
+                        <td class="py-4 px-6">máy tính xách tay và máy tính bảng <br> <span class="paraphrase-tag">Paraphrase</span> <strong>At an electronics store</strong> (Q44)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>partner</strong> <br><span class="text-slate-400 text-sm">/ˈpɑːrtnə(r)/</span></td>
-                        <td class="py-4 px-6">Cộng sự.</td>
-                        <td class="py-4 px-6">colleague, associate</td>
+                        <td class="py-4 px-6"><strong>people with home offices</strong></td>
+                        <td class="py-4 px-6">những người làm việc tại nhà</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>setting up</strong> <br><span class="text-slate-400 text-sm">/ˈsetɪŋ ʌp/</span></td>
-                        <td class="py-4 px-6">Thiết lập.</td>
-                        <td class="py-4 px-6">installing, arranging</td>
+                        <td class="py-4 px-6"><strong>who may have limited space</strong></td>
+                        <td class="py-4 px-6">những người có thể có không gian hạn chế</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>station</strong> <br><span class="text-slate-400 text-sm">/ˈsteɪʃn/</span></td>
-                        <td class="py-4 px-6">Trạm, vị trí.</td>
-                        <td class="py-4 px-6">post, spot</td>
+                        <td class="py-4 px-6"><strong>setting up the printer station</strong></td>
+                        <td class="py-4 px-6">thiết lập trạm máy in</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>demonstration table</strong> <br><span class="text-slate-400 text-sm">/ˌdemənˈstreɪʃn ˈteɪbl/</span></td>
-                        <td class="py-4 px-6">Bàn thuyết trình.</td>
-                        <td class="py-4 px-6">display stand</td>
+                        <td class="py-4 px-6"><strong>where can I put our demonstration table</strong></td>
+                        <td class="py-4 px-6">tôi có thể đặt bàn thuyết trình của chúng tôi ở đâu</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>brochures</strong> <br><span class="text-slate-400 text-sm">/ˈbrəʊʃə(r)z/</span></td>
-                        <td class="py-4 px-6">Tài liệu quảng cáo.</td>
-                        <td class="py-4 px-6">pamphlets, leaflets</td>
+                        <td class="py-4 px-6"><strong>show you the area</strong></td>
+                        <td class="py-4 px-6">chỉ cho bạn khu vực đó</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>helpful</strong> <br><span class="text-slate-400 text-sm">/ˈhelpfl/</span></td>
-                        <td class="py-4 px-6">Hữu ích.</td>
-                        <td class="py-4 px-6">useful, beneficial</td>
+                        <td class="py-4 px-6"><strong>brought any brochures with you</strong></td>
+                        <td class="py-4 px-6">có mang theo bất kỳ cuốn tài liệu quảng cáo nào không <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Provide brochures to customers</strong> (Q46)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>tablets</strong> <br><span class="text-slate-400 text-sm">/ˈtæbləts/</span></td>
-                        <td class="py-4 px-6">Máy tính bảng.</td>
-                        <td class="py-4 px-6">handheld computers</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>electronics store</strong> <br><span class="text-slate-400 text-sm">/ɪˌlekˈtrɒnɪks stɔː(r)/</span></td>
-                        <td class="py-4 px-6">Cửa hàng điện tử.</td>
-                        <td class="py-4 px-6">tech shop</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>display stand</strong> <br><span class="text-slate-400 text-sm">/dɪˈspleɪ stænd/</span></td>
-                        <td class="py-4 px-6">Giá trưng bày.</td>
-                        <td class="py-4 px-6">exhibition area</td>
+                        <td class="py-4 px-6"><strong>put those out for people to take</strong></td>
+                        <td class="py-4 px-6">đặt chúng ra ngoài để mọi người lấy</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- 3. FILL-IN-THE-BLANK CHALLENGE -->
+        <!-- 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE) -->
         <section class="glass-card p-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
                     <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN TỪ
-                    </h2>
+                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE)</h2>
                 </div>
                 <button id="checkAnswersBtn" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
@@ -178,25 +160,24 @@
 
             <div class="bg-blue-50 p-6 rounded-lg text-lg leading-loose font-medium text-slate-700">
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> Thank you both for coming here today to <input type="text" data-answer="demonstrate" class="input-blank mx-1 w-[130px]"> your company’s new <input type="text" data-answer="compact printer" class="input-blank mx-1 w-[160px]">. I know the store will be busy because we're having a big sale on laptop computers and tablets.
+                    <span class="text-pink-600 font-bold">W:</span> Thank you both for coming here today to <input type="text" data-answer="demonstrate" class="input-blank mx-1 w-[130px]"> your company’s new <input type="text" data-answer="compact printer" class="input-blank mx-1 w-[180px]">. I know the store will be busy because we're having a big sale on laptop computers and tablets.
                 </p>
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M1:</span> We're happy to be here. Our printers are perfect for students or people with home offices who may have <input type="text" data-answer="limited space" class="input-blank mx-1 w-[140px]">. My partner, Murat, will be setting up the printer station.
+                    <span class="text-blue-600 font-bold">M1:</span> We're happy to be here. Our printers are perfect for students or people with home offices who may have <input type="text" data-answer="limited space" class="input-blank mx-1 w-[150px]">. My partner, Murat, will be setting up the printer station.
                 </p>
                 <p class="mb-4">
-                    <span class="text-teal-600 font-bold">M2:</span> Yes—where can I put our <input type="text" data-answer="demonstration table" class="input-blank mx-1 w-[180px]">?
+                    <span class="text-teal-600 font-bold">M2:</span> Yes—where can I put our <input type="text" data-answer="demonstration table" class="input-blank mx-1 w-[200px]">?
                 </p>
                 <p>
-                    <span class="text-pink-600 font-bold">W:</span> I'll show you the area. Also, if you brought any <input type="text" data-answer="brochures" class="input-blank mx-1 w-[110px]"> with you, it’ll be helpful to put those out for people to take.
+                    <span class="text-pink-600 font-bold">W:</span> I'll show you the area. Also, if you brought any <input type="text" data-answer="brochures" class="input-blank mx-1 w-[130px]"> with you, it’ll be helpful to put those out for people to take.
                 </p>
             </div>
         </section>
 
-        <!-- 4. QUESTIONS -->
+        <!-- 4. GIẢI THÍCH CHI TIẾT -->
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
-                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. CÂU HỎI BÀI TẬP
-            </h2>
+                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
                 
                 <!-- Q44 -->
@@ -220,6 +201,10 @@
                             (D) At a home office
                             <span class="text-slate-500 text-sm block mt-1">Tại một văn phòng tại nhà</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người phụ nữ nói về việc cửa hàng bận rộn vì đang có đợt giảm giá lớn cho "<strong>laptop computers and tablets</strong>". Điều này cho thấy họ đang ở một cửa hàng điện tử (A).</p>
                     </div>
                 </div>
 
@@ -245,6 +230,10 @@
                             <span class="text-slate-500 text-sm block mt-1">Chúng sử dụng ít mực hơn</span>
                         </div>
                     </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông giới thiệu: "Our printers are perfect for... who may have <strong>limited space</strong>". Từ "compact" trong phần đầu cũng có nghĩa là nhỏ gọn. Vậy đáp án là (C).</p>
+                    </div>
                 </div>
 
                 <!-- Q46 -->
@@ -268,6 +257,10 @@
                             (D) Set up a station near the laptops
                             <span class="text-slate-500 text-sm block mt-1">Thiết lập một trạm gần máy tính xách tay</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người phụ nữ gợi ý: "if you brought any <strong>brochures</strong> with you, it’ll be helpful to put those out for people to take". Đáp án là (B).</p>
                     </div>
                 </div>
 

@@ -12,123 +12,128 @@
 
     <div class="main-container space-y-8">
         
-        
-
-        <!-- 1. SHADOWING FLOW -->
+        <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING
-                </h2>
+                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING</h2>
                 <button id="toggleTranslation" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-purple-200 transition">
                     <i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt
                 </button>
             </div>
             
             <div id="shadowingContainer" class="space-y-6 text-lg">
-                <!-- M-Director -->
+                <!-- M-Au -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>As director, / I'm delighted to welcome you / to the Redmond Aquatic Institute.</strong>
-                            <span class="chunk-vi">Với tư cách là giám đốc, / tôi rất vui mừng được chào đón bạn / đến với Viện Thủy sinh Redmond.</span>
+                            <strong>As director, / I’m delighted / to welcome you / to the Redmond Aquatic Institute.</strong>
+                            <span class="chunk-vi">Với tư cách là giám đốc, / tôi rất vui mừng / được chào đón bạn / đến với Viện Thủy sinh Redmond.</span>
                         </div>
                         <div>
-                            <strong>We're happy you'll be / producing content / for our Web site.</strong>
-                            <span class="chunk-vi">Chúng tôi rất vui vì bạn sẽ / sản xuất nội dung / cho trang web của chúng tôi.</span>
+                            <strong>We're happy / you'll be producing content / for our Web site.</strong>
+                            <span class="chunk-vi">Chúng tôi rất vui / vì bạn sẽ sản xuất nội dung / cho trang web của chúng tôi.</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- W -->
+                <!-- W-Br -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-pink-600 flex-shrink-0">W</div>
                     <div class="w-full">
                         <div>
-                            <strong>I’m looking forward to / writing about / Redmond's initiatives / in marine biology.</strong>
+                            <strong>I'm looking forward / to writing about / Redmond’s initiatives / in marine biology.</strong>
                             <span class="chunk-vi">Tôi rất mong chờ / được viết về / các sáng kiến của Redmond / trong lĩnh vực sinh học biển.</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- M-Director -->
+                <!-- M-Au -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>Yes, the more articles the public can read / about threats to aquatic ecosystems, / the better.</strong>
-                            <span class="chunk-vi">Vâng, công chúng càng đọc được nhiều bài báo / về các mối đe dọa đối với hệ sinh thái thủy sinh, / thì càng tốt.</span>
+                            <strong>Yes, / the more articles / the public can read / about threats / to aquatic ecosystems, / the better.</strong>
+                            <span class="chunk-vi">Đúng vậy, / công chúng càng đọc được / nhiều bài báo / về các mối đe dọa / đối với hệ sinh thái thủy sinh, / thì càng tốt.</span>
                         </div>
                         <div>
-                            <strong>Public awareness / will help us get funding / to meet our aim / of preserving these ecosystems.</strong>
-                            <span class="chunk-vi">Nhận thức của công chúng / sẽ giúp chúng tôi có được nguồn tài trợ / để đạt được mục tiêu / bảo tồn các hệ sinh thái này.</span>
+                            <strong>Public awareness / will help us / get funding / to meet our aim / of preserving these ecosystems.</strong>
+                            <span class="chunk-vi">Nhận thức của công chúng / sẽ giúp chúng tôi / có được nguồn kinh phí / để thực hiện mục tiêu / bảo tồn các hệ sinh thái này.</span>
                         </div>
                         <div>
-                            <strong>This is Roberto. / He's working on our / mangrove research project, / which is the first one / you'll cover.</strong>
-                            <span class="chunk-vi">Đây là Roberto. / Anh ấy đang thực hiện / dự án nghiên cứu rừng ngập mặn của chúng tôi, / đây là dự án đầu tiên / mà bạn sẽ đưa tin.</span>
+                            <strong>This is Roberto. / He’s working / on our mangrove research project, / which is the first one / you'll cover.</strong>
+                            <span class="chunk-vi">Đây là Roberto. / Anh ấy đang làm việc / trong dự án nghiên cứu rừng ngập mặn của chúng tôi, / đây là dự án đầu tiên / bạn sẽ đưa tin.</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Roberto -->
+                <!-- M-Cn -->
                 <div class="flex gap-4">
-                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center font-bold text-green-600 flex-shrink-0">R</div>
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>It's an interesting project. / And what's exciting is that / we've started using drones / to photograph the area.</strong>
-                            <span class="chunk-vi">Đó là một dự án thú vị. / Và điều thú vị là / chúng tôi đã bắt đầu sử dụng máy bay không người lái / để chụp ảnh khu vực này.</span>
-                        </div>
-                        <div>
-                            <strong>So we have some great images / you could use.</strong>
-                            <span class="chunk-vi">Vì vậy, chúng tôi có một số hình ảnh tuyệt vời / mà bạn có thể sử dụng.</span>
+                            <strong>It’s an interesting project. / And what’s exciting / is that we've started / using drones / to photograph the area / with the mangroves. / So we have / some great images / you could use.</strong>
+                            <span class="chunk-vi">Đó là một dự án thú vị. / Và điều hào hứng / là chúng tôi đã bắt đầu / sử dụng máy bay không người lái / để chụp ảnh khu vực / có rừng ngập mặn. / Vì vậy, chúng tôi có / một số hình ảnh tuyệt vời / mà bạn có thể sử dụng.</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2. BUSINESS VOCAB -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-briefcase text-orange-500 mr-2"></i> 2. TỪ VỰNG TRỌNG TÂM
-                </h2>
+                    <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
-            <table class="w-full text-left border-collapse">
-                
+            <table class="w-full text-left border-collapse chunk-table">
+                <thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>hired to write articles</strong> <br><span class="text-slate-400 text-sm">/ˈhaɪərd tə raɪt ˈɑːrtɪklz/</span></td>
-                        <td class="py-4 px-6">Được thuê để viết bài báo.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>Redmond Aquatic Institute</strong></td>
+                        <td class="py-4 px-6">Viện Thủy sinh Redmond</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>producing content</strong> <br><span class="text-slate-400 text-sm">/prəˈduːsɪŋ ˈkɑːntent/</span></td>
-                        <td class="py-4 px-6">Sản xuất nội dung.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>producing content for our Web site</strong></td>
+                        <td class="py-4 px-6">sản xuất nội dung cho trang web của chúng tôi <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Write articles</strong> (Q50)</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>initiatives</strong> <br><span class="text-slate-400 text-sm">/ɪˈnɪʃətɪvz/</span></td>
-                        <td class="py-4 px-6">Các sáng kiến.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>writing about Redmond’s initiatives</strong></td>
+                        <td class="py-4 px-6">viết về các sáng kiến của Redmond</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>marine biology</strong> <br><span class="text-slate-400 text-sm">/məˈriːn baɪˈɑːlədʒi/</span></td>
-                        <td class="py-4 px-6">Sinh học biển.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>marine biology</strong></td>
+                        <td class="py-4 px-6">sinh học biển</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>aquatic ecosystems</strong> <br><span class="text-slate-400 text-sm">/əˈkwætɪk ˈiːkoʊsɪstəmz/</span></td>
-                        <td class="py-4 px-6">Hệ sinh thái thủy sinh.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>threats to aquatic ecosystems</strong></td>
+                        <td class="py-4 px-6">mối đe dọa đối với hệ sinh thái thủy sinh</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>public awareness</strong> <br><span class="text-slate-400 text-sm">/ˈpʌblɪk əˈwernəs/</span></td>
-                        <td class="py-4 px-6">Nhận thức của công chúng.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>public awareness</strong></td>
+                        <td class="py-4 px-6">nhận thức của công chúng</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>mangrove research</strong> <br><span class="text-slate-400 text-sm">/ˈmæŋɡroʊv rɪˈsɜːrtʃ/</span></td>
-                        <td class="py-4 px-6">Nghiên cứu rừng ngập mặn.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>get funding to meet our aim</strong></td>
+                        <td class="py-4 px-6">có được nguồn kinh phí để thực hiện mục tiêu</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>drones</strong> <br><span class="text-slate-400 text-sm">/droʊnz/</span></td>
-                        <td class="py-4 px-6">Máy bay không người lái.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>preserving these ecosystems</strong></td>
+                        <td class="py-4 px-6">bảo tồn các hệ sinh thái này <br> <span class="paraphrase-tag">Paraphrase</span> <strong>To protect aquatic environments</strong> (Q51)</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>mangrove research project</strong></td>
+                        <td class="py-4 px-6">dự án nghiên cứu rừng ngập mặn</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>using drones to photograph the area</strong></td>
+                        <td class="py-4 px-6">sử dụng máy bay không người lái để chụp ảnh khu vực <br> <span class="paraphrase-tag">Paraphrase</span> <strong>The use of some equipment</strong> (Q52)</td>
                     </tr>
                 </tbody>
             </table>
@@ -139,8 +144,7 @@
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
                     <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN TỪ
-                    </h2>
+                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE)</h2>
                 </div>
                 <button id="checkAnswersBtn" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
@@ -149,108 +153,81 @@
             
             <!-- Word Bank -->
             <div class="mb-6 flex flex-wrap gap-2 justify-center bg-slate-50 p-4 rounded-lg border border-slate-100">
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">hired to write articles</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">producing content</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">initiatives</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">producing content for our Web site</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">writing about Redmond’s initiatives</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">marine biology</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">aquatic ecosystems</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">threats to aquatic ecosystems</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">public awareness</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">mangrove research</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">drones</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">get funding to meet our aim</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">preserving these ecosystems</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">mangrove research project</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">using drones to photograph the area</span>
             </div>
 
             <div class="bg-blue-50 p-6 rounded-lg text-lg leading-loose font-medium text-slate-700">
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> As director, I'm delighted to welcome you to the Redmond Aquatic Institute. We're happy you'll be <input type="text" data-answer="producing content" class="input-blank mx-1 w-[180px]"> for our Web site.
+                    <span class="text-blue-600 font-bold">M1:</span> As director, I’m delighted to welcome you to the Redmond Aquatic Institute. We're happy you'll be <input type="text" data-answer="producing content for our Web site" class="input-blank mx-1 w-[320px]">.
                 </p>
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> I’m looking forward to <input type="text" data-answer="hired to write articles" class="input-blank mx-1 w-[200px]"> about Redmond's <input type="text" data-answer="initiatives" class="input-blank mx-1"> in <input type="text" data-answer="marine biology" class="input-blank mx-1 w-[150px]">.
+                    <span class="text-pink-600 font-bold">W:</span> I'm looking forward to <input type="text" data-answer="writing about Redmond’s initiatives" class="input-blank mx-1 w-[320px]"> in <input type="text" data-answer="marine biology" class="input-blank mx-1 w-[160px]">.
                 </p>
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> Yes, the more articles the public can read about threats to <input type="text" data-answer="aquatic ecosystems" class="input-blank mx-1 w-[180px]">, the better. <input type="text" data-answer="public awareness" class="input-blank mx-1 w-[160px]"> will help us get funding to meet our aim of preserving these ecosystems. This is Roberto. He's working on our <input type="text" data-answer="mangrove research" class="input-blank mx-1 w-[180px]"> project, which is the first one you'll cover.
+                    <span class="text-blue-600 font-bold">M1:</span> Yes, the more articles the public can read about <input type="text" data-answer="threats to aquatic ecosystems" class="input-blank mx-1 w-[300px]">, the better. <input type="text" data-answer="public awareness" class="input-blank mx-1 w-[180px]"> will help us <input type="text" data-answer="get funding to meet our aim" class="input-blank mx-1 w-[300px]"> of <input type="text" data-answer="preserving these ecosystems" class="input-blank mx-1 w-[260px]">. This is Roberto. He’s working on our <input type="text" data-answer="mangrove research project" class="input-blank mx-1 w-[260px]">, which is the first one you'll cover.
                 </p>
                 <p>
-                    <span class="text-green-600 font-bold">R:</span> It's an interesting project. And what's exciting is that we've started using <input type="text" data-answer="drones" class="input-blank mx-1"> to photograph the area. So we have some great images you could use.
+                    <span class="text-blue-600 font-bold">M2:</span> It’s an interesting project. And what’s exciting is that we've started <input type="text" data-answer="using drones to photograph the area" class="input-blank mx-1 w-[360px]"> with the mangroves. So we have some great images you could use.
                 </p>
             </div>
         </section>
 
-        <!-- 4. QUESTIONS -->
+        <!-- 4. GIẢI THÍCH CHI TIẾT -->
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
-                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. CÂU HỎI BÀI TẬP
-            </h2>
+                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
                 
                 <!-- Q50 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">50. What has the woman been hired to do?</div>
-                    <div class="text-slate-500 text-sm mb-4">Người phụ nữ đã được thuê để làm gì?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">50. What will the woman do at the Redmond Aquatic Institute?</div>
+                    <div class="text-slate-500 text-sm mb-4">Người phụ nữ sẽ làm gì tại Viện Thủy sinh Redmond?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">
-                            (A) Write articles
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Viết các bài báo</span>
-                        </div>
-                        <div>
-                            (B) Update some software
-                            <span class="text-slate-500 text-sm block mt-1">Cập nhật một số phần mềm</span>
-                        </div>
-                        <div>
-                            (C) Organize a fund-raiser
-                            <span class="text-slate-500 text-sm block mt-1">Tổ chức một buổi gây quỹ</span>
-                        </div>
-                        <div>
-                            (D) Manage office staff
-                            <span class="text-slate-500 text-sm block mt-1">Quản lý nhân viên văn phòng</span>
-                        </div>
+                        <div class="font-bold text-blue-600">(A) Write articles</div>
+                        <div>(B) Give a tour</div>
+                        <div>(C) Lead a research team</div>
+                        <div>(D) Repair equipment</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Giám đốc nói cô ấy sẽ "producing content for our Web site" (sản xuất nội dung cho trang web) và cô ấy nói mong chờ "writing about Redmond’s initiatives" (viết về các sáng kiến của Redmond), cho thấy cô ấy sẽ viết bài.
                     </div>
                 </div>
 
                 <!-- Q51 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">51. According to the Director, what is the organization's goal?</div>
-                    <div class="text-slate-500 text-sm mb-4">Theo Giám đốc, mục tiêu của tổ chức là gì?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">51. According to the man, why is public awareness important?</div>
+                    <div class="text-slate-500 text-sm mb-4">Theo người đàn ông, tại sao nhận thức của công chúng lại quan trọng?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>
-                            (A) To hire professionals in the field
-                            <span class="text-slate-500 text-sm block mt-1">Thuê các chuyên gia trong lĩnh vực</span>
-                        </div>
-                        <div>
-                            (B) To create educational programs
-                            <span class="text-slate-500 text-sm block mt-1">Tạo ra các chương trình giáo dục</span>
-                        </div>
-                        <div>
-                            (C) To collect data from other scientific institutes
-                            <span class="text-slate-500 text-sm block mt-1">Thu thập dữ liệu từ các viện khoa học khác</span>
-                        </div>
-                        <div class="font-bold text-blue-600">
-                            (D) To protect aquatic environments
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Bảo vệ môi trường thủy sinh</span>
-                        </div>
+                        <div>(A) To increase attendance at an institute</div>
+                        <div>(B) To recruit new volunteers</div>
+                        <div>(C) To help with a job search</div>
+                        <div class="font-bold text-blue-600">(D) To protect aquatic environments</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người đàn ông nói nhận thức của công chúng giúp họ có kinh phí "to meet our aim of preserving these ecosystems" (để đạt được mục tiêu bảo tồn các hệ sinh thái này), tức là để bảo vệ môi trường thủy sinh.
                     </div>
                 </div>
 
                 <!-- Q52 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">52. What does Roberto say is exciting?</div>
-                    <div class="text-slate-500 text-sm mb-4">Roberto nói điều gì là thú vị?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">52. What does Roberto describe?</div>
+                    <div class="text-slate-500 text-sm mb-4">Roberto mô tả điều gì?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">
-                            (A) The use of some equipment
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Việc sử dụng một số thiết bị</span>
-                        </div>
-                        <div>
-                            (B) The location of a project
-                            <span class="text-slate-500 text-sm block mt-1">Vị trí của một dự án</span>
-                        </div>
-                        <div>
-                            (C) The results of a study
-                            <span class="text-slate-500 text-sm block mt-1">Kết quả của một nghiên cứu</span>
-                        </div>
-                        <div>
-                            (D) The size of a research team
-                            <span class="text-slate-500 text-sm block mt-1">Quy mô của một nhóm nghiên cứu</span>
-                        </div>
+                        <div class="font-bold text-blue-600">(A) The use of some equipment</div>
+                        <div>(B) The findings of a study</div>
+                        <div>(C) The timeline for a project</div>
+                        <div>(D) The design of a building</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Roberto nhắc đến việc "started using drones to photograph the area" (đã bắt đầu sử dụng máy bay không người lái để chụp ảnh khu vực), drones chính là một loại thiết bị (equipment).
                     </div>
                 </div>
 

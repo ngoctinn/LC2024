@@ -12,14 +12,11 @@
 
     <div class="main-container space-y-8">
         
-        
-
-        <!-- 1. SHADOWING FLOW -->
+        <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING
-                </h2>
+                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING</h2>
                 <button id="toggleTranslation" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-purple-200 transition">
                     <i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt
                 </button>
@@ -31,12 +28,8 @@
                     <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-pink-600 flex-shrink-0">W</div>
                     <div class="w-full">
                         <div>
-                            <strong>As you can see, / this Renaissance landscape painting / we acquired</strong>
-                            <span class="chunk-vi">Như bạn có thể thấy, / bức tranh phong cảnh thời Phục hưng này / mà chúng ta vừa mua được</span>
-                        </div>
-                        <div>
-                            <strong>is in bad condition. / We can't display it yet.</strong>
-                            <span class="chunk-vi">đang ở trong tình trạng tồi tệ. / Chúng ta chưa thể trưng bày nó được.</span>
+                            <strong>As you can see, / this Renaissance landscape painting / we acquired / is in bad condition. / We can’t display it yet.</strong>
+                            <span class="chunk-vi">Như bạn có thể thấy, / bức tranh phong cảnh thời Phục hưng này / chúng ta vừa mua được / đang trong tình trạng tồi tệ. / Chúng ta chưa thể trưng bày nó được.</span>
                         </div>
                     </div>
                 </div>
@@ -57,12 +50,8 @@
                     <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-pink-600 flex-shrink-0">W</div>
                     <div class="w-full">
                         <div>
-                            <strong>I'll begin / by investigating / the artist's color palette and style</strong>
-                            <span class="chunk-vi">Tôi sẽ bắt đầu / bằng cách tìm hiểu / bảng màu và phong cách của họa sĩ</span>
-                        </div>
-                        <div>
-                            <strong>to see / how we should repair / the damaged areas.</strong>
-                            <span class="chunk-vi">để xem / chúng ta nên sửa chữa / các khu vực bị hư hỏng như thế nào.</span>
+                            <strong>I’ll begin / by investigating / the artist's color palette and style / to see how / we should repair / the damaged areas.</strong>
+                            <span class="chunk-vi">Tôi sẽ bắt đầu / bằng việc nghiên cứu / bảng màu và phong cách của nghệ sĩ / để xem / chúng ta nên sửa chữa / các khu vực bị hư hỏng như thế nào.</span>
                         </div>
                     </div>
                 </div>
@@ -72,75 +61,78 @@
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>You know, / this would be / a stunning piece / to unveil</strong>
-                            <span class="chunk-vi">Bạn biết đấy, / đây sẽ là / một tác phẩm tuyệt đẹp / để ra mắt</span>
-                        </div>
-                        <div>
-                            <strong>at our anniversary dinner / in June.</strong>
-                            <span class="chunk-vi">tại bữa tối kỷ niệm của chúng ta / vào tháng Sáu.</span>
-                        </div>
-                        <div>
-                            <strong>And, since it's / a big project / to finish by then,</strong>
-                            <span class="chunk-vi">Và vì đó là / một dự án lớn / cần hoàn thành trước lúc đó,</span>
-                        </div>
-                        <div>
-                            <strong>we should / get started right away.</strong>
-                            <span class="chunk-vi">chúng ta nên / bắt đầu ngay lập tức.</span>
+                            <strong>You know, / this would be / a stunning piece / to unveil / at our anniversary dinner / in June. / And, since / it’s a big project / to finish by then, / we should get started / right away.</strong>
+                            <span class="chunk-vi">Bạn biết đấy, / đây sẽ là / một tác phẩm tuyệt vời / để ra mắt / tại bữa tiệc tối kỷ niệm của chúng ta / vào tháng Sáu. / Và, vì / đó là một dự án lớn / phải hoàn thành trước lúc đó, / chúng ta nên bắt đầu / ngay lập tức.</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2. BUSINESS VOCAB -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-briefcase text-orange-500 mr-2"></i> 2. TỪ VỰNG TRỌNG TÂM
-                </h2>
+                    <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
-            <table class="w-full text-left border-collapse">
-                
+            <table class="w-full text-left border-collapse chunk-table">
+                <thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>acquired</strong> <br><span class="text-slate-400 text-sm">/əˈkwaɪərd/</span></td>
-                        <td class="py-4 px-6">Mua được, đạt được</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>Renaissance landscape painting</strong></td>
+                        <td class="py-4 px-6">bức tranh phong cảnh thời Phục hưng <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Art restorers</strong> (Q38)</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>in bad condition</strong> <br><span class="text-slate-400 text-sm">/ɪn bæd kənˈdɪʃn/</span></td>
-                        <td class="py-4 px-6">Trong tình trạng tồi tệ</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>acquired is in bad condition</strong></td>
+                        <td class="py-4 px-6">mua được đang trong tình trạng tồi tệ</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>restoration work</strong> <br><span class="text-slate-400 text-sm">/ˌrestəˈreɪʃn wɜːrk/</span></td>
-                        <td class="py-4 px-6">Công việc phục chế, tu bổ</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>significant restoration work</strong></td>
+                        <td class="py-4 px-6">công việc phục chế đáng kể</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>color palette and style</strong> <br><span class="text-slate-400 text-sm">/ˈkʌlər ˈpælət ænd staɪl/</span></td>
-                        <td class="py-4 px-6">Bảng màu và phong cách</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>investigating the artist's color palette</strong></td>
+                        <td class="py-4 px-6">nghiên cứu bảng màu của nghệ sĩ <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Investigate a problem</strong> (Q39)</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>repair the damaged areas</strong> <br><span class="text-slate-400 text-sm">/rɪˈpeər ðə ˈdæmɪdʒd ˈeriəz/</span></td>
-                        <td class="py-4 px-6">Sửa chữa các khu vực bị hư hại</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>repair the damaged areas</strong></td>
+                        <td class="py-4 px-6">sửa chữa những vùng bị hư hỏng</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>unveil</strong> <br><span class="text-slate-400 text-sm">/ˌʌnˈveɪl/</span></td>
-                        <td class="py-4 px-6">Ra mắt, khánh thành, công bố</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>stunning piece to unveil</strong></td>
+                        <td class="py-4 px-6">tác phẩm tuyệt vời để ra mắt</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>anniversary dinner</strong> <br><span class="text-slate-400 text-sm">/ˌænɪˈvɜːrsəri ˈdɪnər/</span></td>
-                        <td class="py-4 px-6">Bữa tối kỷ niệm</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>anniversary dinner in June</strong></td>
+                        <td class="py-4 px-6">tiệc tối kỷ niệm vào tháng 6 <br> <span class="paraphrase-tag">Paraphrase</span> <strong>An important event is approaching</strong> (Q40)</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>big project to finish</strong></td>
+                        <td class="py-4 px-6">dự án lớn cần hoàn thành</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>get started right away</strong></td>
+                        <td class="py-4 px-6">bắt đầu ngay lập tức</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>can’t display it yet</strong></td>
+                        <td class="py-4 px-6">chưa thể trưng bày nó</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- 3. FILL-IN-THE-BLANK CHALLENGE -->
+        <!-- 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE) -->
         <section class="glass-card p-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
                     <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN TỪ
-                    </h2>
+                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE)</h2>
                 </div>
                 <button id="checkAnswersBtn" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
@@ -149,59 +141,52 @@
             
             <!-- Word Bank -->
             <div class="mb-6 flex flex-wrap gap-2 justify-center bg-slate-50 p-4 rounded-lg border border-slate-100">
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">acquired</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">in bad condition</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">restoration work</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">color palette and style</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">Renaissance landscape painting</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">acquired is in bad condition</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">significant restoration work</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">investigating the artist's color palette</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">repair the damaged areas</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">unveil</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">anniversary dinner</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">stunning piece to unveil</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">anniversary dinner in June</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">big project to finish</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">get started right away</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">can’t display it yet</span>
             </div>
 
             <div class="bg-blue-50 p-6 rounded-lg text-lg leading-loose font-medium text-slate-700">
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> As you can see, this Renaissance landscape painting we <input type="text" data-answer="acquired" class="input-blank mx-1"> is <input type="text" data-answer="in bad condition" class="input-blank mx-1 w-[160px]">. We can't display it yet.
+                    <span class="text-pink-600 font-bold">W:</span> As you can see, this <input type="text" data-answer="Renaissance landscape painting" class="input-blank mx-1 w-[320px]"> we <input type="text" data-answer="acquired is in bad condition" class="input-blank mx-1 w-[280px]">. We <input type="text" data-answer="can’t display it yet" class="input-blank mx-1 w-[200px]">.
                 </p>
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> Hmm, yes. This painting will need significant <input type="text" data-answer="restoration work" class="input-blank mx-1 w-[180px]">.
+                    <span class="text-blue-600 font-bold">M:</span> Hmm, yes. This painting will need <input type="text" data-answer="significant restoration work" class="input-blank mx-1 w-[280px]">.
                 </p>
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> I'll begin by investigating the artist's <input type="text" data-answer="color palette and style" class="input-blank mx-1 w-[220px]"> to see how we should <input type="text" data-answer="repair the damaged areas" class="input-blank mx-1 w-[260px]">.
+                    <span class="text-pink-600 font-bold">W:</span> I’ll begin by <input type="text" data-answer="investigating the artist's color palette" class="input-blank mx-1 w-[360px]"> and style to see how we should <input type="text" data-answer="repair the damaged areas" class="input-blank mx-1 w-[280px]">.
                 </p>
                 <p>
-                    <span class="text-blue-600 font-bold">M:</span> You know, this would be a stunning piece to <input type="text" data-answer="unveil" class="input-blank mx-1"> at our <input type="text" data-answer="anniversary dinner" class="input-blank mx-1 w-[180px]"> in June. And, since it's a big project to finish by then, we should get started right away.
+                    <span class="text-blue-600 font-bold">M:</span> You know, this would be a <input type="text" data-answer="stunning piece to unveil" class="input-blank mx-1 w-[260px]"> at our <input type="text" data-answer="anniversary dinner in June" class="input-blank mx-1 w-[260px]">. And, since it’s a <input type="text" data-answer="big project to finish" class="input-blank mx-1 w-[240px]"> by then, we should <input type="text" data-answer="get started right away" class="input-blank mx-1 w-[240px]">.
                 </p>
             </div>
         </section>
 
-        <!-- 4. QUESTIONS -->
+        <!-- 4. GIẢI THÍCH CHI TIẾT -->
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
-                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. CÂU HỎI BÀI TẬP
-            </h2>
+                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
                 
                 <!-- Q38 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">38. What is being discussed?</div>
-                    <div class="text-slate-500 text-sm mb-4">Điều gì đang được thảo luận?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">38. Who most likely are the speakers?</div>
+                    <div class="text-slate-500 text-sm mb-4">Các nhân vật trong cuộc hội thoại này có khả năng nhất là ai?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">
-                            (A) A landscape painting
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Một bức tranh phong cảnh</span>
-                        </div>
-                        <div>
-                            (B) A photography exhibit
-                            <span class="text-slate-500 text-sm block mt-1">Một cuộc triển lãm ảnh</span>
-                        </div>
-                        <div>
-                            (C) A sculpture garden
-                            <span class="text-slate-500 text-sm block mt-1">Một vườn điêu khắc</span>
-                        </div>
-                        <div>
-                            (D) A pottery workshop
-                            <span class="text-slate-500 text-sm block mt-1">Một xưởng làm gốm</span>
-                        </div>
+                        <div class="font-bold text-blue-600">(A) Art restorers</div>
+                        <div>(B) Event planners</div>
+                        <div>(C) History professors</div>
+                        <div>(D) Museum guides</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Họ thảo luận về việc "restoration work" (phục chế), "repair the damaged areas" (sửa chữa các phần bị hỏng) của một bức tranh phong cảnh thời Phục hưng, nên họ là những người phục chế nghệ thuật (art restorers).
                     </div>
                 </div>
 
@@ -210,46 +195,28 @@
                     <div class="font-semibold text-slate-800 mb-1 text-lg">39. What will the woman do first?</div>
                     <div class="text-slate-500 text-sm mb-4">Người phụ nữ sẽ làm gì đầu tiên?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>
-                            (A) Clean some frames
-                            <span class="text-slate-500 text-sm block mt-1">Làm sạch một số khung hình</span>
-                        </div>
-                        <div>
-                            (B) Contact an artist
-                            <span class="text-slate-500 text-sm block mt-1">Liên hệ với một họa sĩ</span>
-                        </div>
-                        <div>
-                            (C) Purchase some supplies
-                            <span class="text-slate-500 text-sm block mt-1">Mua một số vật tư</span>
-                        </div>
-                        <div class="font-bold text-blue-600">
-                            (D) Research an artist's style
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Nghiên cứu phong cách của một họa sĩ</span>
-                        </div>
+                        <div>(A) Call an artist</div>
+                        <div>(B) Prepare a budget</div>
+                        <div>(C) Order some supplies</div>
+                        <div class="font-bold text-blue-600">(D) Investigate a problem</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người phụ nữ nói "I’ll begin by investigating the artist's color palette and style..." (Tôi sẽ bắt đầu bằng cách nghiên cứu bảng màu và phong cách của nghệ sĩ...), tương ứng với việc điều tra/nghiên cứu vấn đề.
                     </div>
                 </div>
 
                 <!-- Q40 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">40. When does the man want to finish the project?</div>
-                    <div class="text-slate-500 text-sm mb-4">Khi nào người đàn ông muốn hoàn thành dự án?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">40. Why does the man say, "we should get started right away"?</div>
+                    <div class="text-slate-500 text-sm mb-4">Tại sao người đàn ông lại nói "chúng ta nên bắt đầu ngay lập tức"?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>
-                            (A) By April
-                            <span class="text-slate-500 text-sm block mt-1">Trước tháng Tư</span>
-                        </div>
-                        <div>
-                            (B) By May
-                            <span class="text-slate-500 text-sm block mt-1">Trước tháng Năm</span>
-                        </div>
-                        <div class="font-bold text-blue-600">
-                            (C) By June
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Trước tháng Sáu</span>
-                        </div>
-                        <div>
-                            (D) By July
-                            <span class="text-slate-500 text-sm block mt-1">Trước tháng Bảy</span>
-                        </div>
+                        <div>(A) A facility is closing.</div>
+                        <div>(B) A supply of materials is low.</div>
+                        <div class="font-bold text-blue-600">(C) An important event is approaching.</div>
+                        <div>(D) A client is coming to visit.</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người đàn ông nhắc đến việc ra mắt tác phẩm tại "our anniversary dinner in June" và đó là dự án lớn cần hoàn thành trước lúc đó, cho thấy một sự kiện quan trọng đang đến gần.
                     </div>
                 </div>
 

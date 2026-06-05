@@ -12,126 +12,131 @@
 
     <div class="main-container space-y-8">
         
-        
-
-        <!-- 1. SHADOWING FLOW -->
+        <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING
-                </h2>
+                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING</h2>
                 <button id="toggleTranslation" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-purple-200 transition">
                     <i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt
                 </button>
             </div>
             
             <div id="shadowingContainer" class="space-y-6 text-lg">
-                <!-- W -->
+                <!-- W-Am -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-pink-600 flex-shrink-0">W</div>
                     <div class="w-full">
                         <div>
-                            <strong>Matthew, / you're not planning / to cancel / Wednesday's budget meeting, / are you?</strong>
-                            <span class="chunk-vi">Matthew, / bạn không có kế hoạch / hủy / cuộc họp ngân sách vào thứ Tư, / phải không?</span>
+                            <strong>Matthew, / you’re not planning / to cancel / Wednesday’s budget meeting, / are you?</strong>
+                            <span class="chunk-vi">Matthew, / bạn không có ý định / hủy / cuộc họp ngân sách vào thứ Tư, / phải không?</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- M -->
+                <!-- M-Au -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>I haven't sent out / the cancellation yet, / but our research partners in China</strong>
-                            <span class="chunk-vi">Tôi chưa gửi / thông báo hủy, / nhưng các đối tác nghiên cứu của chúng tôi ở Trung Quốc</span>
-                        </div>
-                        <div>
-                            <strong>are off this week / for a national holiday, / so there's no point in meeting. / Why?</strong>
-                            <span class="chunk-vi">nghỉ tuần này / nhân dịp quốc khánh, / nên không có lý do gì để họp. / Tại sao vậy?</span>
+                            <strong>I haven’t sent out / the cancellation yet, / but our research partners / in China / are off this week / for a national holiday, / so there’s no point / in meeting. / Why?</strong>
+                            <span class="chunk-vi">Tôi vẫn chưa gửi / thông báo hủy, / nhưng các đối tác nghiên cứu của chúng ta / ở Trung Quốc / được nghỉ tuần này / cho một ngày lễ quốc gia, / nên việc họp / cũng chẳng có ý nghĩa gì. / Tại sao vậy?</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- W -->
+                <!-- W-Am -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-pink-600 flex-shrink-0">W</div>
                     <div class="w-full">
                         <div>
-                            <strong>Well, I've been looking / at the draft budget, / and we didn't allocate funds / for a project leader.</strong>
-                            <span class="chunk-vi">Chà, tôi đã xem qua / bản dự thảo ngân sách, / và chúng ta đã không phân bổ kinh phí / cho một trưởng dự án.</span>
+                            <strong>Well, / I’ve been looking / at the draft budget, / and we didn’t / allocate funds / for a project leader.</strong>
+                            <span class="chunk-vi">Chà, / tôi vừa xem / bản dự thảo ngân sách, / và chúng ta đã không / phân bổ kinh phí / cho một trưởng dự án.</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- M -->
+                <!-- M-Au -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>Uh-oh. / I wonder how that happened. / You're right. / We need to discuss / how to fix that.</strong>
-                            <span class="chunk-vi">Ồ không. / Tôi tự hỏi tại sao điều đó lại xảy ra. / Bạn nói đúng. / Chúng ta cần thảo luận / cách khắc phục điều đó.</span>
+                            <strong>Uh-oh. / I wonder / how that happened. / You're right. / We need to discuss / how to fix that.</strong>
+                            <span class="chunk-vi">Ồ-ồ. / Tôi tự hỏi / làm thế nào mà chuyện đó lại xảy ra. / Bạn đúng đấy. / Chúng ta cần thảo luận / cách khắc phục điều đó.</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- W -->
+                <!-- W-Am -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-pink-600 flex-shrink-0">W</div>
                     <div class="w-full">
                         <div>
-                            <strong>You know, / we allocated money / for a trip to Singapore / to present / our preliminary findings.</strong>
-                            <span class="chunk-vi">Bạn biết đấy, / chúng ta đã phân bổ tiền / cho một chuyến đi đến Singapore / để trình bày / các kết quả sơ bộ của mình.</span>
-                        </div>
-                        <div>
-                            <strong>We don't really need / to do that.</strong>
-                            <span class="chunk-vi">Chúng ta thực sự không cần / phải làm điều đó.</span>
+                            <strong>You know, / we allocated money / for a trip to Singapore / to present / our preliminary findings. / We don't really need / to do that.</strong>
+                            <span class="chunk-vi">Bạn biết đấy, / chúng ta đã phân bổ tiền / cho một chuyến đi đến Singapore / để trình bày / các phát hiện sơ bộ của mình. / Chúng ta thực sự không cần / phải làm điều đó.</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 2. BUSINESS VOCAB -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-briefcase text-orange-500 mr-2"></i> 2. TỪ VỰNG TRỌNG TÂM
-                </h2>
+                    <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
-            <table class="w-full text-left border-collapse">
-                
+            <table class="w-full text-left border-collapse chunk-table">
+                <thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>budget meeting</strong> <br><span class="text-slate-400 text-sm">/ˈbʌdʒɪt ˈmiːtɪŋ/</span></td>
-                        <td class="py-4 px-6">Cuộc họp ngân sách.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>cancel Wednesday’s budget meeting</strong></td>
+                        <td class="py-4 px-6">hủy cuộc họp ngân sách vào thứ Tư</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>cancellation</strong> <br><span class="text-slate-400 text-sm">/ˌkænsəˈleɪʃn/</span></td>
-                        <td class="py-4 px-6">Sự hủy bỏ.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>sent out the cancellation</strong></td>
+                        <td class="py-4 px-6">gửi thông báo hủy</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>national holiday</strong> <br><span class="text-slate-400 text-sm">/ˌnæʃnəl ˈhɑːlədeɪ/</span></td>
-                        <td class="py-4 px-6">Ngày lễ quốc gia.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>research partners in China</strong></td>
+                        <td class="py-4 px-6">các đối tác nghiên cứu ở Trung Quốc</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>draft budget</strong> <br><span class="text-slate-400 text-sm">/dræft ˈbʌdʒɪt/</span></td>
-                        <td class="py-4 px-6">Bản dự thảo ngân sách.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>off this week for a national holiday</strong></td>
+                        <td class="py-4 px-6">nghỉ tuần này cho một ngày lễ quốc gia <br> <span class="paraphrase-tag">Paraphrase</span> <strong>They are celebrating a holiday</strong> (Q53)</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>allocate funds</strong> <br><span class="text-slate-400 text-sm">/ˈæləkeɪt fʌndz/</span></td>
-                        <td class="py-4 px-6">Phân bổ kinh phí.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>no point in meeting</strong></td>
+                        <td class="py-4 px-6">việc họp cũng chẳng có ý nghĩa gì</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>project leader</strong> <br><span class="text-slate-400 text-sm">/ˈprɑːdʒekt ˈliːdər/</span></td>
-                        <td class="py-4 px-6">Trưởng dự án.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>looking at the draft budget</strong></td>
+                        <td class="py-4 px-6">xem bản dự thảo ngân sách</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>preliminary findings</strong> <br><span class="text-slate-400 text-sm">/prɪˈlɪmɪneri ˈfaɪndɪŋz/</span></td>
-                        <td class="py-4 px-6">Các kết quả sơ bộ.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>allocate funds for a project leader</strong></td>
+                        <td class="py-4 px-6">phân bổ kinh phí cho một trưởng dự án</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>unnecessary</strong> <br><span class="text-slate-400 text-sm">/ʌnˈnesəseri/</span></td>
-                        <td class="py-4 px-6">Không cần thiết.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>discuss how to fix that</strong></td>
+                        <td class="py-4 px-6">thảo luận cách khắc phục điều đó <br> <span class="paraphrase-tag">Paraphrase</span> <strong>A scheduled meeting should take place</strong> (Q54)</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>allocated money for a trip to Singapore</strong></td>
+                        <td class="py-4 px-6">phân bổ tiền cho một chuyến đi đến Singapore</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>present our preliminary findings</strong></td>
+                        <td class="py-4 px-6">trình bày các phát hiện sơ bộ của chúng ta</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>don't really need to do that</strong></td>
+                        <td class="py-4 px-6">thực sự không cần phải làm điều đó <br> <span class="paraphrase-tag">Paraphrase</span> <strong>They are unnecessary</strong> (Q55)</td>
                     </tr>
                 </tbody>
             </table>
@@ -142,8 +147,7 @@
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
                     <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN TỪ
-                    </h2>
+                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE)</h2>
                 </div>
                 <button id="checkAnswersBtn" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
@@ -152,40 +156,41 @@
             
             <!-- Word Bank -->
             <div class="mb-6 flex flex-wrap gap-2 justify-center bg-slate-50 p-4 rounded-lg border border-slate-100">
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">cancel</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">national holiday</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">cancellation</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">draft budget</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">allocate funds</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">project leader</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">preliminary findings</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">unnecessary</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">cancel Wednesday’s budget meeting</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">sent out the cancellation</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">research partners in China</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">off this week for a national holiday</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">looking at the draft budget</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">allocate funds for a project leader</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">discuss how to fix that</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">allocated money for a trip to Singapore</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">present our preliminary findings</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">don't really need to do that</span>
             </div>
 
             <div class="bg-blue-50 p-6 rounded-lg text-lg leading-loose font-medium text-slate-700">
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> Matthew, you're not planning to <input type="text" data-answer="cancel" class="input-blank mx-1"> Wednesday's budget meeting, are you?
+                    <span class="text-pink-600 font-bold">W:</span> Matthew, you’re not planning to <input type="text" data-answer="cancel Wednesday’s budget meeting" class="input-blank mx-1 w-[320px]">, are you?
                 </p>
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> I haven't sent out the <input type="text" data-answer="cancellation" class="input-blank mx-1 w-[120px]"> yet, but our research partners in China are off this week for a <input type="text" data-answer="national holiday" class="input-blank mx-1 w-[140px]">, so there's no point in meeting. Why?
+                    <span class="text-blue-600 font-bold">M:</span> I haven’t <input type="text" data-answer="sent out the cancellation" class="input-blank mx-1 w-[240px]"> yet, but our <input type="text" data-answer="research partners in China" class="input-blank mx-1 w-[260px]"> are <input type="text" data-answer="off this week for a national holiday" class="input-blank mx-1 w-[320px]">, so there’s no point in meeting. Why?
                 </p>
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> Well, I've been looking at the <input type="text" data-answer="draft budget" class="input-blank mx-1 w-[120px]">, and we didn't <input type="text" data-answer="allocate funds" class="input-blank mx-1 w-[130px]"> for a <input type="text" data-answer="project leader" class="input-blank mx-1 w-[130px]">.
+                    <span class="text-pink-600 font-bold">W:</span> Well, I’ve been <input type="text" data-answer="looking at the draft budget" class="input-blank mx-1 w-[240px]">, and we didn’t <input type="text" data-answer="allocate funds for a project leader" class="input-blank mx-1 w-[320px]">.
                 </p>
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> Uh-oh. I wonder how that happened. You're right. We need to discuss how to fix that.
+                    <span class="text-blue-600 font-bold">M:</span> Uh-oh. I wonder how that happened. You're right. We need to <input type="text" data-answer="discuss how to fix that" class="input-blank mx-1 w-[240px]">.
                 </p>
                 <p>
-                    <span class="text-pink-600 font-bold">W:</span> You know, we allocated money for a trip to Singapore to present our <input type="text" data-answer="preliminary findings" class="input-blank mx-1 w-[180px]">. We don't really think it's <input type="text" data-answer="unnecessary" class="input-blank mx-1 w-[120px]"> to do that.
+                    <span class="text-pink-600 font-bold">W:</span> You know, we <input type="text" data-answer="allocated money for a trip to Singapore" class="input-blank mx-1 w-[360px]"> to <input type="text" data-answer="present our preliminary findings" class="input-blank mx-1 w-[300px]">. We <input type="text" data-answer="don't really need to do that" class="input-blank mx-1 w-[280px]">.
                 </p>
             </div>
         </section>
 
-        <!-- 4. QUESTIONS -->
+        <!-- 4. GIẢI THÍCH CHI TIẾT -->
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
-                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. CÂU HỎI BÀI TẬP
-            </h2>
+                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
                 
                 <!-- Q53 -->
@@ -193,70 +198,43 @@
                     <div class="font-semibold text-slate-800 mb-1 text-lg">53. Why does the man want to cancel a meeting?</div>
                     <div class="text-slate-500 text-sm mb-4">Tại sao người đàn ông muốn hủy một cuộc họp?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>
-                            (A) A client is unavailable.
-                            <span class="text-slate-500 text-sm block mt-1">Khách hàng không rảnh.</span>
-                        </div>
-                        <div>
-                            (B) A project has been completed.
-                            <span class="text-slate-500 text-sm block mt-1">Dự án đã hoàn thành.</span>
-                        </div>
-                        <div class="font-bold text-blue-600">
-                            (C) Some partners are on holiday.
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Một số đối tác đang đi nghỉ lễ.</span>
-                        </div>
-                        <div>
-                            (D) A budget has not been approved.
-                            <span class="text-slate-500 text-sm block mt-1">Ngân sách chưa được phê duyệt.</span>
-                        </div>
+                        <div>(A) A deadline has been pushed back.</div>
+                        <div>(B) Some research is not yet complete.</div>
+                        <div class="font-bold text-blue-600">(C) They are celebrating a holiday.</div>
+                        <div>(D) A project has lost funding.</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người đàn ông giải thích "our research partners in China are off this week for a national holiday", nên việc họp vào lúc này là không cần thiết.
                     </div>
                 </div>
 
                 <!-- Q54 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">54. What problem does the woman mention?</div>
-                    <div class="text-slate-500 text-sm mb-4">Người phụ nữ đề cập đến vấn đề gì?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">54. Why does the woman think a meeting is necessary?</div>
+                    <div class="text-slate-500 text-sm mb-4">Tại sao người phụ nữ nghĩ rằng một cuộc họp là cần thiết?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>
-                            (A) A deadline was missed.
-                            <span class="text-slate-500 text-sm block mt-1">Đã quá hạn chót.</span>
-                        </div>
-                        <div>
-                            (B) A travel request was denied.
-                            <span class="text-slate-500 text-sm block mt-1">Yêu cầu đi công tác bị từ chối.</span>
-                        </div>
-                        <div class="font-bold text-blue-600">
-                            (C) A project leader was not funded.
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Trưởng dự án chưa được cấp kinh phí.</span>
-                        </div>
-                        <div>
-                            (D) A software system is slow.
-                            <span class="text-slate-500 text-sm block mt-1">Hệ thống phần mềm bị chậm.</span>
-                        </div>
+                        <div>(A) A contract is ready to be signed.</div>
+                        <div>(B) A new project has been proposed.</div>
+                        <div class="font-bold text-blue-600">(C) A scheduled meeting should take place.</div>
+                        <div>(D) A client will be visiting the office.</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người phụ nữ phát hiện ra lỗi trong dự thảo ngân sách ("we didn’t allocate funds for a project leader") và cần thảo luận để khắc phục nó, nên cuộc họp đã lên lịch vẫn cần diễn ra.
                     </div>
                 </div>
 
                 <!-- Q55 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">55. What does the woman suggest?</div>
-                    <div class="text-slate-500 text-sm mb-4">Người phụ nữ gợi ý điều gì?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">55. What does the woman say about the funds for a trip?</div>
+                    <div class="text-slate-500 text-sm mb-4">Người phụ nữ nói gì về số tiền cho một chuyến đi?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">
-                            (A) Canceling a presentation
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Hủy bỏ một bài thuyết trình</span>
-                        </div>
-                        <div>
-                            (B) Rescheduling a trip
-                            <span class="text-slate-500 text-sm block mt-1">Sắp xếp lại lịch trình một chuyến đi</span>
-                        </div>
-                        <div>
-                            (C) Hiring a new consultant
-                            <span class="text-slate-500 text-sm block mt-1">Thuê một tư vấn viên mới</span>
-                        </div>
-                        <div>
-                            (D) Conducting a survey
-                            <span class="text-slate-500 text-sm block mt-1">Tiến hành một cuộc khảo sát</span>
-                        </div>
+                        <div class="font-bold text-blue-600">(A) They are unnecessary.</div>
+                        <div>(B) They were already spent.</div>
+                        <div>(C) They are insufficient.</div>
+                        <div>(D) They were used for equipment.</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người phụ nữ nói về chuyến đi Singapore: "We don't really need to do that", nghĩa là khoản kinh phí này không thực sự cần thiết (unnecessary).
                     </div>
                 </div>
 

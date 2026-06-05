@@ -14,12 +14,11 @@
         
         
 
-        <!-- 1. SHADOWING FLOW -->
+        <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING
-                </h2>
+                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING</h2>
                 <button id="toggleTranslation" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-purple-200 transition">
                     <i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt
                 </button>
@@ -84,87 +83,70 @@
             </div>
         </section>
 
-        <!-- 2. BUSINESS VOCAB -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-briefcase text-orange-500 mr-2"></i> 2. TỪ VỰNG TRỌNG TÂM
-                </h2>
+                    <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
             <table class="w-full text-left border-collapse">
-                
+                <thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>marketing firm</strong> <br><span class="text-slate-400 text-sm">/ˈmɑːkɪtɪŋ fɜːm/</span></td>
-                        <td class="py-4 px-6">Công ty tiếp thị.</td>
-                        <td class="py-4 px-6">advertising agency</td>
+                        <td class="py-4 px-6"><strong>project for my marketing firm</strong></td>
+                        <td class="py-4 px-6">dự án cho công ty tiếp thị của tôi</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>expanded</strong> <br><span class="text-slate-400 text-sm">/ɪkˈspændɪd/</span></td>
-                        <td class="py-4 px-6">Mở rộng.</td>
-                        <td class="py-4 px-6">grown larger</td>
+                        <td class="py-4 px-6"><strong>expanded a lot in the past year</strong></td>
+                        <td class="py-4 px-6">mở rộng rất nhiều trong năm qua <br> <span class="paraphrase-tag">Paraphrase</span> <strong>ask for help with a project</strong> (Q50)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>past year</strong> <br><span class="text-slate-400 text-sm">/pæst jɪə(r)/</span></td>
-                        <td class="py-4 px-6">Năm vừa qua.</td>
-                        <td class="py-4 px-6">previous twelve months</td>
+                        <td class="py-4 px-6"><strong>client in Brazil</strong></td>
+                        <td class="py-4 px-6">khách hàng ở Brazil</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>client</strong> <br><span class="text-slate-400 text-sm">/ˈklaɪənt/</span></td>
-                        <td class="py-4 px-6">Khách hàng.</td>
-                        <td class="py-4 px-6">customer, patron</td>
+                        <td class="py-4 px-6"><strong>marketing campaign for social media sites</strong></td>
+                        <td class="py-4 px-6">chiến dịch tiếp thị cho các trang mạng xã hội</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>marketing campaign</strong> <br><span class="text-slate-400 text-sm">/ˈmɑːkɪtɪŋ kæmˈpeɪn/</span></td>
-                        <td class="py-4 px-6">Chiến dịch tiếp thị.</td>
-                        <td class="py-4 px-6">promotion drive</td>
+                        <td class="py-4 px-6"><strong>overseeing the campaign</strong></td>
+                        <td class="py-4 px-6">giám sát chiến dịch <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Overseeing a marketing campaign</strong> (Q51)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>social media sites</strong> <br><span class="text-slate-400 text-sm">/ˈsəʊʃl ˈmiːdiə saɪts/</span></td>
-                        <td class="py-4 px-6">Các trang mạng xã hội.</td>
-                        <td class="py-4 px-6">online networking platforms</td>
+                        <td class="py-4 px-6"><strong>have experience with that</strong></td>
+                        <td class="py-4 px-6">có kinh nghiệm về việc đó</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>overseeing</strong> <br><span class="text-slate-400 text-sm">/ˌəʊvəˈsiːɪŋ/</span></td>
-                        <td class="py-4 px-6">Giám sát.</td>
-                        <td class="py-4 px-6">managing, supervising</td>
+                        <td class="py-4 px-6"><strong>detailed description of the work</strong></td>
+                        <td class="py-4 px-6">bản mô tả chi tiết về công việc <br> <span class="paraphrase-tag">Paraphrase</span> <strong>detailed description of the work</strong> (Q52)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>experience</strong> <br><span class="text-slate-400 text-sm">/ɪkˈspɪəriəns/</span></td>
-                        <td class="py-4 px-6">Kinh nghiệm.</td>
-                        <td class="py-4 px-6">knowledge, expertise</td>
+                        <td class="py-4 px-6"><strong>give me an idea</strong></td>
+                        <td class="py-4 px-6">cho tôi biết sơ bộ</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>detailed description</strong> <br><span class="text-slate-400 text-sm">/ˈdiːteɪld dɪˈskrɪpʃn/</span></td>
-                        <td class="py-4 px-6">Bản mô tả chi tiết.</td>
-                        <td class="py-4 px-6">thorough explanation</td>
+                        <td class="py-4 px-6"><strong>how much time this project will take</strong></td>
+                        <td class="py-4 px-6">dự án này sẽ mất bao nhiêu thời gian</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>give me an idea</strong> <br><span class="text-slate-400 text-sm">/ɡɪv miː ən aɪˈdɪə/</span></td>
-                        <td class="py-4 px-6">Cho tôi biết sơ bộ.</td>
-                        <td class="py-4 px-6">provide a general understanding</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>project</strong> <br><span class="text-slate-400 text-sm">/ˈprɒdʒekt/</span></td>
-                        <td class="py-4 px-6">Dự án.</td>
-                        <td class="py-4 px-6">assignment, task</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>take time</strong> <br><span class="text-slate-400 text-sm">/teɪk taɪm/</span></td>
-                        <td class="py-4 px-6">Tốn thời gian.</td>
-                        <td class="py-4 px-6">require duration</td>
+                        <td class="py-4 px-6"><strong>thanks for thinking of me</strong></td>
+                        <td class="py-4 px-6">cảm ơn vì đã nghĩ đến tôi</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- 3. FILL-IN-THE-BLANK CHALLENGE -->
+        <!-- 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE) -->
         <section class="glass-card p-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
                     <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN TỪ
-                    </h2>
+                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE)</h2>
                 </div>
                 <button id="checkAnswersBtn" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
@@ -174,7 +156,7 @@
             <!-- Word Bank -->
             <div class="mb-6 flex flex-wrap gap-2 justify-center bg-slate-50 p-4 rounded-lg border border-slate-100">
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">marketing firm</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">expanded</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">expanded a lot</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">marketing campaign</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">overseeing</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">detailed description</span>
@@ -182,25 +164,24 @@
 
             <div class="bg-blue-50 p-6 rounded-lg text-lg leading-loose font-medium text-slate-700">
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> Hi, Bianca. I'm calling to see if you’d have time to work on a project for my <input type="text" data-answer="marketing firm" class="input-blank mx-1 w-[140px]">. We've <input type="text" data-answer="expanded" class="input-blank mx-1 w-[100px]"> a lot in the past year, and we need some help.
+                    <span class="text-blue-600 font-bold">M:</span> Hi, Bianca. I'm calling to see if you’d have time to work on a project for my <input type="text" data-answer="marketing firm" class="input-blank mx-1 w-[150px]">. We've <input type="text" data-answer="expanded a lot" class="input-blank mx-1 w-[150px]"> in the past year, and we need some help.
                 </p>
                 <p class="mb-4">
                     <span class="text-pink-600 font-bold">W:</span> Thanks for thinking of me. What type of work would I be doing?
                 </p>
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> Well, we have a new client in Brazil who’s interested in creating a <input type="text" data-answer="marketing campaign" class="input-blank mx-1 w-[180px]"> for social media sites. You'd be <input type="text" data-answer="overseeing" class="input-blank mx-1 w-[120px]"> the campaign.
+                    <span class="text-blue-600 font-bold">M:</span> Well, we have a new client in Brazil who’s interested in creating a <input type="text" data-answer="marketing campaign" class="input-blank mx-1 w-[180px]"> for social media sites. You'd be <input type="text" data-answer="overseeing" class="input-blank mx-1 w-[130px]"> the campaign.
                 </p>
                 <p>
-                    <span class="text-pink-600 font-bold">W:</span> Oh, I have experience with that. Why don’t you send me a <input type="text" data-answer="detailed description" class="input-blank mx-1 w-[180px]"> of the work? That'll give me an idea of how much time this project will take.
+                    <span class="text-pink-600 font-bold">W:</span> Oh, I have experience with that. Why don’t you send me a <input type="text" data-answer="detailed description" class="input-blank mx-1 w-[200px]"> of the work? That'll give me an idea of how much time this project will take.
                 </p>
             </div>
         </section>
 
-        <!-- 4. QUESTIONS -->
+        <!-- 4. GIẢI THÍCH CHI TIẾT -->
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
-                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. CÂU HỎI BÀI TẬP
-            </h2>
+                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
                 
                 <!-- Q50 -->
@@ -224,6 +205,10 @@
                             (D) To discuss a salary increase
                             <span class="text-slate-500 text-sm block mt-1">Để thảo luận về việc tăng lương</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông mở đầu: "I'm calling to see if you’d have time to <strong>work on a project</strong> for my marketing firm". Đáp án là (B).</p>
                     </div>
                 </div>
 
@@ -249,6 +234,10 @@
                             <span class="text-slate-500 text-sm block mt-1">Đào tạo nhân viên mới</span>
                         </div>
                     </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông nói: "You'd be <strong>overseeing the campaign</strong> [marketing campaign]". Vậy đáp án là (B).</p>
+                    </div>
                 </div>
 
                 <!-- Q52 -->
@@ -272,6 +261,10 @@
                             (D) A contract for her to sign
                             <span class="text-slate-500 text-sm block mt-1">Một bản hợp đồng để cô ấy ký</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người phụ nữ đề nghị: "Why don’t you send me a <strong>detailed description of the work</strong>?". Đáp án là (C).</p>
                     </div>
                 </div>
 

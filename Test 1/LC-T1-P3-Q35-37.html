@@ -14,12 +14,11 @@
         
         
 
-        <!-- 1. SHADOWING FLOW -->
+        <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING
-                </h2>
+                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING</h2>
                 <button id="toggleTranslation" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-purple-200 transition">
                     <i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt
                 </button>
@@ -105,87 +104,70 @@
             </div>
         </section>
 
-        <!-- 2. BUSINESS VOCAB -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-briefcase text-orange-500 mr-2"></i> 2. TỪ VỰNG TRỌNG TÂM
-                </h2>
+                    <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
             <table class="w-full text-left border-collapse">
-                
+                <thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>calculating</strong> <br><span class="text-slate-400 text-sm">/ˈkælkjuleɪtɪŋ/</span></td>
-                        <td class="py-4 px-6">Tính toán.</td>
-                        <td class="py-4 px-6">computing</td>
+                        <td class="py-4 px-6"><strong>calculating the company’s expense reports</strong></td>
+                        <td class="py-4 px-6">tính toán các báo cáo chi phí của công ty <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Calculating expense reports</strong> (Q35)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>expense reports</strong> <br><span class="text-slate-400 text-sm">/ɪkˈspens rɪˈpɔːts/</span></td>
-                        <td class="py-4 px-6">Báo cáo chi phí.</td>
-                        <td class="py-4 px-6">spending records</td>
+                        <td class="py-4 px-6"><strong>reviewing the travel reimbursement forms</strong></td>
+                        <td class="py-4 px-6">xem xét các mẫu đơn hoàn trả chi phí đi lại</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>reviewing</strong> <br><span class="text-slate-400 text-sm">/rɪˈvjuːɪŋ/</span></td>
-                        <td class="py-4 px-6">Xem xét, kiểm tra.</td>
-                        <td class="py-4 px-6">examining</td>
+                        <td class="py-4 px-6"><strong>hotel receipt from one of our employees</strong></td>
+                        <td class="py-4 px-6">biên lai khách sạn từ một trong những nhân viên của chúng ta</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>travel reimbursement</strong> <br><span class="text-slate-400 text-sm">/ˈtrævl ˌriːɪmˈbɜːsmənt/</span></td>
-                        <td class="py-4 px-6">Hoàn trả chi phí đi lại.</td>
-                        <td class="py-4 px-6">repaying trip costs</td>
+                        <td class="py-4 px-6"><strong>policy is for employees to stay at a hotel</strong></td>
+                        <td class="py-4 px-6">chính sách là nhân viên phải ở tại một khách sạn</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>department</strong> <br><span class="text-slate-400 text-sm">/dɪˈpɑːrtmənt/</span></td>
-                        <td class="py-4 px-6">Bộ phận.</td>
-                        <td class="py-4 px-6">division, unit</td>
+                        <td class="py-4 px-6"><strong>list of approved accommodations</strong></td>
+                        <td class="py-4 px-6">danh sách các cơ sở lưu trú đã được phê duyệt <br> <span class="paraphrase-tag">Paraphrase</span> <strong>hotel is not on an approved list</strong> (Q36)</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>policy</strong> <br><span class="text-slate-400 text-sm">/ˈpɑːləsi/</span></td>
-                        <td class="py-4 px-6">Chính sách.</td>
-                        <td class="py-4 px-6">rule, regulation</td>
+                        <td class="py-4 px-6"><strong>submitted the receipt</strong></td>
+                        <td class="py-4 px-6">đã nộp biên lai</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>approved</strong> <br><span class="text-slate-400 text-sm">/əˈpruːvd/</span></td>
-                        <td class="py-4 px-6">Được phê duyệt.</td>
-                        <td class="py-4 px-6">authorized, sanctioned</td>
+                        <td class="py-4 px-6"><strong>one of our sales representatives</strong></td>
+                        <td class="py-4 px-6">một trong những đại diện bán hàng của chúng ta</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>accommodations</strong> <br><span class="text-slate-400 text-sm">/əˌkɒməˈdeɪʃnz/</span></td>
-                        <td class="py-4 px-6">Chỗ ở.</td>
-                        <td class="py-4 px-6">lodging, housing</td>
+                        <td class="py-4 px-6"><strong>may have forgotten the policy</strong></td>
+                        <td class="py-4 px-6">có thể đã quên chính sách</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>receipt</strong> <br><span class="text-slate-400 text-sm">/rɪˈsiːt/</span></td>
-                        <td class="py-4 px-6">Biên lai, hóa đơn.</td>
-                        <td class="py-4 px-6">proof of purchase</td>
+                        <td class="py-4 px-6"><strong>as a supervisor</strong></td>
+                        <td class="py-4 px-6">với tư cách là người giám sát</td>
                     </tr>
                     <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>sales representatives</strong> <br><span class="text-slate-400 text-sm">/seɪlz ˌreprɪˈzentətɪvz/</span></td>
-                        <td class="py-4 px-6">Đại diện bán hàng.</td>
-                        <td class="py-4 px-6">sales staff</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>supervisor</strong> <br><span class="text-slate-400 text-sm">/ˈsuːpəvaɪzə(r)/</span></td>
-                        <td class="py-4 px-6">Người giám sát.</td>
-                        <td class="py-4 px-6">manager, boss</td>
-                    </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>submit</strong> <br><span class="text-slate-400 text-sm">/səbˈmɪt/</span></td>
-                        <td class="py-4 px-6">Nộp.</td>
-                        <td class="py-4 px-6">hand in, present</td>
+                        <td class="py-4 px-6"><strong>approve the expense this one time</strong></td>
+                        <td class="py-4 px-6">phê duyệt chi phí này một lần này thôi <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Approve an expense</strong> (Q37)</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <!-- 3. FILL-IN-THE-BLANK CHALLENGE -->
+        <!-- 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE) -->
         <section class="glass-card p-6">
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
                     <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN TỪ
-                    </h2>
+                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE)</h2>
                 </div>
                 <button id="checkAnswersBtn" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
@@ -195,43 +177,42 @@
             <!-- Word Bank -->
             <div class="mb-6 flex flex-wrap gap-2 justify-center bg-slate-50 p-4 rounded-lg border border-slate-100">
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">expense reports</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">reimbursement</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">hotel receipt</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">reimbursement forms</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">approved accommodations</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">sales representatives</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">supervisor</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">approve the expense</span>
             </div>
 
             <div class="bg-blue-50 p-6 rounded-lg text-lg leading-loose font-medium text-slate-700">
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> I'd like to finish calculating the company’s <input type="text" data-answer="expense reports" class="input-blank mx-1 w-[180px]"> for the month. Have you finished reviewing the travel <input type="text" data-answer="reimbursement" class="input-blank mx-1 w-[160px]"> forms from all the departments?
+                    <span class="text-blue-600 font-bold">M:</span> I'd like to finish calculating the company’s <input type="text" data-answer="expense reports" class="input-blank mx-1 w-[180px]"> for the month. Have you finished reviewing the travel <input type="text" data-answer="reimbursement forms" class="input-blank mx-1 w-[220px]"> from all the departments?
                 </p>
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> I'm almost done, but I have a question about a <input type="text" data-answer="hotel receipt" class="input-blank mx-1 w-[140px]"> from one of our employees.
+                    <span class="text-pink-600 font-bold">W:</span> I'm almost done, but I have a question about a hotel receipt from one of our employees.
                 </p>
                 <p class="mb-4">
                     <span class="text-blue-600 font-bold">M:</span> What's the problem?
                 </p>
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> Well, our policy is for employees to stay at a hotel that's on our list of <input type="text" data-answer="approved accommodations" class="input-blank mx-1 w-[220px]">. This one isn't on the list.
+                    <span class="text-pink-600 font-bold">W:</span> Well, our policy is for employees to stay at a hotel that's on our list of <input type="text" data-answer="approved accommodations" class="input-blank mx-1 w-[260px]">. This one isn't on the list.
                 </p>
                 <p class="mb-4">
                     <span class="text-blue-600 font-bold">M:</span> Who submitted the receipt?
                 </p>
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> Moritz Ziegler, one of our <input type="text" data-answer="sales representatives" class="input-blank mx-1 w-[200px]">.
+                    <span class="text-pink-600 font-bold">W:</span> Moritz Ziegler, one of our <input type="text" data-answer="sales representatives" class="input-blank mx-1 w-[220px]">.
                 </p>
                 <p>
-                    <span class="text-blue-600 font-bold">M:</span> Hmm. He's a new employee and may have forgotten the policy. As a <input type="text" data-answer="supervisor" class="input-blank mx-1 w-[120px]">, I can approve the expense this one time.
+                    <span class="text-blue-600 font-bold">M:</span> Hmm. He's a new employee and may have forgotten the policy. As a <input type="text" data-answer="supervisor" class="input-blank mx-1 w-[120px]">, I can <input type="text" data-answer="approve the expense" class="input-blank mx-1 w-[200px]"> this one time.
                 </p>
             </div>
         </section>
 
-        <!-- 4. QUESTIONS -->
+        <!-- 4. GIẢI THÍCH CHI TIẾT -->
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
-                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. CÂU HỎI BÀI TẬP
-            </h2>
+                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
                 
                 <!-- Q35 -->
@@ -255,6 +236,10 @@
                             (D) Writing a company policy
                             <span class="text-slate-500 text-sm block mt-1">Viết chính sách công ty</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông bắt đầu cuộc đối thoại bằng câu: "I'd like to finish <strong>calculating the company’s expense reports</strong> for the month". Vậy đáp án là (B).</p>
                     </div>
                 </div>
 
@@ -280,6 +265,10 @@
                             <span class="text-slate-500 text-sm block mt-1">Người giám sát không có mặt</span>
                         </div>
                     </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người phụ nữ nói về một biên lai khách sạn: "This one <strong>isn't on the list</strong> [of approved accommodations]". Đáp án tương ứng là (B).</p>
+                    </div>
                 </div>
 
                 <!-- Q37 -->
@@ -303,6 +292,10 @@
                             (D) Hire a new employee
                             <span class="text-slate-500 text-sm block mt-1">Thuê một nhân viên mới</span>
                         </div>
+                    </div>
+                    <div class="mt-4 p-4 bg-indigo-50 rounded-lg border-l-4 border-indigo-500">
+                        <div class="font-bold text-indigo-800 mb-2">Giải thích:</div>
+                        <p class="text-slate-700 text-sm">Người đàn ông quyết định: "As a supervisor, I can <strong>approve the expense</strong> this one time". Vậy đáp án là (B).</p>
                     </div>
                 </div>
 

@@ -12,61 +12,50 @@
 
     <div class="main-container space-y-8">
         
-        
-
-        <!-- 1. SHADOWING FLOW -->
+        <!-- 1. BẢN ĐỌC CHUNKING -->
         <section class="glass-card p-6">
             <div class="flex justify-between items-center mb-6">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING
-                </h2>
+                    <i class="fas fa-microphone-lines text-purple-500 mr-2"></i> 1. BẢN ĐỌC CHUNKING</h2>
                 <button id="toggleTranslation" class="bg-purple-100 text-purple-700 px-4 py-2 rounded-md text-sm font-semibold hover:bg-purple-200 transition">
                     <i class="fas fa-eye-slash mr-1"></i> Ẩn tiếng Việt
                 </button>
             </div>
             
             <div id="shadowingContainer" class="space-y-6 text-lg">
-                <!-- M -->
+                <!-- M-Au -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>He wants us / to install / an irrigation system / in the rose garden</strong>
-                            <span class="chunk-vi">Anh ấy muốn chúng ta / lắp đặt / một hệ thống tưới nước / trong vườn hồng</span>
+                            <strong>I just spoke / to the garden director. / He wants us / to install / an irrigation system / in the rose garden / as well as / the magnolia grove.</strong>
+                            <span class="chunk-vi">Tôi vừa nói chuyện / với giám đốc khu vườn. / Ông ấy muốn chúng ta / lắp đặt / một hệ thống tưới tiêu / trong vườn hồng / cũng như / rặng cây mộc lan.</span>
                         </div>
                         <div>
-                            <strong>as well as the magnolia grove.</strong>
-                            <span class="chunk-vi">cũng như trong khu vườn mộc lan.</span>
-                        </div>
-                        <div>
-                            <strong>He wants to be sure the flowers / get plenty of water / during the hot summer months.</strong>
-                            <span class="chunk-vi">Anh ấy muốn đảm bảo rằng hoa / nhận được nhiều nước / trong những tháng hè nóng bức.</span>
+                            <strong>He wants to be sure / the flowers get / plenty of water / during the hot summer months.</strong>
+                            <span class="chunk-vi">Ông ấy muốn đảm bảo / các loài hoa nhận được / nhiều nước / trong những tháng hè nóng nực.</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- W -->
+                <!-- W-Br -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center font-bold text-pink-600 flex-shrink-0">W</div>
                     <div class="w-full">
                         <div>
-                            <strong>OK, let's walk over there / now / and take some measurements.</strong>
-                            <span class="chunk-vi">Được rồi, chúng ta hãy đi bộ đến đó / ngay bây giờ / và thực hiện một số phép đo.</span>
-                        </div>
-                        <div>
-                            <strong>Then we can figure out / what materials we'll need.</strong>
-                            <span class="chunk-vi">Sau đó chúng ta có thể tìm ra / những vật liệu nào chúng ta sẽ cần.</span>
+                            <strong>OK, / let’s walk over there / now / and take some measurements. / Then / we can figure out / what materials / we'll need.</strong>
+                            <span class="chunk-vi">Được rồi, / chúng ta hãy đi bộ đến đó / ngay bây giờ / và đo đạc một chút. / Sau đó / chúng ta có thể tính toán / những vật liệu nào / chúng ta sẽ cần.</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- M -->
+                <!-- M-Au -->
                 <div class="flex gap-4">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600 flex-shrink-0">M</div>
                     <div class="w-full">
                         <div>
-                            <strong>Sure. / We have some extra parts / left over / from when we worked on the cherry trees.</strong>
-                            <span class="chunk-vi">Chắc chắn rồi. / Chúng ta có một số bộ phận phụ / còn sót lại / từ khi chúng ta làm việc với những cây anh đào.</span>
+                            <strong>Sure. / We have / some extra parts / left over / from when we worked / on the cherry trees.</strong>
+                            <span class="chunk-vi">Chắc chắn rồi. / Chúng ta có / một số bộ phận dư thừa / còn lại / từ khi chúng ta làm việc / với những cây anh đào.</span>
                         </div>
                         <div>
                             <strong>I'll check / what we have left / after we finish / measuring the rose garden.</strong>
@@ -77,47 +66,63 @@
             </div>
         </section>
 
-        <!-- 2. BUSINESS VOCAB -->
+        <!-- 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING) -->
         <section class="glass-card overflow-hidden">
             <div class="p-6 pb-4">
                 <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                    <i class="fas fa-briefcase text-orange-500 mr-2"></i> 2. TỪ VỰNG TRỌNG TÂM
-                </h2>
+                    <i class="fas fa-star text-yellow-500 mr-2"></i> 2. KIẾN THỨC TRỌNG TÂM (CHUNKING & PARAPHRASING)</h2>
             </div>
-            <table class="w-full text-left border-collapse">
-                
+            <table class="w-full text-left border-collapse chunk-table">
+                <thead>
+                    <tr class="bg-slate-50 text-slate-500 text-sm">
+                        <th class="py-3 px-6 font-semibold">Cụm từ (Chunk)</th>
+                        <th class="py-3 px-6 font-semibold">Ý nghĩa & Cận ngôn (Paraphrase)</th>
+                    </tr>
+                </thead>
                 <tbody class="divide-y divide-slate-100 text-slate-700">
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>garden director</strong> <br><span class="text-slate-400 text-sm">/ˈɡɑːrdn dəˈrektər/</span></td>
-                        <td class="py-4 px-6">Giám đốc vườn.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>spoke to the garden director</strong></td>
+                        <td class="py-4 px-6">nói chuyện với giám đốc khu vườn <br> <span class="paraphrase-tag">Paraphrase</span> <strong>At a botanical garden</strong> (Q59)</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>irrigation system</strong> <br><span class="text-slate-400 text-sm">/ˌɪrɪˈɡeɪʃn ˈsɪstəm/</span></td>
-                        <td class="py-4 px-6">Hệ thống tưới tiêu.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>install an irrigation system</strong></td>
+                        <td class="py-4 px-6">lắp đặt một hệ thống tưới tiêu <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Install a watering system</strong> (Q60)</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>installation</strong> <br><span class="text-slate-400 text-sm">/ˌɪnstəˈleɪʃn/</span></td>
-                        <td class="py-4 px-6">Sự lắp đặt.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>in the rose garden</strong></td>
+                        <td class="py-4 px-6">trong vườn hồng</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>rose garden</strong> <br><span class="text-slate-400 text-sm">/roʊz ˈɡɑːrdn/</span></td>
-                        <td class="py-4 px-6">Vườn hoa hồng.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>as well as the magnolia grove</strong></td>
+                        <td class="py-4 px-6">cũng như rặng cây mộc lan</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>magnolia grove</strong> <br><span class="text-slate-400 text-sm">/mæɡˈnoʊliə ɡroʊv/</span></td>
-                        <td class="py-4 px-6">Khu vườn mộc lan.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>plenty of water during the hot summer months</strong></td>
+                        <td class="py-4 px-6">nhiều nước trong những tháng hè nóng nực</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>measurements</strong> <br><span class="text-slate-400 text-sm">/ˈmeʒərmənts/</span></td>
-                        <td class="py-4 px-6">Các phép đo, sự đo đạc.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>walk over there now</strong></td>
+                        <td class="py-4 px-6">đi bộ đến đó ngay bây giờ</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>extra parts</strong> <br><span class="text-slate-400 text-sm">/ˈekstrə pɑːrts/</span></td>
-                        <td class="py-4 px-6">Các bộ phận phụ/thêm.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>take some measurements</strong></td>
+                        <td class="py-4 px-6">đo đạc một chút</td>
                     </tr>
-                    <tr class="hover:bg-slate-50">
-                        <td class="py-4 px-6"><strong>check what we have left</strong> <br><span class="text-slate-400 text-sm">/tʃek wʌt wi hæv left/</span></td>
-                        <td class="py-4 px-6">Kiểm tra những gì chúng ta còn lại.</td>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>figure out what materials we'll need</strong></td>
+                        <td class="py-4 px-6">tính toán những vật liệu nào chúng ta sẽ cần</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>extra parts left over</strong></td>
+                        <td class="py-4 px-6">một số bộ phận dư thừa còn lại</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>worked on the cherry trees</strong></td>
+                        <td class="py-4 px-6">làm việc với những cây anh đào</td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition">
+                        <td class="py-4 px-6"><strong>check what we have left</strong></td>
+                        <td class="py-4 px-6">kiểm tra những gì chúng ta còn lại <br> <span class="paraphrase-tag">Paraphrase</span> <strong>Look for some materials</strong> (Q61)</td>
                     </tr>
                 </tbody>
             </table>
@@ -128,8 +133,7 @@
             <div class="flex flex-col md:flex-row justify-between items-center mb-6">
                 <div>
                     <h2 class="text-xl font-bold text-slate-800 flex items-center">
-                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN TỪ
-                    </h2>
+                        <i class="fas fa-pen-nib text-cyan-500 mr-2"></i> 3. ĐIỀN CỤM TỪ (CHUNKING CHALLENGE)</h2>
                 </div>
                 <button id="checkAnswersBtn" class="mt-4 md:mt-0 bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-full font-bold shadow-lg transition transform hover:scale-105">
                     <i class="fas fa-check-circle mr-2"></i> Kiểm tra Đáp án
@@ -138,105 +142,79 @@
             
             <!-- Word Bank -->
             <div class="mb-6 flex flex-wrap gap-2 justify-center bg-slate-50 p-4 rounded-lg border border-slate-100">
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">garden director</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">irrigation system</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">installation</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">rose garden</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">magnolia grove</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">measurements</span>
-                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">extra parts</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">spoke to the garden director</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">install an irrigation system</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">in the rose garden</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">as well as the magnolia grove</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">plenty of water during the hot summer months</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">walk over there now</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">take some measurements</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">figure out what materials we'll need</span>
+                <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">extra parts left over</span>
                 <span class="px-3 py-1 bg-white text-slate-700 rounded-md border border-slate-200 text-sm font-medium shadow-sm">check what we have left</span>
             </div>
 
             <div class="bg-blue-50 p-6 rounded-lg text-lg leading-loose font-medium text-slate-700">
                 <p class="mb-4">
-                    <span class="text-blue-600 font-bold">M:</span> I just spoke to the <input type="text" data-answer="garden director" class="input-blank mx-1 w-[140px]">. He wants us to do an <input type="text" data-answer="installation" class="input-blank mx-1"> of an <input type="text" data-answer="irrigation system" class="input-blank mx-1 w-[160px]"> in the <input type="text" data-answer="rose garden" class="input-blank mx-1 w-[120px]"> as well as the <input type="text" data-answer="magnolia grove" class="input-blank mx-1 w-[150px]">. He wants to be sure the flowers get plenty of water during the hot summer months.
+                    <span class="text-blue-600 font-bold">M:</span> I just <input type="text" data-answer="spoke to the garden director" class="input-blank mx-1 w-[280px]">. He wants us to <input type="text" data-answer="install an irrigation system" class="input-blank mx-1 w-[260px]"> <input type="text" data-answer="in the rose garden" class="input-blank mx-1 w-[200px]"> <input type="text" data-answer="as well as the magnolia grove" class="input-blank mx-1 w-[280px]">. He wants to be sure the flowers get <input type="text" data-answer="plenty of water during the hot summer months" class="input-blank mx-1 w-[400px]">.
                 </p>
                 <p class="mb-4">
-                    <span class="text-pink-600 font-bold">W:</span> OK, let's walk over there now and take some <input type="text" data-answer="measurements" class="input-blank mx-1 w-[140px]">. Then we can figure out what materials we'll need.
+                    <span class="text-pink-600 font-bold">W:</span> OK, let’s <input type="text" data-answer="walk over there now" class="input-blank mx-1 w-[200px]"> and <input type="text" data-answer="take some measurements" class="input-blank mx-1 w-[240px]">. Then we can <input type="text" data-answer="figure out what materials we'll need" class="input-blank mx-1 w-[320px]">.
                 </p>
                 <p>
-                    <span class="text-blue-600 font-bold">M:</span> Sure. We have some <input type="text" data-answer="extra parts" class="input-blank mx-1 w-[110px]"> left over from when we worked on the cherry trees. I'll <input type="text" data-answer="check what we have left" class="input-blank mx-1 w-[200px]"> after we finish measuring the rose garden.
+                    <span class="text-blue-600 font-bold">M:</span> Sure. We have some <input type="text" data-answer="extra parts left over" class="input-blank mx-1 w-[240px]"> from when we worked on the cherry trees. I'll <input type="text" data-answer="check what we have left" class="input-blank mx-1 w-[240px]"> after we finish measuring the rose garden.
                 </p>
             </div>
         </section>
 
-        <!-- 4. QUESTIONS -->
+        <!-- 4. GIẢI THÍCH CHI TIẾT -->
         <section class="glass-card p-6">
             <h2 class="text-xl font-bold text-slate-800 flex items-center mb-6">
-                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. CÂU HỎI BÀI TẬP
-            </h2>
+                <i class="fas fa-question-circle text-indigo-500 mr-2"></i> 4. GIẢI THÍCH CHI TIẾT</h2>
             <div class="space-y-6">
                 
                 <!-- Q59 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">59. Where are the speakers most likely working?</div>
-                    <div class="text-slate-500 text-sm mb-4">Các nhân vật rất có thể đang làm việc ở đâu?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">59. Where most likely are the speakers?</div>
+                    <div class="text-slate-500 text-sm mb-4">Các nhân vật có khả năng nhất là đang ở đâu?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>
-                            (A) At a flower shop
-                            <span class="text-slate-500 text-sm block mt-1">Tại một cửa hàng hoa</span>
-                        </div>
-                        <div class="font-bold text-blue-600">
-                            (B) At a botanical garden
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Tại một vườn bách thảo</span>
-                        </div>
-                        <div>
-                            (C) At a fruit orchard
-                            <span class="text-slate-500 text-sm block mt-1">Tại một vườn cây ăn quả</span>
-                        </div>
-                        <div>
-                            (D) At a hardware store
-                            <span class="text-slate-500 text-sm block mt-1">Tại một cửa hàng kim khí</span>
-                        </div>
+                        <div>(A) At a construction site</div>
+                        <div class="font-bold text-blue-600">(B) At a botanical garden</div>
+                        <div>(C) At a hardware store</div>
+                        <div>(D) At a flower shop</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Họ nhắc đến "garden director" (giám đốc khu vườn), "rose garden" (vườn hồng), "magnolia grove" (rặng cây mộc lan) và "cherry trees" (cây anh đào), cho thấy họ đang ở một vườn bách thảo.
                     </div>
                 </div>
 
                 <!-- Q60 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">60. What have the speakers been asked to do?</div>
-                    <div class="text-slate-500 text-sm mb-4">Các nhân vật được yêu cầu làm gì?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">60. What does the garden director want the speakers to do?</div>
+                    <div class="text-slate-500 text-sm mb-4">Giám đốc khu vườn muốn các nhân vật làm gì?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div>
-                            (A) Arrange some flowers
-                            <span class="text-slate-500 text-sm block mt-1">Cắm một số bông hoa</span>
-                        </div>
-                        <div>
-                            (B) Deliver some tools
-                            <span class="text-slate-500 text-sm block mt-1">Giao một số dụng cụ</span>
-                        </div>
-                        <div class="font-bold text-blue-600">
-                            (C) Install a watering system
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Lắp đặt hệ thống tưới nước</span>
-                        </div>
-                        <div>
-                            (D) Repair a lawn mower
-                            <span class="text-slate-500 text-sm block mt-1">Sửa máy cắt cỏ</span>
-                        </div>
+                        <div>(A) Trim some trees</div>
+                        <div>(B) Order some flowers</div>
+                        <div class="font-bold text-blue-600">(C) Install a watering system</div>
+                        <div>(D) Build a new fence</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người đàn ông nói giám đốc muốn họ "install an irrigation system" (lắp đặt một hệ thống tưới tiêu), tương ứng với một hệ thống tưới nước (watering system).
                     </div>
                 </div>
 
                 <!-- Q61 -->
                 <div class="bg-slate-50 p-5 rounded-lg border border-slate-100">
-                    <div class="font-semibold text-slate-800 mb-1 text-lg">61. What does the man offer to do?</div>
-                    <div class="text-slate-500 text-sm mb-4">Người đàn ông đề nghị làm gì?</div>
+                    <div class="font-semibold text-slate-800 mb-1 text-lg">61. What does the man say he will do?</div>
+                    <div class="text-slate-500 text-sm mb-4">Người đàn ông nói anh ta sẽ làm gì?</div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-700">
-                        <div class="font-bold text-blue-600">
-                            (A) Look for some materials
-                            <span class="text-slate-500 text-sm font-normal block mt-1">Tìm kiếm một số vật liệu</span>
-                        </div>
-                        <div>
-                            (B) Train an assistant
-                            <span class="text-slate-500 text-sm block mt-1">Đào tạo một trợ lý</span>
-                        </div>
-                        <div>
-                            (C) Transplant some trees
-                            <span class="text-slate-500 text-sm block mt-1">Cấy ghép một số cây</span>
-                        </div>
-                        <div>
-                            (D) Work extra hours
-                            <span class="text-slate-500 text-sm block mt-1">Làm thêm giờ</span>
-                        </div>
+                        <div class="font-bold text-blue-600">(A) Look for some materials</div>
+                        <div>(B) Create a project timeline</div>
+                        <div>(C) Hire more workers</div>
+                        <div>(D) Contact a supplier</div>
+                    </div>
+                    <div class="mt-4 p-3 bg-blue-100/50 rounded text-sm text-blue-800">
+                        <strong>Giải thích:</strong> Người đàn ông nói "I'll check what we have left [extra parts] after we finish measuring", tức là anh ta sẽ đi tìm xem còn vật liệu/linh kiện nào còn sót lại không.
                     </div>
                 </div>
 
